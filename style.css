@@ -1517,3 +1517,84 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ====================================================
+   CLUB PAGINA'S
+   ==================================================== */
+
+/* Leeftijdsbadge in de hero */
+.hero__age {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 10px;
+}
+
+/* Groot statement blok onder de hero */
+.club-tagline {
+  background: var(--dark);
+  color: var(--white);
+  padding: 72px 32px;
+  text-align: center;
+}
+
+.club-tagline__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.club-tagline p {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* Praktisch info items in een blok__card */
+.praktisch {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.praktisch__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.praktisch__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.praktisch__label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.praktisch__value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Klikbare club-items in age-cards (homepage) */
+.age-card a {
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.18s;
+}
+
+.age-card a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
