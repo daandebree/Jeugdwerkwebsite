@@ -23,9 +23,9 @@
         <li><a href="#watjedoen">Wat we doen</a></li>
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="nav__cta-mobile"><a href="#meewerken" class="btn nav__cta-link">Meewerken</a></li>
+        <li class="nav__cta-mobile"><a href="#aanmelden" class="btn nav__cta-link">Meewerken</a></li>
       </ul>
-      <a href="#meewerken" class="btn nav__cta">Meewerken</a>
+      <a href="#aanmelden" class="btn nav__cta">Meewerken</a>
       <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
         <span></span>
         <span></span>
@@ -49,7 +49,7 @@
         Om Jezus te leren kennen, samen te groeien en een plek te vinden in Gods gemeente.
       </p>
       <div class="hero__btns">
-        <a href="#contact" class="btn">Ik wil meedoen</a>
+        <a href="#aanmelden" class="btn">Ik wil meedoen</a>
         <a href="#watjedoen" class="btn btn--ghost">Ontdek wat er is</a>
       </div>
     </div>
@@ -274,7 +274,9 @@
           </ul>
         </div>
       </div>
-      <form class="form" action="#" method="post">
+      <form class="form" name="aanmelding" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="aanmelding">
+        <p hidden><label>Laat dit veld leeg: <input name="bot-field"></label></p>
         <div class="form__row">
           <label for="naam">Naam</label>
           <input type="text" id="naam" name="naam" placeholder="Jouw naam" required>
@@ -300,30 +302,42 @@
         </div>
         <div class="form__row">
           <label>Beschikbaarheid</label>
-          <div class="avail-split">
-            <select id="beschikbaar" name="beschikbaar" class="avail-split__select">
-              <option value="">Kies een moment…</option>
-              <optgroup label="Doordeweeks — middag">
-                <option value="ma-middag">Maandagmiddag</option>
-                <option value="wo-middag">Woensdagmiddag</option>
-              </optgroup>
-              <optgroup label="Doordeweeks — avond">
-                <option value="ma-avond">Maandagavond</option>
-                <option value="di-avond">Dinsdagavond</option>
-                <option value="wo-avond">Woensdagavond</option>
-                <option value="do-avond">Donderdagavond</option>
-                <option value="vr-avond">Vrijdagavond</option>
-              </optgroup>
-              <optgroup label="Weekend">
-                <option value="za-middag">Zaterdagmiddag</option>
-                <option value="za-avond">Zaterdagavond</option>
-                <option value="zo-middag">Zondagmiddag</option>
-              </optgroup>
-            </select>
-            <label class="avail-split__unknown">
-              <input type="checkbox" name="beschikbaar_onzeker" value="weet-niet">
-              <span>Weet ik nog niet</span>
-            </label>
+          <div class="avail-check" id="availDrop">
+            <button type="button" class="avail-check__btn" aria-haspopup="true" aria-expanded="false">
+              <span class="avail-check__summary">Kies een moment…</span>
+              <svg class="avail-check__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="avail-check__panel" hidden>
+              <div class="avail-check__left">
+                <div class="avail-check__group">
+                  <p class="avail-check__groeplabel">Doordeweeks — middag</p>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="ma-middag"> Maandagmiddag</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="wo-middag"> Woensdagmiddag</label>
+                </div>
+                <div class="avail-check__group">
+                  <p class="avail-check__groeplabel">Doordeweeks — avond</p>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="ma-avond"> Maandagavond</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="di-avond"> Dinsdagavond</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="wo-avond"> Woensdagavond</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="do-avond"> Donderdagavond</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="vr-avond"> Vrijdagavond</label>
+                </div>
+                <div class="avail-check__group">
+                  <p class="avail-check__groeplabel">Weekend</p>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="za-middag"> Zaterdagmiddag</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="za-avond"> Zaterdagavond</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="zo-middag"> Zondagmiddag</label>
+                </div>
+              </div>
+              <div class="avail-check__right">
+                <label class="avail-check__unknown">
+                  <input type="checkbox" name="beschikbaar_onzeker" value="weet-niet">
+                  <span>Weet ik nog niet</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form__row">

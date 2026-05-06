@@ -1050,6 +1050,16 @@ a {
   resize: vertical;
 }
 
+.form__success {
+  padding: 24px;
+  background: #f0faf4;
+  border: 1px solid #a8d5b8;
+  color: #1d6636;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 /* ====================================================
    SLOTBLOK
    ==================================================== */
@@ -1182,42 +1192,158 @@ a {
 /* ====================================================
    BESCHIKBAARHEID — split layout
    ==================================================== */
-.avail-split {
-  display: flex;
-  gap: 12px;
-  align-items: stretch;
+/* ---- Custom checkbox dropdown ---- */
+.avail-check {
+  position: relative;
 }
 
-.avail-split__select {
-  flex: 1;
-}
-
-.avail-split__unknown {
+.avail-check__btn {
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   padding: 12px 16px;
   border: 1px solid #ddd;
   background: var(--white);
-  white-space: nowrap;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--dark);
   cursor: pointer;
-  font-size: 0.875rem;
-  color: #444;
-  flex-shrink: 0;
+  text-align: left;
+  transition: border-color 0.2s;
 }
 
-.avail-split__select:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
+.avail-check__btn:focus {
+  outline: none;
+  border-color: var(--dark);
+}
+
+.avail-check__btn[aria-expanded="true"] {
+  border-color: var(--dark);
+}
+
+.avail-check__summary {
+  flex: 1;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.avail-check__summary.is-placeholder {
+  color: #999;
+}
+
+.avail-check__chevron {
+  flex-shrink: 0;
+  color: #888;
+  transition: transform 0.18s;
+}
+
+.avail-check__btn[aria-expanded="true"] .avail-check__chevron {
+  transform: rotate(180deg);
+}
+
+.avail-check__panel {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  display: flex;
+  background: var(--white);
+  border: 1px solid #ddd;
+  z-index: 200;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.avail-check__panel[hidden] {
+  display: none;
+}
+
+.avail-check__left {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.avail-check__right {
+  width: 140px;
+  flex-shrink: 0;
+  border-left: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avail-check__unknown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 12px;
+  font-size: 0.85rem;
+  color: #444;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.avail-check__group {
+  padding: 8px 0 4px;
+}
+
+.avail-check__group + .avail-check__group {
+  border-top: 1px solid #eee;
+  margin-top: 4px;
+  padding-top: 10px;
+}
+
+.avail-check__groeplabel {
+  padding: 0 14px 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 0;
+}
+
+.avail-check__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  color: var(--dark);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.avail-check__item:hover {
   background: #f5f5f5;
 }
 
-.avail-split__unknown input[type="checkbox"] {
-  width: 15px;
-  height: 15px;
+.avail-check__item input[type="checkbox"],
+.avail-check__unknown input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  appearance: auto;
+  -webkit-appearance: auto;
   accent-color: var(--brand);
   cursor: pointer;
   flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  border: revert;
+}
+
+.avail-check.is-disabled .avail-check__btn {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background: #f5f5f5;
+  pointer-events: none;
 }
 
 /* ====================================================
