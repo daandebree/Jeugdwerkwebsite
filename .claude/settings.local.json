@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/daand/OneDrive/Documenten/Kerk/**)",
+      "Read(//c/Users/daand/Downloads/Jeugdkamp 2025-3-001/Jeugdkamp 2025/**)",
+      "WebFetch(domain:www.hervormdwoudenberg.nl)",
+      "Bash(git init *)"
+    ]
+  }
+}

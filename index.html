@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeugdwerk — Hervormde Gemeente Woudenberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATIE ===================== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="images/logo.png" alt="Hervormde Gemeente Woudenberg" class="nav__logo-img">
+        <span>Jeugdwerk <span class="nav__logo-sub">Hervormd Woudenberg</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#visie">Visie</a></li>
+        <li><a href="#watjedoen">Wat we doen</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav__cta-mobile"><a href="#meewerken" class="btn nav__cta-link">Meewerken</a></li>
+      </ul>
+      <a href="#meewerken" class="btn nav__cta">Meewerken</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <!--
+      Eigen foto toevoegen:
+      Verwijder "hero__bg--placeholder" en voeg toe:
+      style="background-image: url('images/hero.jpg')"
+    -->
+    <div class="hero__bg hero__bg--placeholder"></div>
+    <div class="hero__card">
+      <h1>Ken Hem,<br>Vind Ons,<br>Groei Samen</h1>
+      <p>
+        Voor kinderen, tieners en jongeren.<br>
+        Om Jezus te leren kennen, samen te groeien en een plek te vinden in Gods gemeente.
+      </p>
+      <div class="hero__btns">
+        <a href="#contact" class="btn">Ik wil meedoen</a>
+        <a href="#watjedoen" class="btn btn--ghost">Ontdek wat er is</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VISIE / 3 PIJLERS ===================== -->
+  <section class="pillars" id="visie">
+    <div class="pillars__inner">
+      <p class="pillars__label">De 3 pijlers van het jeugdwerk</p>
+      <div class="pillars__grid">
+
+        <div class="pillar">
+          <span class="pillar__rel">Hij &amp; jij</span>
+          <h3 class="pillar__name">Ken Hem</h3>
+          <p class="pillar__kern">God spreekt jou aan.<br>Je leert Hem kennen.</p>
+          <span class="pillar__base">Geloofskennis &amp; overdracht</span>
+        </div>
+
+        <div class="pillar pillar--mid">
+          <span class="pillar__rel">Jij &amp; wij</span>
+          <h3 class="pillar__name">Vind Ons</h3>
+          <p class="pillar__kern">Je staat er niet alleen voor.<br>Je vindt je mensen.</p>
+          <span class="pillar__base">Verbinden van leeftijdsgenoten</span>
+        </div>
+
+        <div class="pillar">
+          <span class="pillar__rel">Hij &amp; wij</span>
+          <h3 class="pillar__name">Groei Samen</h3>
+          <p class="pillar__kern">Dit is groter dan jij. God bouwt een gemeente — en jij hoort erbij.</p>
+          <span class="pillar__base">Ingroeien in de gemeente</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY / VERLANGEN ===================== -->
+  <section class="block">
+    <!-- Video placeholder — vervang door een <iframe> of <video> tag -->
+    <div class="block__photo block__photo--video">
+      <div class="video-play">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.15)"/>
+          <polygon points="26,20 48,32 26,44" fill="white"/>
+        </svg>
+        <span>Bekijk onze video</span>
+      </div>
+    </div>
+    <div class="block__card">
+      <h2>Ons verlangen</h2>
+      <p>
+        Ons verlangen is simpel, maar groot:<br>
+        dat jongeren dichtbij God leven.
+      </p>
+      <p>
+        Niet alleen kennis, maar een relatie.<br>
+        Niet alleen aanwezig zijn, maar meebouwen.
+      </p>
+      <p>Daarom investeren we in geloof, relaties en groei in de gemeente.</p>
+    </div>
+  </section>
+
+  <!-- ===================== WAT WE DOEN (per leeftijdsgroep) ===================== -->
+  <section class="ages block--dark" id="watjedoen">
+    <div class="ages__inner">
+      <h2>Wat we doen</h2>
+      <p class="ages__intro">
+        Verbinding met leeftijdsgenoten is cruciaal. Daarom hebben we voor elke leeftijd een plek.
+      </p>
+      <div class="ages__grid">
+        <div class="age-card">
+          <span class="age-card__range">0 – 4 jaar</span>
+          <h3>Kleintjes</h3>
+          <ul>
+            <li>Oppas</li>
+          </ul>
+        </div>
+        <div class="age-card">
+          <span class="age-card__range">4 – 10 jaar</span>
+          <h3>Bijbeluur & Club</h3>
+          <ul>
+            <li>Bijbeluur</li>
+            <li>Woensdagmiddagclub</li>
+          </ul>
+        </div>
+        <div class="age-card">
+          <span class="age-card__range">10 – 12 jaar</span>
+          <h3>Club & Catechese</h3>
+          <ul>
+            <li>Jongensclub</li>
+            <li>Meisjesclub</li>
+            <li>Catechese groep 7 &amp; 8</li>
+          </ul>
+        </div>
+        <div class="age-card">
+          <span class="age-card__range">12 – 16 jaar</span>
+          <h3>Club & Catechese</h3>
+          <ul>
+            <li>United Friday</li>
+            <li>United Saturday</li>
+            <li>Catechese</li>
+          </ul>
+        </div>
+        <div class="age-card">
+          <span class="age-card__range">16+ jaar</span>
+          <h3>Club & Catechese</h3>
+          <ul>
+            <li>Jongeren Vereniging (JV)</li>
+            <li>Catechese</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== UPCOMING EVENTS ===================== -->
+  <section class="events" id="agenda">
+    <div class="events__left">
+      <h2>Agenda</h2>
+      <ul class="events__list">
+        <li>
+          <span class="events__date">Dinsdag</span>
+          <span class="events__name">Clubavonden (zie planning)</span>
+        </li>
+        <li>
+          <span class="events__date">Maandag</span>
+          <span class="events__name">Catechese avonden</span>
+        </li>
+        <li>
+          <span class="events__date">00.00.2026</span>
+          <span class="events__name">United Friday</span>
+        </li>
+        <li>
+          <span class="events__date">00.00.2026</span>
+          <span class="events__name">United Saturday</span>
+        </li>
+        <li>
+          <span class="events__date">Zomer 2026</span>
+          <span class="events__name">Jeugdkamp</span>
+        </li>
+      </ul>
+      <a href="#" class="btn btn--outline">Bekijk volledige agenda</a>
+    </div>
+    <div class="events__photo events__photo--placeholder"></div>
+  </section>
+
+  <!-- ===================== ROLLEN / VACATURES ===================== -->
+  <section class="roles block--dark" id="meewerken">
+    <div class="roles__inner">
+      <h2>Waar pas jij bij?</h2>
+      <div class="roles__grid">
+
+        <div class="role-card">
+          <span class="role-card__icon">❤️+📖</span>
+          <h3>Mentor</h3>
+          <p class="role-card__sub">Zorg &amp; Aandacht</p>
+          <p>Loop een stukje mee met jongeren. Luister, bid en wees er — ook buiten de groepsmomenten.</p>
+        </div>
+
+        <div class="role-card">
+          <span class="role-card__icon">🤝</span>
+          <h3>Groepsleider</h3>
+          <p class="role-card__sub">Community &amp; Clubs</p>
+          <p>Sta naast een groep jongeren. Creëer een plek waar ze zich gezien en thuis voelen.</p>
+        </div>
+
+        <div class="role-card">
+          <span class="role-card__icon">🎨</span>
+          <h3>Creatief &amp; Media</h3>
+          <p class="role-card__sub">Socials &amp; Zichtbaarheid</p>
+          <p>Help met socials, foto's, video's of muziek. Laat zien wat God doet in het jeugdwerk.</p>
+        </div>
+
+        <div class="role-card">
+          <span class="role-card__icon">⚡</span>
+          <h3>Organisator</h3>
+          <p class="role-card__sub">Praktisch &amp; Events</p>
+          <p>Help bij activiteiten, het jeugdkamp of jeugddiensten. Maak momenten mogelijk die jongeren niet vergeten.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WAT HET JE BRENGT ===================== -->
+  <section class="block block--dark">
+    <div class="block__photo block__photo--p2"></div>
+    <div class="block__card">
+      <h2>Waarom zou je meedoen?</h2>
+      <p>Je geeft iets — maar je krijgt minstens zoveel terug:</p>
+      <ul class="benefit-list">
+        <li>Betekenisvol contact met jongeren</li>
+        <li>Groei in je eigen geloof</li>
+        <li>Echte impact — ook als je het niet direct ziet</li>
+        <li>Onderdeel zijn van een betrokken team</li>
+      </ul>
+      <p>Elk gesprek, elke avond, elke moment… maakt verschil.</p>
+      <a href="#aanmelden" class="btn">Meld je aan</a>
+    </div>
+  </section>
+
+  <!-- ===================== AANMELDFORMULIER ===================== -->
+  <section class="form-section" id="aanmelden">
+    <div class="form-section__inner">
+      <div class="form-section__text">
+        <h2>Doe mee. Bouw mee.</h2>
+        <p>
+          We hebben je nodig — niet omdat het moet, maar omdat het verschil maakt.<br>
+          Jongeren zoeken voorbeelden. Mensen die er zijn, die luisteren, die laten zien wat geloven is.
+        </p>
+        <p>
+          Dit jeugdwerk draait niet om programma's.<br>
+          Het draait om mensen. Om jongeren die Jezus leren kennen.<br>
+          En om volwassenen die naast hen willen staan.
+        </p>
+        <div class="vacancies">
+          <h3 class="vacancies__title">Actuele vacatures</h3>
+          <ul class="vacancies__list">
+            <li><a href="#">Mentor voor jongeren (12–16 jaar)</a></li>
+            <li><a href="#">Groepsleider United Friday</a></li>
+            <li><a href="#">Organisator jeugdkamp 2026</a></li>
+          </ul>
+        </div>
+      </div>
+      <form class="form" action="#" method="post">
+        <div class="form__row">
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Jouw naam" required>
+        </div>
+        <div class="form__row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+        </div>
+        <div class="form__row">
+          <label for="leeftijd">Leeftijd</label>
+          <input type="number" id="leeftijd" name="leeftijd" placeholder="Jouw leeftijd" min="12" max="99">
+        </div>
+        <div class="form__row">
+          <label for="interesse">Interesse in rol</label>
+          <select id="interesse" name="interesse">
+            <option value="">Kies een rol…</option>
+            <option value="mentor">Mentor (Zorg &amp; Aandacht)</option>
+            <option value="groepsleider">Groepsleider (Community &amp; Clubs)</option>
+            <option value="creatief">Creatief &amp; Media</option>
+            <option value="organisator">Organisator (Praktisch &amp; Events)</option>
+            <option value="weet-niet">Weet ik nog niet</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label>Beschikbaarheid</label>
+          <div class="avail-split">
+            <select id="beschikbaar" name="beschikbaar" class="avail-split__select">
+              <option value="">Kies een moment…</option>
+              <optgroup label="Doordeweeks — middag">
+                <option value="ma-middag">Maandagmiddag</option>
+                <option value="wo-middag">Woensdagmiddag</option>
+              </optgroup>
+              <optgroup label="Doordeweeks — avond">
+                <option value="ma-avond">Maandagavond</option>
+                <option value="di-avond">Dinsdagavond</option>
+                <option value="wo-avond">Woensdagavond</option>
+                <option value="do-avond">Donderdagavond</option>
+                <option value="vr-avond">Vrijdagavond</option>
+              </optgroup>
+              <optgroup label="Weekend">
+                <option value="za-middag">Zaterdagmiddag</option>
+                <option value="za-avond">Zaterdagavond</option>
+                <option value="zo-middag">Zondagmiddag</option>
+              </optgroup>
+            </select>
+            <label class="avail-split__unknown">
+              <input type="checkbox" name="beschikbaar_onzeker" value="weet-niet">
+              <span>Weet ik nog niet</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__row">
+          <label for="enthousiast">Waar word jij enthousiast van?</label>
+          <textarea id="enthousiast" name="enthousiast" rows="4" placeholder="Vertel het ons…"></textarea>
+        </div>
+        <button type="submit" class="btn">Verstuur aanmelding</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== SLOTBLOK ===================== -->
+  <section class="closing block--dark">
+    <div class="closing__inner">
+      <p class="closing__text">
+        Dit jeugdwerk draait niet om programma's.
+        Het draait om mensen.
+        Om jongeren die Jezus leren kennen.
+        En om volwassenen die naast hen willen staan.
+      </p>
+      <a href="#aanmelden" class="btn btn--outline closing__btn">Doe mee. Bouw mee.</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer block--dark" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
+        <p>Ken Hem · Vind Ons · Groei Samen</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/hervormdwoudenberg/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/hervormdwoudenberg/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@HervormdeGemeenteWoudenberg" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h3>Navigatie</h3>
+        <ul>
+          <li><a href="#visie">Visie</a></li>
+          <li><a href="#watjedoen">Wat we doen</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#meewerken">Meewerken</a></li>
+          <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Jeugdleiders</h3>
+        <p>Vragen over het jeugdwerk?<br>Neem contact op met:</p>
+        <p>Tom Horst — <a href="tel:+31643084241">06 43 08 42 41</a><br>
+        <a href="mailto:t.horst@hervormdwoudenberg.nl">t.horst@hervormdwoudenberg.nl</a></p>
+        <p>Daan de Bree — <a href="tel:+31683238677">06 83 23 86 77</a><br>
+        <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
+        <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
+        <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Hervormde Gemeente Woudenberg — <a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">hervormdwoudenberg.nl</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
