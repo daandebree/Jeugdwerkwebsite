@@ -23,9 +23,9 @@
         <li><a href="#watjedoen">Wat we doen</a></li>
         <li><a href="agenda.html">Agenda</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="nav__cta-mobile"><a href="#aanmelden" class="btn nav__cta-link">Meewerken</a></li>
+        <li class="nav__cta-mobile"><a href="#aanmelden" class="btn nav__cta-link">Ik wil meedoen</a></li>
       </ul>
-      <a href="#aanmelden" class="btn nav__cta">Meewerken</a>
+      <a href="#aanmelden" class="btn nav__cta">Ik wil meedoen</a>
       <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
         <span></span>
         <span></span>
@@ -43,7 +43,7 @@
     -->
     <div class="hero__bg hero__bg--placeholder"></div>
     <div class="hero__card">
-      <h1>Ken Hem,<br>Vind Ons,<br>Groei Samen</h1>
+      <h1>Ken Hem,<br>vind ons,<br>groei samen</h1>
       <p>
         Voor kinderen, tieners en jongeren.<br>
         Om Jezus te leren kennen, samen te groeien en een plek te vinden in Gods gemeente.
@@ -58,7 +58,7 @@
   <!-- ===================== VISIE / 3 PIJLERS ===================== -->
   <section class="pillars" id="visie">
     <div class="pillars__inner">
-      <p class="pillars__label">De 3 pijlers van het jeugdwerk</p>
+      <h2 class="pillars__title">De drie pijlers van het jeugdwerk</h2>
       <div class="pillars__grid">
 
         <div class="pillar">
@@ -149,7 +149,7 @@
           <h3>Club & Catechese</h3>
           <ul>
             <li><a href="united-friday.html">United Friday</a></li>
-            <li><a href="united-saturday.html">United Saturday</a></li>
+            <li><a href="connect.html">Connect</a></li>
             <li><a href="catechese.html">Catechese</a></li>
           </ul>
         </div>
@@ -193,7 +193,27 @@
       </ul>
       <a href="agenda.html" class="btn btn--outline">Bekijk volledige agenda</a>
     </div>
-    <div class="events__photo events__photo--placeholder"></div>
+    <div class="events__carousel" id="eventsCarousel">
+      <div class="carousel__track" id="carouselTrack">
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-01.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-02.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-03.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-04.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-05.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-06.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-07.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-08.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-09.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-10.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-11.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-12.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-13.jpeg')"></div>
+        <div class="carousel__slide" style="background-image:url('images/carousel/slide-14.jpeg')"></div>
+      </div>
+      <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Vorige foto">&#8249;</button>
+      <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Volgende foto">&#8250;</button>
+      <div class="carousel__dots" id="carouselDots"></div>
+    </div>
   </section>
 
   <!-- ===================== ROLLEN / VACATURES ===================== -->
@@ -235,7 +255,7 @@
   </section>
 
   <!-- ===================== WAT HET JE BRENGT ===================== -->
-  <section class="block block--dark">
+  <section class="block">
     <div class="block__photo block__photo--p2"></div>
     <div class="block__card">
       <h2>Waarom zou je meedoen?</h2>
@@ -247,7 +267,7 @@
         <li>Onderdeel zijn van een betrokken team</li>
       </ul>
       <p>Elk gesprek, elke avond, elke moment… maakt verschil.</p>
-      <a href="#aanmelden" class="btn">Meld je aan</a>
+      <a href="#aanmelden" class="btn">Ik wil meedoen</a>
     </div>
   </section>
 
@@ -267,11 +287,23 @@
         </p>
         <div class="vacancies">
           <h3 class="vacancies__title">Actuele vacatures</h3>
-          <ul class="vacancies__list">
-            <li><a href="#">Mentor voor jongeren (12–16 jaar)</a></li>
-            <li><a href="#">Groepsleider United Friday</a></li>
-            <li><a href="#">Organisator jeugdkamp 2026</a></li>
-          </ul>
+          <div class="vacancies__cards">
+            <a href="vacature-catechese-mentor.html" class="vacancy-card">
+              <span class="vacancy-card__role">Mentor</span>
+              <span class="vacancy-card__desc">Catechese leider (12–16 jaar)</span>
+              <span class="vacancy-card__cta">Lees vacature →</span>
+            </a>
+            <a href="#" class="vacancy-card">
+              <span class="vacancy-card__role">Groepsleider</span>
+              <span class="vacancy-card__desc">United Friday</span>
+              <span class="vacancy-card__cta">Meer info →</span>
+            </a>
+            <a href="#" class="vacancy-card">
+              <span class="vacancy-card__role">Organisator</span>
+              <span class="vacancy-card__desc">Jeugdkamp 2026</span>
+              <span class="vacancy-card__cta">Meer info →</span>
+            </a>
+          </div>
         </div>
       </div>
       <form class="form" name="aanmelding" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -344,7 +376,7 @@
           <label for="enthousiast">Waar word jij enthousiast van?</label>
           <textarea id="enthousiast" name="enthousiast" rows="4" placeholder="Vertel het ons…"></textarea>
         </div>
-        <button type="submit" class="btn">Verstuur aanmelding</button>
+        <button type="submit" class="btn">Ja, ik ga meedoen.</button>
       </form>
     </div>
   </section>
@@ -363,7 +395,7 @@
   </section>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="footer block--dark" id="contact">
+  <footer class="footer footer--light" id="contact">
     <div class="footer__inner">
       <div class="footer__brand">
         <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
@@ -386,7 +418,7 @@
           <li><a href="#visie">Visie</a></li>
           <li><a href="#watjedoen">Wat we doen</a></li>
           <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="#meewerken">Meewerken</a></li>
+          <li><a href="#meewerken">Ik wil meedoen</a></li>
           <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
         </ul>
       </div>
@@ -399,6 +431,7 @@
         <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
         <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
         <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p>Marjolein</p>
         <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
       </div>
     </div>

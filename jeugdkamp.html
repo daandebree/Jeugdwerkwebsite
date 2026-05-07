@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeugdkamp — Jeugdwerk Hervormd Woudenberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .kamp-strip {
+      background: var(--dark);
+      color: rgba(255,255,255,0.85);
+      padding: 14px 32px;
+      text-align: center;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+    .kamp-strip strong { color: #fff; }
+
+    .program-section {
+      background: var(--white);
+      padding: 80px 32px;
+    }
+    .program-section__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .program-section h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .program-section > .program-section__inner > p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .program-card {
+      border: 1px solid #e5e5e5;
+      padding: 28px 24px;
+    }
+    .program-card__dag {
+      font-family: var(--font-heading);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand);
+      margin-bottom: 10px;
+    }
+    .program-card__titel {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .program-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 2;
+      color: #555;
+    }
+    .program-card ul li::before {
+      content: '→ ';
+      color: var(--brand);
+      font-weight: 600;
+    }
+
+    .form__section-header {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand);
+      margin-top: 4px;
+    }
+
+    .form__row--split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form__row--split .form__row {
+      gap: 6px;
+    }
+
+    .form__check {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .form__check input[type="checkbox"] {
+      width: auto;
+      flex-shrink: 0;
+      margin-top: 3px;
+      accent-color: var(--brand);
+    }
+    .form__check label {
+      font-size: 0.85rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #444;
+      line-height: 1.55;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .program-grid { grid-template-columns: 1fr; }
+      .form__row--split { grid-template-columns: 1fr; }
+      .kamp-strip { font-size: 0.8rem; padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.png" alt="Hervormde Gemeente Woudenberg" class="nav__logo-img">
+        <span>Jeugdwerk <span class="nav__logo-sub">Hervormd Woudenberg</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#visie">Visie</a></li>
+        <li><a href="index.html#watjedoen">Wat we doen</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meedoen</a></li>
+      </ul>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meedoen</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" style="background-image: url('images/hero.jpg')"></div>
+    <div class="hero__card">
+      <span class="hero__age">Groep 3 t/m 4e klas VO · September 2026</span>
+      <h1>Jeugdkamp</h1>
+      <p>
+        Drie dagen weg met de jeugd —<br>
+        vol spel, stilte, vriendschap en geloof.
+      </p>
+      <div class="hero__btns">
+        <a href="#inschrijven" class="btn">Aanmelden</a>
+        <a href="#programma" class="btn btn--ghost">Bekijk het programma</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <div class="kamp-strip">
+    <strong>4 – 6 september 2026</strong> &nbsp;·&nbsp; Camping 't Boerenerf &nbsp;·&nbsp; Groep 3 t/m 4e klas VO &nbsp;·&nbsp; <strong>Aanmelden via dit formulier</strong>
+  </div>
+
+  <!-- TAGLINE -->
+  <section class="club-tagline">
+    <div class="club-tagline__inner">
+      <p>
+        Drie dagen buiten je comfortzone —<br>
+        en dichter bij God en elkaar.
+      </p>
+    </div>
+  </section>
+
+  <!-- WAT IS HET KAMP -->
+  <section class="block">
+    <div class="block__photo block__photo--p1"></div>
+    <div class="block__card">
+      <h2>Wat is het jeugdkamp?</h2>
+      <p>
+        Elk jaar gaan we samen op kamp — een paar dagen weg van school, schermen en de dagelijkse drukte.
+        Samen met leeftijdsgenoten en JV'ers die het kamp grotendeels zelf organiseren.
+      </p>
+      <p>
+        Overdag spelen we spellen, zijn we buiten actief en is er ruimte voor gesprekken over wat er echt toe doet.
+        's Avonds komen we samen voor een moment van bezinning: een Bijbelgedeelte, een vraag om over na te denken — niet zwaar, wel eerlijk.
+      </p>
+      <p>
+        Het kamp is voor kinderen uit groep 3 tot en met jongeren in de vierde klas van het voortgezet onderwijs.
+        Iedereen is welkom, ook als je nog nooit eerder bent geweest.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRAKTISCH -->
+  <section class="block block--dark block--reversed">
+    <div class="block__photo block__photo--p2"></div>
+    <div class="block__card">
+      <h2>Praktisch</h2>
+      <div class="praktisch">
+        <div class="praktisch__grid">
+          <div class="praktisch__item">
+            <span class="praktisch__label">Wanneer</span>
+            <span class="praktisch__value">4 – 6 september<br>2026</span>
+          </div>
+          <div class="praktisch__item">
+            <span class="praktisch__label">Leeftijd</span>
+            <span class="praktisch__value">Groep 3 t/m<br>4e klas VO</span>
+          </div>
+          <div class="praktisch__item">
+            <span class="praktisch__label">Locatie</span>
+            <span class="praktisch__value">Camping<br>'t Boerenerf</span>
+          </div>
+          <div class="praktisch__item">
+            <span class="praktisch__label">Aanmelden</span>
+            <span class="praktisch__value">Via het<br>formulier</span>
+          </div>
+        </div>
+        <a href="#inschrijven" class="btn">Direct aanmelden</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMMA -->
+  <section class="program-section" id="programma">
+    <div class="program-section__inner">
+      <h2>Het programma</h2>
+      <p>Een globale schets — het echte programma is een verrassing voor de deelnemers.</p>
+      <div class="program-grid">
+        <div class="program-card">
+          <div class="program-card__dag">Dag 1 — Vrijdag</div>
+          <div class="program-card__titel">Aankomen</div>
+          <ul>
+            <li>Aankomst & kampopbouw</li>
+            <li>Kennismakingsspelen</li>
+            <li>Avondmaaltijd samen</li>
+            <li>Avondprogramma & kampvuur</li>
+          </ul>
+        </div>
+        <div class="program-card">
+          <div class="program-card__dag">Dag 2 — Zaterdag</div>
+          <div class="program-card__titel">De volle dag</div>
+          <ul>
+            <li>Ochtendopening</li>
+            <li>Groot buitenspel</li>
+            <li>Vrije tijd & activiteiten</li>
+            <li>Avonddienst & gesprekken</li>
+          </ul>
+        </div>
+        <div class="program-card">
+          <div class="program-card__dag">Dag 3 — Zondag</div>
+          <div class="program-card__titel">Afronden</div>
+          <ul>
+            <li>Ochtendmoment</li>
+            <li>Groot opruimen</li>
+            <li>Afsluitend samenzijn</li>
+            <li>Terugkomst 's middags</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCHRIJFFORMULIER -->
+  <section class="form-section" id="inschrijven">
+    <div class="form-section__inner">
+
+      <div class="form-section__text">
+        <h2>Aanmelden voor het kamp</h2>
+        <p>
+          Vul het formulier in voor elke deelnemer apart.
+          Na aanmelding nemen we contact op met verdere informatie.
+        </p>
+        <p>
+          <strong>Vragen?</strong> Mail naar
+          <a href="mailto:t.horst@hervormdwoudenberg.nl" style="color:var(--brand);">t.horst@hervormdwoudenberg.nl</a>
+          of bel <a href="tel:033286576" style="color:var(--brand);">033 – 286 57 65</a>.
+        </p>
+      </div>
+
+      <form class="form" name="jeugdkamp" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="kampForm">
+        <input type="hidden" name="form-name" value="jeugdkamp">
+        <p hidden><label>Laat dit leeg: <input name="bot-field"></label></p>
+
+        <!-- DEELNEMER -->
+        <div class="form__section-header">Deelnemer</div>
+
+        <div class="form__row form__row--split">
+          <div class="form__row">
+            <label for="voornaam">Voornaam *</label>
+            <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required>
+          </div>
+          <div class="form__row">
+            <label for="achternaam">Achternaam *</label>
+            <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+          </div>
+        </div>
+
+        <div class="form__row form__row--split">
+          <div class="form__row">
+            <label for="geboortedatum">Geboortedatum *</label>
+            <input type="date" id="geboortedatum" name="geboortedatum" required>
+          </div>
+          <div class="form__row">
+            <label for="geslacht">Geslacht</label>
+            <select id="geslacht" name="geslacht">
+              <option value="">Kies…</option>
+              <option value="jongen">Jongen</option>
+              <option value="meisje">Meisje</option>
+              <option value="anders">Anders / geen voorkeur</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <label for="school_klas">School & klas (schooljaar 2026–2027)</label>
+          <input type="text" id="school_klas" name="school_klas" placeholder="bijv. groep 6, of 2e klas VMBO">
+        </div>
+
+        <div class="form__row">
+          <label for="eerste_keer">Eerder op kamp geweest?</label>
+          <select id="eerste_keer" name="eerste_keer">
+            <option value="">Kies…</option>
+            <option value="ja">Ja, eerder geweest</option>
+            <option value="nee">Nee, eerste keer</option>
+          </select>
+        </div>
+
+        <!-- OUDER / VERZORGER -->
+        <div class="form__section-header">Ouder / Verzorger</div>
+
+        <div class="form__row">
+          <label for="ouder_naam">Naam ouder / verzorger *</label>
+          <input type="text" id="ouder_naam" name="ouder_naam" placeholder="Volledige naam" required>
+        </div>
+
+        <div class="form__row form__row--split">
+          <div class="form__row">
+            <label for="ouder_email">E-mailadres *</label>
+            <input type="email" id="ouder_email" name="ouder_email" placeholder="email@voorbeeld.nl" required>
+          </div>
+          <div class="form__row">
+            <label for="ouder_telefoon">Telefoonnummer *</label>
+            <input type="tel" id="ouder_telefoon" name="ouder_telefoon" placeholder="06 – – – – – – –" required>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <label for="nood_telefoon">Tweede noodnummer (tijdens het kamp)</label>
+          <input type="tel" id="nood_telefoon" name="nood_telefoon" placeholder="Bereikbaar als eerste nummer niet opneemt">
+        </div>
+
+        <!-- GEZONDHEID -->
+        <div class="form__section-header">Gezondheid & Bijzonderheden</div>
+
+        <div class="form__row">
+          <label for="allergien">Allergieën of dieetwensen</label>
+          <textarea id="allergien" name="allergien" rows="2" placeholder="bijv. notenallergie, glutenvrij, vegetarisch — laat leeg indien niet van toepassing"></textarea>
+        </div>
+
+        <div class="form__row">
+          <label for="medicatie">Medicatie</label>
+          <textarea id="medicatie" name="medicatie" rows="2" placeholder="Naam, dosering en tijdstip — laat leeg indien niet van toepassing"></textarea>
+        </div>
+
+        <div class="form__row">
+          <label for="bijzonderheden">Overige bijzonderheden</label>
+          <textarea id="bijzonderheden" name="bijzonderheden" rows="3" placeholder="Denk aan: slaapproblemen, thuisziekte, moeilijkheden in groepen, hoogtevrees, of iets anders wat wij moeten weten"></textarea>
+        </div>
+
+        <!-- TOESTEMMINGEN -->
+        <div class="form__section-header">Toestemmingen</div>
+
+        <div class="form__row">
+          <div class="form__check">
+            <input type="checkbox" id="toestemming_fotos" name="toestemming_fotos" value="ja">
+            <label for="toestemming_fotos">Ik geef toestemming om foto's en video's van de deelnemer te maken en te delen via de website en sociale media van de gemeente.</label>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__check">
+            <input type="checkbox" id="akkoord_ehbo" name="akkoord_ehbo" value="ja" required>
+            <label for="akkoord_ehbo">Bij een medisch noodgeval mogen de leiders noodzakelijke EHBO toepassen en zo nodig een arts of hulpdienst inschakelen. *</label>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__check">
+            <input type="checkbox" id="akkoord_regels" name="akkoord_regels" value="ja" required>
+            <label for="akkoord_regels">Ik ga akkoord met de kampregels. Ik begrijp dat de deelnemer bij ernstig grensoverschrijdend gedrag naar huis kan worden gestuurd zonder restitutie van de kampkosten. *</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Aanmelding versturen</button>
+
+        <div class="form__success" id="kampSucces" style="display:none;">
+          <strong>Aanmelding ontvangen!</strong><br>
+          Je ontvangt binnen twee werkdagen een bevestiging per e-mail met betaalinformatie. Tot op het kamp!
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer footer--light" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
+        <p>Ken Hem · Vind Ons · Groei Samen</p>
+      </div>
+      <div class="footer__links">
+        <h3>Navigatie</h3>
+        <ul>
+          <li><a href="index.html#visie">Visie</a></li>
+          <li><a href="index.html#watjedoen">Wat we doen</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="index.html#meewerken">Ik wil meedoen</a></li>
+          <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Jeugdleiders</h3>
+        <p>Tom Horst — <a href="tel:+31643084241">06 43 08 42 41</a><br>
+        <a href="mailto:t.horst@hervormdwoudenberg.nl">t.horst@hervormdwoudenberg.nl</a></p>
+        <p>Daan de Bree — <a href="tel:+31683238677">06 83 23 86 77</a><br>
+        <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
+        <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
+        <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p>Marjolein</p>
+        <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Hervormde Gemeente Woudenberg — <a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">hervormdwoudenberg.nl</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const kampForm = document.getElementById('kampForm');
+    if (kampForm) {
+      kampForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const body = new URLSearchParams(new FormData(kampForm)).toString();
+        try {
+          await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body
+          });
+          kampForm.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+          document.getElementById('kampSucces').style.display = 'block';
+          document.getElementById('kampSucces').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch {
+          alert('Er is iets misgegaan. Probeer het opnieuw of mail naar t.horst@hervormdwoudenberg.nl.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

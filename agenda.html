@@ -296,6 +296,167 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* ---- Weekoverzicht ---- */
+    .week-overview {
+      background: var(--dark);
+      color: var(--white);
+      padding: 80px 32px;
+    }
+
+    .week-overview__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .week-overview h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.2vw, 2rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .week-overview__intro {
+      opacity: 0.6;
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+    }
+
+    .week-table-wrap {
+      overflow-x: auto;
+    }
+
+    .week-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+      font-size: 0.875rem;
+    }
+
+    .week-table thead th {
+      text-align: left;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand);
+      padding: 0 16px 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .week-table tbody td {
+      padding: 10px 16px;
+      vertical-align: top;
+      border-right: 1px solid rgba(255,255,255,0.06);
+      min-width: 140px;
+    }
+
+    .week-table tbody td:last-child {
+      border-right: none;
+    }
+
+    .week-table tbody tr:not(:last-child) td {
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .week-table a {
+      color: var(--white);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .week-table a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    .wt-time {
+      display: block;
+      font-size: 0.75rem;
+      opacity: 0.45;
+      margin-top: 2px;
+    }
+
+    /* ---- Visuele maandkalender ---- */
+    .cal__months {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .cal__month {
+      border: 1px solid #e0e0e0;
+      background: var(--white);
+    }
+
+    .cal__month-header {
+      background: var(--dark);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+    }
+
+    .cal__month-list {
+      list-style: none;
+      padding: 8px 0;
+    }
+
+    .cal__entry {
+      display: flex;
+      gap: 10px;
+      padding: 9px 16px;
+      font-size: 0.875rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .cal__entry:last-child {
+      border-bottom: none;
+    }
+
+    .cal__entry-date {
+      flex-shrink: 0;
+      width: 108px;
+      color: #888;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.82rem;
+    }
+
+    .cal__entry-label {
+      color: var(--dark);
+      line-height: 1.4;
+    }
+
+    .cal__entry--off {
+      opacity: 0.45;
+    }
+
+    .cal__entry--off .cal__entry-label {
+      font-style: italic;
+    }
+
+    .cal__entry--special {
+      background: #eef5fb;
+    }
+
+    .cal__entry--special .cal__entry-date {
+      color: var(--brand);
+      font-weight: 600;
+    }
+
+    .cal__entry--special .cal__entry-label {
+      color: var(--brand);
+      font-weight: 600;
+    }
+
+    @media (max-width: 700px) {
+      .week-overview { padding: 56px 20px; }
+      .cal__months { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -311,9 +472,9 @@
         <li><a href="index.html#watjedoen">Wat we doen</a></li>
         <li><a href="agenda.html" class="active">Agenda</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Meewerken</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meedoen</a></li>
       </ul>
-      <a href="index.html#aanmelden" class="btn nav__cta">Meewerken</a>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meedoen</a>
       <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -326,10 +487,74 @@
     <p>Alle vaste momenten en bijzondere activiteiten van het jeugdwerk op één plek.</p>
   </section>
 
+  <!-- WEEKOVERZICHT -->
+  <section class="week-overview">
+    <div class="week-overview__inner">
+      <h2>Per week in één oogopslag</h2>
+      <p class="week-overview__intro">Wat er elke week plaatsvindt, per dag overzichtelijk.</p>
+      <div class="week-table-wrap">
+        <table class="week-table">
+          <thead>
+            <tr>
+              <th>Maandag</th>
+              <th>Dinsdag</th>
+              <th>Woensdag</th>
+              <th>Vrijdag</th>
+              <th>Zaterdag</th>
+              <th>Zondag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="catechese.html">Catechese Bovenbouw</a><span class="wt-time">19:30 · 4e–6e VO</span></td>
+              <td><a href="jongensclub.html">Jongensclub</a><span class="wt-time">19:00 · gr. 7/8</span></td>
+              <td><a href="woensdagmiddagclub.html">Woensdagmiddagclub</a><span class="wt-time">14:15 · gr. 3–6</span></td>
+              <td><a href="united-friday.html">United Friday</a><span class="wt-time">19:30 · 1e–2e klas VO</span></td>
+              <td><a href="connect.html">Connect</a><span class="wt-time">avond · 3e–4e klas VO</span></td>
+              <td><a href="oppas.html">Oppas</a><span class="wt-time">tijdens dienst · 0–4 jr</span></td>
+            </tr>
+            <tr>
+              <td><a href="catechese.html">Catechese 18+</a><span class="wt-time">19:30</span></td>
+              <td><a href="meisjesclub.html">Meisjesclub</a><span class="wt-time">avond · gr. 7/8</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="bijbeluur.html">Bijbeluur</a><span class="wt-time">tijdens dienst · 4–10 jr</span></td>
+            </tr>
+            <tr>
+              <td><a href="catechese.html">Belijdenisgroep</a><span class="wt-time">20:30</span></td>
+              <td><a href="catechese.html">Catechese Onderbouw</a><span class="wt-time">19:00 · 1e–3e VO</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="catechese.html">Kindercatechese</a><span class="wt-time">15:30 · gr. 7/8 · om de week</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="jv.html">Jongeren Vereniging</a><span class="wt-time">avond · 16+ jr</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <!-- TERUGKERENDE ACTIVITEITEN -->
   <section class="recurring">
     <h2>Vaste momenten</h2>
-    <p class="recurring__intro">Deze activiteiten vinden elke week of elke maand op een vast moment plaats.</p>
+    <p class="recurring__intro">Alle vaste activiteiten van het jeugdwerk op een rij.</p>
     <div class="recurring__grid">
 
       <div class="recurring-card">
@@ -422,10 +647,10 @@
 
       <div class="recurring-card">
         <span class="recurring-card__day">Zaterdag</span>
-        <span class="recurring-card__time">Middag</span>
-        <h3>United Saturday</h3>
-        <p class="recurring-card__age">12 – 16 jaar</p>
-        <a href="united-saturday.html" class="recurring-card__link">Meer info →</a>
+        <span class="recurring-card__time">Avond</span>
+        <h3>Connect</h3>
+        <p class="recurring-card__age">3e en 4e klas VO</p>
+        <a href="connect.html" class="recurring-card__link">Meer info →</a>
       </div>
 
       <div class="recurring-card">
@@ -444,150 +669,158 @@
     <div class="cal__inner">
       <h2>Catechese jaarkalender 2026–2027</h2>
       <p class="cal__intro">
-        Maandaggroep: Bovenbouw (4–6 VO) · 18+ · Belijdenis &nbsp;|&nbsp;
-        Dinsdaggroep: Kindercatechese (gr. 7/8, di-middag om de week) · Onderbouw (1–3 VO, di-avond)
+        <strong>Maandaggroep:</strong> Bovenbouw (4–6 VO) · 18+ · Belijdenis &nbsp;|&nbsp;
+        <strong>Dinsdaggroep:</strong> Kindercatechese (gr. 7/8 · di-middag om de week) · Onderbouw (1–3 VO · di-avond)
       </p>
-      <table class="cal__table">
-        <thead>
-          <tr>
-            <th>Maandag</th>
-            <th>Dinsdag</th>
-            <th>Bijzonderheden</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="cal__row--special">
-            <td>11 sep 2026</td>
-            <td>11 sep 2026</td>
-            <td><span class="cal__note">Kick-off Mentoren &amp; Toerusting 1</span> <span class="cal__badge">Vrijdag</span></td>
-          </tr>
-          <tr>
-            <td>21 sep</td>
-            <td>22 sep</td>
-            <td>Les 1 — Start in eigen groep</td>
-          </tr>
-          <tr>
-            <td>28 sep</td>
-            <td>29 sep</td>
-            <td>Les 2</td>
-          </tr>
-          <tr>
-            <td>5 okt</td>
-            <td>6 okt</td>
-            <td>Les 3</td>
-          </tr>
-          <tr>
-            <td>12 okt</td>
-            <td>13 okt</td>
-            <td>Les 4</td>
-          </tr>
-          <tr class="cal__row--off">
-            <td>19 okt</td>
-            <td>20 okt</td>
-            <td>Geen catechese — Herfstvakantie</td>
-          </tr>
-          <tr>
-            <td>26 okt</td>
-            <td>27 okt</td>
-            <td>Les 5</td>
-          </tr>
-          <tr class="cal__row--off">
-            <td>2 nov</td>
-            <td>3 nov</td>
-            <td>Geen catechese — Week van Dankdag</td>
-          </tr>
-          <tr>
-            <td>9 nov</td>
-            <td>10 nov</td>
-            <td>Les 6</td>
-          </tr>
-          <tr>
-            <td>16 nov</td>
-            <td>17 nov</td>
-            <td>Les 7</td>
-          </tr>
-          <tr>
-            <td>23 nov</td>
-            <td>24 nov</td>
-            <td>Les 8</td>
-          </tr>
-          <tr>
-            <td>30 nov</td>
-            <td>1 dec</td>
-            <td>Start 10-minutengesprekken ouders</td>
-          </tr>
-          <tr>
-            <td>7 dec</td>
-            <td>8 dec</td>
-            <td>Les 9</td>
-          </tr>
-          <tr>
-            <td>14 dec</td>
-            <td>15 dec</td>
-            <td>Les 10</td>
-          </tr>
-          <tr class="cal__row--special">
-            <td>4 jan 2027</td>
-            <td>4 jan 2027</td>
-            <td><span class="cal__note">Toerusting 2 + Gezamenlijke maaltijd</span> <span class="cal__badge">Maandag</span></td>
-          </tr>
-          <tr>
-            <td>11 jan</td>
-            <td>12 jan</td>
-            <td>Les 11</td>
-          </tr>
-          <tr>
-            <td>18 jan</td>
-            <td>19 jan</td>
-            <td>Les 12</td>
-          </tr>
-          <tr>
-            <td>25 jan</td>
-            <td>26 jan</td>
-            <td>Les 13</td>
-          </tr>
-          <tr>
-            <td>1 feb</td>
-            <td>2 feb</td>
-            <td>Les 14</td>
-          </tr>
-          <tr>
-            <td>8 feb</td>
-            <td>9 feb</td>
-            <td>Les 15</td>
-          </tr>
-          <tr class="cal__row--off">
-            <td>15 feb</td>
-            <td>16 feb</td>
-            <td>Geen catechese — Voorjaarsvakantie</td>
-          </tr>
-          <tr>
-            <td>22 feb</td>
-            <td>23 feb</td>
-            <td>Les 16</td>
-          </tr>
-          <tr>
-            <td>1 mrt</td>
-            <td>2 mrt</td>
-            <td>Les 17</td>
-          </tr>
-          <tr class="cal__row--off">
-            <td>8 mrt</td>
-            <td>9 mrt</td>
-            <td>Geen catechese — Week van Biddag</td>
-          </tr>
-          <tr>
-            <td>15 mrt</td>
-            <td>16 mrt</td>
-            <td>Les 18</td>
-          </tr>
-          <tr class="cal__row--special">
-            <td>22 mrt</td>
-            <td>23 mrt</td>
-            <td><span class="cal__note">Centrale Afsluiting — Eben-Haëzer</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="cal__months">
+
+        <div class="cal__month">
+          <div class="cal__month-header">September 2026</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry cal__entry--special">
+              <span class="cal__entry-date">Vr 11 sep</span>
+              <span class="cal__entry-label">Kick-off Mentoren &amp; Toerusting 1</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 21 / Di 22</span>
+              <span class="cal__entry-label">Les 1 — Start in eigen groep</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 28 / Di 29</span>
+              <span class="cal__entry-label">Les 2</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cal__month">
+          <div class="cal__month-header">Oktober 2026</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 5 / Di 6</span>
+              <span class="cal__entry-label">Les 3</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 12 / Di 13</span>
+              <span class="cal__entry-label">Les 4</span>
+            </li>
+            <li class="cal__entry cal__entry--off">
+              <span class="cal__entry-date">Ma 19 / Di 20</span>
+              <span class="cal__entry-label">Geen catechese — Herfstvakantie</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 26 / Di 27</span>
+              <span class="cal__entry-label">Les 5</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cal__month">
+          <div class="cal__month-header">November 2026</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry cal__entry--off">
+              <span class="cal__entry-date">Ma 2 / Di 3</span>
+              <span class="cal__entry-label">Geen catechese — Week van Dankdag</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 9 / Di 10</span>
+              <span class="cal__entry-label">Les 6</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 16 / Di 17</span>
+              <span class="cal__entry-label">Les 7</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 23 / Di 24</span>
+              <span class="cal__entry-label">Les 8</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 30 / Di 1 dec</span>
+              <span class="cal__entry-label">Start 10-minutengesprekken ouders</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cal__month">
+          <div class="cal__month-header">December 2026</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 7 / Di 8</span>
+              <span class="cal__entry-label">Les 9</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 14 / Di 15</span>
+              <span class="cal__entry-label">Les 10</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cal__month">
+          <div class="cal__month-header">Januari 2027</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry cal__entry--special">
+              <span class="cal__entry-date">Ma 4 jan</span>
+              <span class="cal__entry-label">Toerusting 2 + Gezamenlijke maaltijd</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 11 / Di 12</span>
+              <span class="cal__entry-label">Les 11</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 18 / Di 19</span>
+              <span class="cal__entry-label">Les 12</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 25 / Di 26</span>
+              <span class="cal__entry-label">Les 13</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cal__month">
+          <div class="cal__month-header">Februari 2027</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 1 / Di 2</span>
+              <span class="cal__entry-label">Les 14</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 8 / Di 9</span>
+              <span class="cal__entry-label">Les 15</span>
+            </li>
+            <li class="cal__entry cal__entry--off">
+              <span class="cal__entry-date">Ma 15 / Di 16</span>
+              <span class="cal__entry-label">Geen catechese — Voorjaarsvakantie</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 22 / Di 23</span>
+              <span class="cal__entry-label">Les 16</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cal__month">
+          <div class="cal__month-header">Maart 2027</div>
+          <ul class="cal__month-list">
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 1 / Di 2</span>
+              <span class="cal__entry-label">Les 17</span>
+            </li>
+            <li class="cal__entry cal__entry--off">
+              <span class="cal__entry-date">Ma 8 / Di 9</span>
+              <span class="cal__entry-label">Geen catechese — Week van Biddag</span>
+            </li>
+            <li class="cal__entry">
+              <span class="cal__entry-date">Ma 15 / Di 16</span>
+              <span class="cal__entry-label">Les 18</span>
+            </li>
+            <li class="cal__entry cal__entry--special">
+              <span class="cal__entry-date">Ma 22 / Di 23</span>
+              <span class="cal__entry-label">Centrale Afsluiting — Eben-Haëzer</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -638,7 +871,7 @@
     </div>
   </section>
 
-  <footer class="footer block--dark" id="contact">
+  <footer class="footer footer--light" id="contact">
     <div class="footer__inner">
       <div class="footer__brand">
         <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
@@ -661,7 +894,7 @@
           <li><a href="index.html#visie">Visie</a></li>
           <li><a href="index.html#watjedoen">Wat we doen</a></li>
           <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="index.html#meewerken">Meewerken</a></li>
+          <li><a href="index.html#meewerken">Ik wil meedoen</a></li>
           <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
         </ul>
       </div>
@@ -673,6 +906,7 @@
         <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
         <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
         <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p>Marjolein</p>
         <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
       </div>
     </div>
