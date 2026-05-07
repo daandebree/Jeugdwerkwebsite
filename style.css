@@ -293,7 +293,6 @@ a {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
-  text-transform: uppercase;
   line-height: 1.05;
   margin-bottom: 16px;
   letter-spacing: -0.01em;
@@ -487,7 +486,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 480px;
-  background: var(--dark);
+  background: var(--brand);
   color: var(--white);
 }
 
@@ -537,14 +536,74 @@ a {
   font-weight: 500;
 }
 
-.events__photo {
+.events__carousel {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+}
+
+.carousel__track {
+  display: flex;
+  height: 100%;
+  min-height: 480px;
+  transition: transform 0.5s ease;
+}
+
+.carousel__slide {
+  flex: 0 0 100%;
   background-size: cover;
   background-position: center;
 }
 
-/* VERVANG DOOR EIGEN FOTO */
-.events__photo--placeholder {
-  background-image: url('images/events.jpg');
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.35);
+  color: var(--white);
+  border: none;
+  width: 44px;
+  height: 44px;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.carousel__btn:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.carousel__btn--prev { left: 12px; }
+.carousel__btn--next { right: 12px; }
+
+.carousel__dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.carousel__dot.is-active {
+  background: var(--white);
 }
 
 /* ====================================================
@@ -685,13 +744,15 @@ a {
   margin: 0 auto;
 }
 
-.pillars__label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+.pillars__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-weight: 900;
   text-transform: uppercase;
-  color: var(--brand);
+  color: var(--white);
   margin-bottom: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .pillars__grid {
@@ -758,7 +819,7 @@ a {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 4px;
+  margin-top: 24px;
 }
 
 .btn--ghost {
@@ -824,7 +885,7 @@ a {
   font-size: 0.95rem;
   opacity: 0.7;
   margin-bottom: 48px;
-  max-width: 560px;
+  white-space: nowrap;
 }
 
 .ages__grid {
@@ -841,6 +902,17 @@ a {
   flex-direction: column;
   gap: 10px;
 }
+
+.age-card--wide {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+}
+.age-card--wide h3 { margin: 0; }
+.age-card--wide ul { margin: 0; }
 
 .age-card__range {
   font-size: 0.75rem;
@@ -1597,4 +1669,142 @@ a {
 .age-card a:hover {
   opacity: 0.7;
   text-decoration: underline;
+}
+
+/* ====================================================
+   VACATURE CARDS
+   ==================================================== */
+.vacancies__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.vacancy-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 16px;
+  border: 2px solid var(--brand);
+  background: var(--white);
+  color: var(--dark);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.vacancy-card:hover {
+  background: var(--brand);
+  color: var(--white);
+}
+
+.vacancy-card__role {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.vacancy-card__desc {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.vacancy-card__cta {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--brand);
+  letter-spacing: 0.03em;
+}
+
+.vacancy-card:hover .vacancy-card__cta {
+  color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .vacancies__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====================================================
+   FOOTER LICHT (wit)
+   ==================================================== */
+.footer--light {
+  background: var(--off-white);
+  color: var(--dark);
+  padding-top: 64px;
+}
+
+.footer--light .footer__inner {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer--light .footer__logo {
+  color: var(--dark);
+}
+
+.footer--light .footer__brand p {
+  color: var(--dark);
+  opacity: 0.55;
+}
+
+.footer--light .footer__socials a {
+  color: var(--dark);
+}
+
+.footer--light .footer__links h3,
+.footer--light .footer__contact h3 {
+  color: var(--dark);
+  opacity: 0.45;
+}
+
+.footer--light .footer__links a,
+.footer--light .footer__contact a,
+.footer--light .footer__contact p {
+  color: var(--dark);
+}
+
+.footer--light .footer__bottom {
+  color: var(--dark);
+  opacity: 0.4;
+}
+
+.footer--light .footer__bottom a {
+  color: var(--dark);
+}
+
+/* ====================================================
+   BLOK LICHT (wit) — "Waarom zou je meedoen?"
+   ==================================================== */
+.block__card--light {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.block__card--light h2 {
+  color: var(--dark);
+}
+
+.block__card--light p,
+.block__card--light li {
+  color: var(--dark);
+}
+
+/* Responsive: carousel */
+@media (max-width: 768px) {
+  .events__carousel {
+    min-height: 260px;
+    order: -1;
+  }
+  .carousel__track,
+  .carousel__slide {
+    min-height: 260px;
+  }
+  .ages__intro {
+    white-space: normal;
+  }
 }
