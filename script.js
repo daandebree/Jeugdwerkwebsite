@@ -101,6 +101,66 @@ if (aanmeldForm) {
   });
 }
 
+// Foto-carrousel in de agenda-sectie
+(function () {
+  const track = document.getElementById('carouselTrack');
+  const dotsContainer = document.getElementById('carouselDots');
+  const btnPrev = document.getElementById('carouselPrev');
+  const btnNext = document.getElementById('carouselNext');
+  if (!track) return;
+
+  const slides = track.querySelectorAll('.carousel__slide');
+  const total = slides.length;
+  let current = 0;
+  let autoTimer;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel__dot' + (i === 0 ? ' is-active' : '');
+    dot.setAttribute('aria-label', 'Foto ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsContainer.querySelectorAll('.carousel__dot').forEach((d, i) => {
+      d.classList.toggle('is-active', i === current);
+    });
+  }
+
+  function startAuto() {
+    autoTimer = setInterval(() => goTo(current + 1), 4000);
+  }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    startAuto();
+  }
+
+  btnPrev.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+  btnNext.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+
+  // Swipe-ondersteuning voor mobiel
+  const carousel = document.getElementById('eventsCarousel');
+  let touchStartX = null;
+  carousel.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  carousel.addEventListener('touchend', e => {
+    if (touchStartX === null) return;
+    const dx = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(dx) > 40) {
+      goTo(dx > 0 ? current + 1 : current - 1);
+      resetAuto();
+    }
+    touchStartX = null;
+  }, { passive: true });
+
+  startAuto();
+})();
+
 // Smooth scroll met offset voor de vaste navigatie
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
