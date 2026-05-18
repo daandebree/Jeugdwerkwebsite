@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css' rel='stylesheet'>
   <style>
     /* ---- Agenda-specifieke stijlen ---- */
     .agenda-hero {
@@ -297,87 +298,6 @@
       }
     }
 
-    /* ---- Weekoverzicht ---- */
-    .week-overview {
-      background: var(--dark);
-      color: var(--white);
-      padding: 80px 32px;
-    }
-
-    .week-overview__inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .week-overview h2 {
-      font-family: var(--font-heading);
-      font-size: clamp(1.4rem, 2.2vw, 2rem);
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .week-overview__intro {
-      opacity: 0.6;
-      margin-bottom: 32px;
-      font-size: 0.95rem;
-    }
-
-    .week-table-wrap {
-      overflow-x: auto;
-    }
-
-    .week-table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 680px;
-      font-size: 0.875rem;
-    }
-
-    .week-table thead th {
-      text-align: left;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--brand);
-      padding: 0 16px 10px;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .week-table tbody td {
-      padding: 10px 16px;
-      vertical-align: top;
-      border-right: 1px solid rgba(255,255,255,0.06);
-      min-width: 140px;
-    }
-
-    .week-table tbody td:last-child {
-      border-right: none;
-    }
-
-    .week-table tbody tr:not(:last-child) td {
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-    }
-
-    .week-table a {
-      color: var(--white);
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .week-table a:hover {
-      text-decoration: underline;
-      opacity: 0.8;
-    }
-
-    .wt-time {
-      display: block;
-      font-size: 0.75rem;
-      opacity: 0.45;
-      margin-top: 2px;
-    }
-
     /* ---- Visuele maandkalender ---- */
     .cal__months {
       display: grid;
@@ -454,7 +374,6 @@
     }
 
     @media (max-width: 700px) {
-      .week-overview { padding: 56px 20px; }
       .cal__months { grid-template-columns: 1fr; }
     }
   </style>
@@ -472,9 +391,9 @@
         <li><a href="index.html#watjedoen">Wat we doen</a></li>
         <li><a href="agenda.html" class="active">Agenda</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meedoen</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
       </ul>
-      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meedoen</a>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
       <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -487,66 +406,29 @@
     <p>Alle vaste momenten en bijzondere activiteiten van het jeugdwerk op één plek.</p>
   </section>
 
-  <!-- WEEKOVERZICHT -->
-  <section class="week-overview">
-    <div class="week-overview__inner">
-      <h2>Per week in één oogopslag</h2>
-      <p class="week-overview__intro">Wat er elke week plaatsvindt, per dag overzichtelijk.</p>
-      <div class="week-table-wrap">
-        <table class="week-table">
-          <thead>
-            <tr>
-              <th>Maandag</th>
-              <th>Dinsdag</th>
-              <th>Woensdag</th>
-              <th>Vrijdag</th>
-              <th>Zaterdag</th>
-              <th>Zondag</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="catechese.html">Catechese Bovenbouw</a><span class="wt-time">19:30 · 4e–6e VO</span></td>
-              <td><a href="catechese.html">Kindercatechese</a><span class="wt-time">15:30 · gr. 7/8 · om de week</span></td>
-              <td><a href="woensdagmiddagclub.html">Woensdagmiddagclub</a><span class="wt-time">14:15 · gr. 3–6</span></td>
-              <td><a href="united-friday.html">United Friday</a><span class="wt-time">19:30 · 1e–2e klas VO</span></td>
-              <td><a href="connect.html">Connect</a><span class="wt-time">20:00 · 3e–4e klas VO</span></td>
-              <td><a href="oppas.html">Oppas</a><span class="wt-time">tijdens dienst · 0–4 jr</span></td>
-            </tr>
-            <tr>
-              <td><a href="catechese.html">Catechese 18+</a><span class="wt-time">19:30</span></td>
-              <td><a href="catechese.html">Catechese Onderbouw</a><span class="wt-time">19:00 · 1e–3e VO</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><a href="bijbeluur.html">Bijbeluur</a><span class="wt-time">tijdens dienst · 4–10 jr</span></td>
-            </tr>
-            <tr>
-              <td><a href="catechese.html">Belijdenisgroep</a><span class="wt-time">20:30</span></td>
-              <td><a href="jongensclub.html">Jongensclub</a><span class="wt-time">19:00 · gr. 7/8</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="meisjesclub.html">Meisjesclub</a><span class="wt-time">19:00 · gr. 7/8</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="jv.html">Jongeren Vereniging</a><span class="wt-time">20:00 · 16+ jr</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+  <!-- INTERACTIEVE KALENDER -->
+  <section class="cal-interactive">
+    <div class="cal-interactive__inner">
+      <h2>Kalender</h2>
+      <p class="cal-interactive__intro">Klik op een activiteit voor meer info. Schakel tussen agenda- en maandweergave.</p>
+      <div id="fullcalendar"></div>
+    </div>
+  </section>
+
+  <!-- ICS DOWNLOADS -->
+  <section class="ics-downloads">
+    <div class="ics-downloads__inner">
+      <h3>Agenda's downloaden</h3>
+      <p>Voeg de agenda van een club toe aan je eigen agenda-app (Google, Outlook, Apple).</p>
+      <div class="ics-downloads__grid">
+        <a href="ics/catechese.ics" class="ics-btn" download>Catechese ↓</a>
+        <a href="ics/jongensclub.ics" class="ics-btn" download>Jongensclub ↓</a>
+        <a href="ics/meisjesclub.ics" class="ics-btn" download>Meisjesclub ↓</a>
+        <a href="ics/woensdagmiddagclub.ics" class="ics-btn" download>Woensdagmiddagclub ↓</a>
+        <a href="ics/united-friday.ics" class="ics-btn" download>United Friday ↓</a>
+        <a href="ics/connect.ics" class="ics-btn" download>Connect ↓</a>
+        <a href="ics/jv.ics" class="ics-btn" download>Jongeren Vereniging ↓</a>
+        <a href="ics/bijbeluur.ics" class="ics-btn" download>Bijbeluur ↓</a>
       </div>
     </div>
   </section>
@@ -896,7 +778,7 @@
           <li><a href="index.html#visie">Visie</a></li>
           <li><a href="index.html#watjedoen">Wat we doen</a></li>
           <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="index.html#meewerken">Ik wil meedoen</a></li>
+          <li><a href="index.html#meewerken">Ik wil meehelpen</a></li>
           <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
         </ul>
       </div>
@@ -918,5 +800,163 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/rrule@2.8.1/dist/es5/rrule.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@6.1.15/index.global.min.js'></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const calEl = document.getElementById('fullcalendar');
+      if (!calEl) return;
+
+      // Kleuren per club
+      const COLORS = {
+        catechese:    '#1e5c7e',
+        jongensclub:  '#2d7d4f',
+        meisjesclub:  '#a0522d',
+        wmclub:       '#6b4c9e',
+        unitedFriday: '#b5451b',
+        connect:      '#c47c00',
+        jv:           '#1a7090',
+        bijbeluur:    '#4a7c59',
+        oppas:        '#888',
+        kamp:         '#c0392b',
+      };
+
+      // Schooljaar 2026-2027: sept 2026 – juni 2027
+      // Vakanties (schoolvakantie Regio Midden):
+      // Herfst:   26 okt – 1 nov 2026
+      // Kerst:    21 dec 2026 – 3 jan 2027
+      // Voorjaar: 22 feb – 28 feb 2027
+      // Pasen:    7 apr – 18 apr 2027
+      // Zomer:    14 jul 2027 (buiten seizoen)
+
+      function noVakantie(dates) {
+        const vakantie = [
+          { s: '2026-10-26', e: '2026-11-02' },
+          { s: '2026-12-21', e: '2027-01-04' },
+          { s: '2027-02-22', e: '2027-03-01' },
+          { s: '2027-04-07', e: '2027-04-19' },
+        ];
+        return dates.filter(d => !vakantie.some(v =>
+          new Date(d) >= new Date(v.s) && new Date(d) < new Date(v.e)
+        ));
+      }
+
+      // Genereer wekelijkse datums voor een weekdag (0=zo, 1=ma, ... 6=za)
+      function wekelijks(weekdag, startStr, eindStr, om2 = false) {
+        const resultaat = [];
+        const eind = new Date(eindStr);
+        let d = new Date(startStr);
+        // Beweeg naar de eerste juiste weekdag
+        while (d.getDay() !== weekdag) d.setDate(d.getDate() + 1);
+        let teller = 0;
+        while (d <= eind) {
+          resultaat.push(d.toISOString().slice(0, 10));
+          teller++;
+          d.setDate(d.getDate() + (om2 ? 14 : 7));
+        }
+        return noVakantie(resultaat);
+      }
+
+      function maakEvents(data, kleur, titel, tijdStart, tijdEind, url) {
+        return data.map(d => ({
+          title: titel,
+          start: d + 'T' + tijdStart,
+          end:   d + 'T' + tijdEind,
+          color: kleur,
+          url:   url || '',
+        }));
+      }
+
+      const START = '2026-09-01';
+      const EIND  = '2027-07-01';
+
+      const events = [
+        // Catechese Kindercatechese — dinsdag om de week 15:30
+        ...maakEvents(wekelijks(2, START, EIND, true), COLORS.catechese,
+          'Kindercatechese', '15:30', '16:30', 'catechese.html'),
+        // Catechese Onderbouw — dinsdag 19:00
+        ...maakEvents(wekelijks(2, START, EIND), COLORS.catechese,
+          'Catechese Onderbouw', '19:00', '20:00', 'catechese.html'),
+        // Catechese Bovenbouw — maandag 19:30
+        ...maakEvents(wekelijks(1, START, EIND), COLORS.catechese,
+          'Catechese Bovenbouw', '19:30', '20:30', 'catechese.html'),
+        // Catechese 18+ — maandag 19:30
+        ...maakEvents(wekelijks(1, START, EIND), COLORS.catechese,
+          'Catechese 18+', '19:30', '20:30', 'catechese.html'),
+        // Belijdenisgroep — maandag 20:30
+        ...maakEvents(wekelijks(1, START, EIND), COLORS.catechese,
+          'Belijdenisgroep', '20:30', '21:30', 'catechese.html'),
+        // Jongensclub — dinsdag 19:00
+        ...maakEvents(wekelijks(2, START, EIND), COLORS.jongensclub,
+          'Jongensclub', '19:00', '20:30', 'jongensclub.html'),
+        // Meisjesclub — dinsdag 19:00
+        ...maakEvents(wekelijks(2, START, EIND), COLORS.meisjesclub,
+          'Meisjesclub', '19:00', '20:30', 'meisjesclub.html'),
+        // Woensdagmiddagclub — woensdag 14:15
+        ...maakEvents(wekelijks(3, START, EIND), COLORS.wmclub,
+          'Woensdagmiddagclub', '14:15', '15:30', 'woensdagmiddagclub.html'),
+        // United Friday — vrijdag 19:30
+        ...maakEvents(wekelijks(5, START, EIND), COLORS.unitedFriday,
+          'United Friday', '19:30', '21:00', 'united-friday.html'),
+        // Connect — zaterdag 20:00
+        ...maakEvents(wekelijks(6, START, EIND), COLORS.connect,
+          'Connect', '20:00', '22:00', 'connect.html'),
+        // JV — dinsdag 20:00
+        ...maakEvents(wekelijks(2, START, EIND), COLORS.jv,
+          'Jongeren Vereniging', '20:00', '21:30', 'jv.html'),
+        // Bijbeluur — zondag (tijdens dienst)
+        ...maakEvents(wekelijks(0, START, EIND), COLORS.bijbeluur,
+          'Bijbeluur', '09:30', '11:00', 'bijbeluur.html'),
+        // Oppas — zondag (tijdens dienst)
+        ...maakEvents(wekelijks(0, START, EIND), COLORS.oppas,
+          'Oppas', '09:30', '11:00', 'oppas.html'),
+        // Jeugdkamp — placeholder
+        {
+          title: 'Jeugdkamp 2027',
+          start: '2027-07-05',
+          end:   '2027-07-12',
+          color: COLORS.kamp,
+          url:   'jeugdkamp.html',
+          allDay: true,
+        },
+      ];
+
+      // Vakantieblokken als achtergrond
+      const vakantieBlokken = [
+        { title: 'Herfstvakantie', start: '2026-10-26', end: '2026-11-02' },
+        { title: 'Kerstvakantie',  start: '2026-12-21', end: '2027-01-04' },
+        { title: 'Voorjaarsvakantie', start: '2027-02-22', end: '2027-03-01' },
+        { title: 'Paasvakantie',   start: '2027-04-07', end: '2027-04-19' },
+      ].map(v => ({ ...v, display: 'background', color: '#e8e8e8' }));
+
+      const calendar = new FullCalendar.Calendar(calEl, {
+        locale: 'nl',
+        initialView: 'listMonth',
+        firstDay: 1,
+        headerToolbar: {
+          left:   'prev,next today',
+          center: 'title',
+          right:  'listMonth,dayGridMonth',
+        },
+        buttonText: {
+          today:      'Vandaag',
+          listMonth:  'Agenda',
+          dayGridMonth: 'Maand',
+        },
+        events: [...events, ...vakantieBlokken],
+        eventClick: function(info) {
+          if (info.event.url) {
+            info.jsEvent.preventDefault();
+            window.location.href = info.event.url;
+          }
+        },
+        noEventsContent: 'Geen activiteiten in deze periode.',
+        height: 'auto',
+      });
+
+      calendar.render();
+    });
+  </script>
 </body>
 </html>

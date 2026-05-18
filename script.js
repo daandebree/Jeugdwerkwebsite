@@ -82,24 +82,23 @@ if (availBtn && availPanel) {
   });
 }
 
-// Aanmeldformulier via Netlify Forms (AJAX)
-const aanmeldForm = document.querySelector('form[name="aanmelding"]');
-if (aanmeldForm) {
-  aanmeldForm.addEventListener('submit', async (e) => {
+// Netlify Forms AJAX — werkt voor alle formulieren op alle pagina's
+document.querySelectorAll('form[data-netlify="true"]').forEach(function (form) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
-    const body = new URLSearchParams(new FormData(aanmeldForm)).toString();
+    const body = new URLSearchParams(new FormData(form)).toString();
     try {
       await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body
       });
-      aanmeldForm.innerHTML = '<p class="form__success">Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.</p>';
+      form.innerHTML = '<p class="form__success">Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.</p>';
     } catch {
       alert('Er is iets misgegaan. Probeer het opnieuw of stuur een e-mail naar t.horst@hervormdwoudenberg.nl.');
     }
   });
-}
+});
 
 // Foto-carrousel in de agenda-sectie
 (function () {
@@ -159,6 +158,31 @@ if (aanmeldForm) {
   }, { passive: true });
 
   startAuto();
+})();
+
+// "Wat we doen" nav dropdown — keyboard & click support
+(function () {
+  const dropdown = document.getElementById('watWeDoDropdown');
+  if (!dropdown) return;
+  const toggle = dropdown.querySelector('.nav__dropdown-toggle');
+
+  function close() {
+    dropdown.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', () => {
+    if (window.innerWidth <= 768) return;
+    const isOpen = dropdown.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
 })();
 
 // Smooth scroll met offset voor de vaste navigatie

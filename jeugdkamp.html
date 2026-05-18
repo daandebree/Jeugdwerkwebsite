@@ -105,12 +105,7 @@
       align-items: flex-start;
       gap: 10px;
     }
-    .form__check input[type="checkbox"] {
-      width: auto;
-      flex-shrink: 0;
-      margin-top: 3px;
-      accent-color: var(--brand);
-    }
+    /* checkbox fix now in style.css */
     .form__check label {
       font-size: 0.85rem;
       font-weight: 400;
@@ -141,9 +136,9 @@
         <li><a href="index.html#watjedoen">Wat we doen</a></li>
         <li><a href="agenda.html">Agenda</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meedoen</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
       </ul>
-      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meedoen</a>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
       <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -154,11 +149,11 @@
   <section class="hero">
     <div class="hero__bg" style="background-image: url('images/hero.jpg')"></div>
     <div class="hero__card">
-      <span class="hero__age">Groep 3 t/m 4e klas VO · September 2026</span>
+      <span class="hero__age">4 – 6 september 2026 · Kampeerboerderij 't Boerenerf, Woudenberg</span>
       <h1>Jeugdkamp</h1>
       <p>
-        Drie dagen weg met de jeugd —<br>
-        vol spel, stilte, vriendschap en geloof.
+        Een toffe start van het winterwerk —<br>
+        samen weg, samen groeien in geloof en vriendschap.
       </p>
       <div class="hero__btns">
         <a href="#inschrijven" class="btn">Aanmelden</a>
@@ -169,15 +164,15 @@
 
   <!-- INFO STRIP -->
   <div class="kamp-strip">
-    <strong>4 – 6 september 2026</strong> &nbsp;·&nbsp; Camping 't Boerenerf &nbsp;·&nbsp; Groep 3 t/m 4e klas VO &nbsp;·&nbsp; <strong>Aanmelden via dit formulier</strong>
+    <strong>Vrijdag 4 sept. 17:30 – Zondag 6 sept.</strong> &nbsp;·&nbsp; Kampeerboerderij 't Boerenerf, Woudenberg &nbsp;·&nbsp; Thema: <strong>'Echt of fake?'</strong> &nbsp;·&nbsp; Groep 3 t/m 4e klas VO &nbsp;·&nbsp; ~140 plaatsen (op volgorde van aanmelding)
   </div>
 
   <!-- TAGLINE -->
   <section class="club-tagline">
     <div class="club-tagline__inner">
       <p>
-        Drie dagen buiten je comfortzone —<br>
-        en dichter bij God en elkaar.
+        Een toffe start van het winterwerk —<br>
+        buiten je comfortzone, dichter bij God en bij elkaar.
       </p>
     </div>
   </section>
@@ -188,17 +183,24 @@
     <div class="block__card">
       <h2>Wat is het jeugdkamp?</h2>
       <p>
-        Elk jaar gaan we samen op kamp — een paar dagen weg van school, schermen en de dagelijkse drukte.
-        Samen met leeftijdsgenoten en JV'ers die het kamp grotendeels zelf organiseren.
+        Met het jeugdkamp willen wij voor de jeugd en jongeren een toffe gezamenlijke start van het winterwerk realiseren.
+        Het doel is om de onderlinge band te versterken — zowel sociaal als op geloofsgebied.
       </p>
       <p>
-        Overdag spelen we spellen, zijn we buiten actief en is er ruimte voor gesprekken over wat er echt toe doet.
-        's Avonds komen we samen voor een moment van bezinning: een Bijbelgedeelte, een vraag om over na te denken — niet zwaar, wel eerlijk.
+        De leiding en organisatie is zoveel mogelijk in handen van onze Jeugdvereniging. We geven de oudere jongeren van onze gemeente nadrukkelijk verantwoordelijkheden, zodat dit weekend voor hen een opstapje is om in te groeien in taken binnen de gemeente.
       </p>
       <p>
         Het kamp is voor kinderen uit groep 3 tot en met jongeren in de vierde klas van het voortgezet onderwijs.
-        Iedereen is welkom, ook als je nog nooit eerder bent geweest.
+        Iedereen is welkom — ook als je nog nooit eerder bent geweest.
       </p>
+    </div>
+  </section>
+
+  <!-- THEMA -->
+  <section class="club-tagline">
+    <div class="club-tagline__inner">
+      <p style="font-size:0.75rem;letter-spacing:0.12em;opacity:0.5;margin-bottom:10px;font-weight:700;">Thema 2026</p>
+      <p>'Echt of fake?'</p>
     </div>
   </section>
 
@@ -211,19 +213,27 @@
         <div class="praktisch__grid">
           <div class="praktisch__item">
             <span class="praktisch__label">Wanneer</span>
-            <span class="praktisch__value">4 – 6 september<br>2026</span>
-          </div>
-          <div class="praktisch__item">
-            <span class="praktisch__label">Leeftijd</span>
-            <span class="praktisch__value">Groep 3 t/m<br>4e klas VO</span>
+            <span class="praktisch__value">Vrijdag 4 sept. 17:30<br>– Zondag 6 sept.</span>
           </div>
           <div class="praktisch__item">
             <span class="praktisch__label">Locatie</span>
-            <span class="praktisch__value">Camping<br>'t Boerenerf</span>
+            <span class="praktisch__value">Kampeerboerderij<br>'t Boerenerf, Woudenberg</span>
           </div>
           <div class="praktisch__item">
-            <span class="praktisch__label">Aanmelden</span>
-            <span class="praktisch__value">Via het<br>formulier</span>
+            <span class="praktisch__label">Groep 3–8 (BS)</span>
+            <span class="praktisch__value">1 nacht<br>€ 17,50</span>
+          </div>
+          <div class="praktisch__item">
+            <span class="praktisch__label">VO t/m 4e klas</span>
+            <span class="praktisch__value">2 nachten<br>€ 27,50</span>
+          </div>
+          <div class="praktisch__item">
+            <span class="praktisch__label">JV-leiding</span>
+            <span class="praktisch__value">2 nachten<br>Gratis</span>
+          </div>
+          <div class="praktisch__item">
+            <span class="praktisch__label">Capaciteit</span>
+            <span class="praktisch__value">~140 plaatsen<br>op volgorde</span>
           </div>
         </div>
         <a href="#inschrijven" class="btn">Direct aanmelden</a>
@@ -261,13 +271,32 @@
           <div class="program-card__dag">Dag 3 — Zondag</div>
           <div class="program-card__titel">Afronden</div>
           <ul>
-            <li>Ochtendmoment</li>
-            <li>Groot opruimen</li>
-            <li>Afsluitend samenzijn</li>
-            <li>Terugkomst 's middags</li>
+            <li>In schone kleren op de fiets</li>
+            <li>Afsluitingsdienst in de Oosterpoort</li>
+            <li>Groep 3–8 sluit ook aan bij de dienst</li>
+            <li>Spullen ophalen maandag bij Oosterpoort</li>
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ORGANISATIE -->
+  <section class="block block--dark">
+    <div class="block__photo block__photo--p2"></div>
+    <div class="block__card">
+      <h2>Organisatie</h2>
+      <p>
+        Het jeugdkamp wordt georganiseerd door de Jeugdvereniging van de Hervormde Gemeente Woudenberg —
+        aangevuld met hulp van ouders en andere vrijwilligers uit de gemeente.
+      </p>
+      <p>
+        Wil je meehelpen als ouder? Houd de kerk-app en de Kerkbode in de gaten voor onze hulpvragen.
+      </p>
+      <p style="margin-top:4px;opacity:0.55;font-size:0.85rem;">
+        Ruben Uijl · Loïs van Pijkeren · Eloïse van Vliet<br>
+        Ilona van Milligen · Jaap van Dam jr. · Petra de Voogd
+      </p>
     </div>
   </section>
 
@@ -279,12 +308,15 @@
         <h2>Aanmelden voor het kamp</h2>
         <p>
           Vul het formulier in voor elke deelnemer apart.
-          Na aanmelding nemen we contact op met verdere informatie.
+          Na aanmelding ontvang je eind juni per e-mail alle verdere informatie over wat je mee moet nemen.
         </p>
+        <p>Er is plek voor ongeveer <strong>140 deelnemers</strong> — aanmelden op volgorde van binnenkomst.</p>
         <p>
           <strong>Vragen?</strong> Mail naar
-          <a href="mailto:t.horst@hervormdwoudenberg.nl" style="color:var(--brand);">t.horst@hervormdwoudenberg.nl</a>
-          of bel <a href="tel:033286576" style="color:var(--brand);">033 – 286 57 65</a>.
+          <a href="mailto:jeugdkamphvwoudenberg@gmail.com" style="color:var(--brand);">jeugdkamphvwoudenberg@gmail.com</a>
+        </p>
+        <p style="margin-top:16px;font-size:0.85rem;color:#666;">
+          Ben je JV-lid of tussen de 18 en 25 jaar en wil je meehelpen als leiding? Schrijf je dan in via hetzelfde formulier — selecteer bij 'Deelname als' de optie JV-leiding.
         </p>
       </div>
 
@@ -294,6 +326,16 @@
 
         <!-- DEELNEMER -->
         <div class="form__section-header">Deelnemer</div>
+
+        <div class="form__row">
+          <label for="deelname_als">Deelname als *</label>
+          <select id="deelname_als" name="deelname_als" required>
+            <option value="">Kies…</option>
+            <option value="bs">Deelnemer basisschool (groep 3–8, 1 nacht — € 17,50)</option>
+            <option value="vo">Deelnemer voortgezet onderwijs (t/m 4e klas, 2 nachten — € 27,50)</option>
+            <option value="jv-leiding">JV-leiding (18–25 jaar, 2 nachten — gratis)</option>
+          </select>
+        </div>
 
         <div class="form__row form__row--split">
           <div class="form__row">
@@ -333,6 +375,15 @@
             <option value="">Kies…</option>
             <option value="ja">Ja, eerder geweest</option>
             <option value="nee">Nee, eerste keer</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label for="shirt">Shirt van vorig jaar</label>
+          <select id="shirt" name="shirt">
+            <option value="">Kies…</option>
+            <option value="heb-hem">Ik heb het shirt van vorig jaar nog</option>
+            <option value="geen">Ik heb het shirt niet meer / nooit gehad</option>
           </select>
         </div>
 
@@ -406,7 +457,7 @@
 
         <div class="form__success" id="kampSucces" style="display:none;">
           <strong>Aanmelding ontvangen!</strong><br>
-          Je ontvangt binnen twee werkdagen een bevestiging per e-mail met betaalinformatie. Tot op het kamp!
+          Je ontvangt eind juni per e-mail alle verdere informatie over wat je mee moet nemen. Vragen? Mail naar <a href="mailto:jeugdkamphvwoudenberg@gmail.com" style="color:var(--brand);">jeugdkamphvwoudenberg@gmail.com</a>. Tot in september!
         </div>
       </form>
 
@@ -425,7 +476,7 @@
           <li><a href="index.html#visie">Visie</a></li>
           <li><a href="index.html#watjedoen">Wat we doen</a></li>
           <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="index.html#meewerken">Ik wil meedoen</a></li>
+          <li><a href="index.html#meewerken">Ik wil meehelpen</a></li>
           <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
         </ul>
       </div>

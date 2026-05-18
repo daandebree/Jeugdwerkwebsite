@@ -22,9 +22,9 @@
         <li><a href="index.html#watjedoen">Wat we doen</a></li>
         <li><a href="index.html#agenda">Agenda</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meedoen</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
       </ul>
-      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meedoen</a>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
       <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -39,29 +39,27 @@
     </div>
   </section>
 
-  <!-- Groepen overzicht -->
+  <!-- Wijk keuze -->
   <section class="ages block--dark">
     <div class="ages__inner">
-      <h2>De catechese­groepen</h2>
-      <p class="ages__intro">We hebben catechese voor drie leeftijdsgroepen, elke maandagavond.</p>
-      <div class="ages__grid">
+      <h2>Kies jouw wijk</h2>
+      <p class="ages__intro">Onze gemeente heeft twee wijken, elk met eigen catecheten en eigen tijden.</p>
+      <div class="ages__grid" style="grid-template-columns: repeat(2, 1fr); max-width: 500px; margin: 0 auto;">
 
         <div class="age-card">
-          <span class="age-card__range">10 – 12 jaar</span>
-          <h3>Catechese groep 7 &amp; 8</h3>
-          <p>Tekst volgt nog.</p>
+          <h3>Catechese Wijk 1</h3>
+          <p>Dinsdagmiddag &amp; dinsdagavond</p>
+          <ul>
+            <li><a href="catechese-wijk-1.html">Bekijk programma Wijk 1 →</a></li>
+          </ul>
         </div>
 
         <div class="age-card">
-          <span class="age-card__range">12 – 16 jaar</span>
-          <h3>Catechese middelbare school</h3>
-          <p>Tekst volgt nog.</p>
-        </div>
-
-        <div class="age-card">
-          <span class="age-card__range">16+ jaar</span>
-          <h3>Catechese JV-leeftijd</h3>
-          <p>Tekst volgt nog.</p>
+          <h3>Catechese Wijk 2</h3>
+          <p>Tekst volgt nog</p>
+          <ul>
+            <li><a href="catechese-wijk-2.html">Bekijk programma Wijk 2 →</a></li>
+          </ul>
         </div>
 
       </div>
@@ -72,7 +70,57 @@
     <div class="block__photo block__photo--p2"></div>
     <div class="block__card">
       <h2>Wat is catechese?</h2>
-      <p>Tekst volgt nog.</p>
+      <p>Catechese is een plek waar jongeren samen leren wie God is, wat de Bijbel zegt en wat dat voor hun eigen leven betekent. Het is geen les die je moet volgen, maar een ontdekkingstocht.</p>
+      <p>Elke leeftijdsgroep heeft een eigen catechesekring, begeleid door ervaren catecheten. Onze gemeente heeft twee wijken, elk met een eigen programma en eigen catecheten.</p>
+    </div>
+  </section>
+
+  <!-- AANMELDEN -->
+  <section class="form-section form-section--club" id="aanmelden">
+    <div class="form-section__inner form-section__inner--single">
+      <div class="form-section__text">
+        <h2>Aanmelden voor Catechese</h2>
+        <p>
+          Wil jij of je kind deelnemen aan catechese? Vul het formulier in en we nemen contact op om je in de juiste groep in te delen.
+          Heb je vragen? Bel of mail een van de jeugdleiders (zie onderaan de pagina).
+        </p>
+      </div>
+      <form class="form" name="aanmelding-catechese" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="aanmelding-catechese">
+        <p hidden><label>Laat dit veld leeg: <input name="bot-field"></label></p>
+        <div class="form__row">
+          <label for="catgroep">Catechese groep</label>
+          <select id="catgroep" name="catechese_groep" required>
+            <option value="">Kies een groep…</option>
+            <option value="kindercatechese">Kindercatechese (groep 7/8)</option>
+            <option value="onderbouw">Catechese Onderbouw (1e–3e VO)</option>
+            <option value="bovenbouw">Catechese Bovenbouw (4e–6e VO)</option>
+            <option value="18plus">Catechese 18+</option>
+            <option value="belijdenis">Belijdenisgroep</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Naam van de deelnemer" required>
+        </div>
+        <div class="form__row">
+          <label for="leeftijd">Leeftijd / Schooljaar</label>
+          <input type="text" id="leeftijd" name="leeftijd" placeholder="bijv. Groep 8 of 2e klas" required>
+        </div>
+        <div class="form__row">
+          <label for="email-ouder">E-mail ouder / deelnemer</label>
+          <input type="email" id="email-ouder" name="email_ouder" placeholder="email@adres.nl" required>
+        </div>
+        <div class="form__row">
+          <label for="telefoon">Telefoonnummer</label>
+          <input type="tel" id="telefoon" name="telefoon" placeholder="06 00 00 00 00">
+        </div>
+        <div class="form__row">
+          <label for="opmerking">Opmerking (optioneel)</label>
+          <textarea id="opmerking" name="opmerking" rows="3" placeholder="Bijzonderheden, vragen…"></textarea>
+        </div>
+        <button type="submit" class="btn">Aanmelden</button>
+      </form>
     </div>
   </section>
 
@@ -88,7 +136,7 @@
           <li><a href="index.html#visie">Visie</a></li>
           <li><a href="index.html#watjedoen">Wat we doen</a></li>
           <li><a href="index.html#agenda">Agenda</a></li>
-          <li><a href="index.html#meewerken">Ik wil meedoen</a></li>
+          <li><a href="index.html#meewerken">Ik wil meehelpen</a></li>
           <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
         </ul>
       </div>

@@ -305,6 +305,49 @@ a {
 }
 
 /* ====================================================
+   STATISTIEKEN STRIP
+   ==================================================== */
+.stats {
+  background: var(--brand);
+  color: var(--white);
+  padding: 48px 32px;
+}
+
+.stats__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.stats__number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stats__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+/* ====================================================
    MISSIE
    ==================================================== */
 .mission {
@@ -1069,6 +1112,20 @@ a {
   align-items: start;
 }
 
+.form-section--club {
+  padding: 64px 32px;
+}
+
+.form-section__inner--single {
+  max-width: 680px;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.form-section__inner--single .form-section__text {
+  max-width: 100%;
+}
+
 .form-section__text h2 {
   font-family: var(--font-heading);
   font-size: clamp(1.5rem, 2.4vw, 2.2rem);
@@ -1125,6 +1182,18 @@ a {
 .form__row select:focus,
 .form__row textarea:focus {
   border-color: var(--dark);
+}
+
+.form__check input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+  border: revert;
+  width: auto;
+  padding: 0;
+  flex-shrink: 0;
+  margin-top: 3px;
+  accent-color: var(--brand);
+  cursor: pointer;
 }
 
 .form__row textarea {
@@ -1582,6 +1651,7 @@ a {
   /* Formulier */
   .form-section { padding: 56px 20px; }
   .form-section__inner { grid-template-columns: 1fr; gap: 40px; }
+  .form-section--club { padding: 48px 20px; }
 
   /* Slotblok */
   .closing { padding: 64px 20px; }
@@ -1597,6 +1667,118 @@ a {
   .instagram__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .stats__inner { gap: 40px; }
+  .stats__number { font-size: 2.2rem; }
+}
+
+/* ====================================================
+   INTERACTIEVE KALENDER (FullCalendar)
+   ==================================================== */
+.cal-interactive {
+  padding: 80px 32px;
+  background: var(--white);
+}
+
+.cal-interactive__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.cal-interactive__inner h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.cal-interactive__intro {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 28px;
+}
+
+/* FullCalendar overrides */
+#fullcalendar .fc-toolbar-title {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#fullcalendar .fc-button-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  font-size: 0.8rem;
+}
+
+#fullcalendar .fc-button-primary:hover {
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+#fullcalendar .fc-button-primary:not(:disabled).fc-button-active,
+#fullcalendar .fc-button-primary:not(:disabled):active {
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+#fullcalendar .fc-list-event:hover td {
+  background: var(--brand-light);
+  cursor: pointer;
+}
+
+/* ICS Downloads */
+.ics-downloads {
+  background: var(--off-white);
+  padding: 56px 32px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.ics-downloads__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.ics-downloads__inner h3 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.ics-downloads__inner p {
+  font-size: 0.9rem;
+  opacity: 0.65;
+  margin-bottom: 20px;
+}
+
+.ics-downloads__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ics-btn {
+  padding: 9px 18px;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.ics-btn:hover {
+  background: var(--brand);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .cal-interactive { padding: 56px 20px; }
+  .ics-downloads { padding: 40px 20px; }
 }
 
 /* ====================================================
@@ -1740,6 +1922,171 @@ a {
 }
 
 /* ====================================================
+   JEUGDRAAD — TEAM OVERZICHT
+   ==================================================== */
+.team-section {
+  padding: 80px 32px;
+  background: var(--off-white);
+}
+
+.team-section__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.team-section h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.team-section__intro {
+  font-size: 0.95rem;
+  opacity: 0.65;
+  margin-bottom: 48px;
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 24px;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.team-card__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.team-card__photo--placeholder {
+  background: var(--brand-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+}
+
+.team-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team-card__name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.team-card__role {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.team-card--vacancy .team-card__name {
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-section { padding: 56px 20px; }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+}
+
+/* ====================================================
+   LEIDING CLUBS & CATECHESE — DONKERE VARIANT
+   ==================================================== */
+.team-section--leiding {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.team-section--leiding h2 {
+  color: var(--white);
+}
+
+.team-section--leiding .team-card__role {
+  color: var(--brand-light);
+}
+
+.team-section--leiding .team-card__photo--placeholder {
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.22);
+}
+
+.team-section--leiding .team-card--vacancy .team-card__name {
+  opacity: 0.35;
+  color: var(--white);
+}
+
+.team-section__manifesto {
+  margin-bottom: 56px;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-section__manifesto p {
+  font-size: 1rem;
+  line-height: 1.55;
+  opacity: 0.82;
+  padding-left: 22px;
+  position: relative;
+}
+
+.team-section__manifesto p::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--brand-light);
+  font-weight: 700;
+}
+
+.team-section__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.team-section__group-label {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 28px;
+}
+
+/* ====================================================
    FOOTER LICHT (wit)
    ==================================================== */
 .footer--light {
@@ -1816,4 +2163,98 @@ a {
   .ages__intro {
     white-space: normal;
   }
+}
+
+/* ====================================================
+   NAV DROPDOWN — Wat we doen (desktop only)
+   ==================================================== */
+.nav__item--dropdown {
+  position: relative;
+}
+
+.nav__dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav__dropdown-chevron {
+  flex-shrink: 0;
+  color: currentColor;
+  transition: transform 0.18s;
+}
+
+.nav__item--dropdown:hover .nav__dropdown-chevron,
+.nav__item--dropdown.is-open .nav__dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.nav__dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
+  min-width: 230px;
+  list-style: none;
+  padding: 8px 0;
+  z-index: 200;
+}
+
+.nav__item--dropdown:hover .nav__dropdown,
+.nav__item--dropdown.is-open .nav__dropdown {
+  display: block;
+}
+
+.nav__dropdown li a {
+  display: block;
+  padding: 7px 16px;
+  font-size: 0.83rem;
+  font-weight: 500;
+  opacity: 0.8;
+  letter-spacing: 0;
+  transition: background 0.12s, opacity 0.12s;
+  white-space: nowrap;
+}
+
+.nav__dropdown li a:hover {
+  background: var(--off-white);
+  opacity: 1;
+}
+
+.nav__dropdown-header {
+  padding: 8px 16px 2px;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand);
+  opacity: 0.85;
+}
+
+.nav__dropdown-divider {
+  border-top: 1px solid #eee;
+  margin: 6px 0;
+}
+
+.nav__dropdown-nolink {
+  display: block;
+  padding: 7px 16px;
+  font-size: 0.83rem;
+  opacity: 0.45;
+  white-space: nowrap;
+}
+
+.nav__dropdown-featured a {
+  color: var(--brand);
+  font-weight: 600;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .nav__dropdown { display: none !important; }
+  .nav__dropdown-chevron { display: none; }
 }
