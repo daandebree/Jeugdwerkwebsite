@@ -2202,6 +2202,8 @@ a {
   list-style: none;
   padding: 8px 0;
   z-index: 200;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
 }
 
 .nav__item--dropdown:hover .nav__dropdown,

@@ -4,7 +4,13 @@
       "Read(//c/Users/daand/OneDrive/Documenten/Kerk/**)",
       "Read(//c/Users/daand/Downloads/Jeugdkamp 2025-3-001/Jeugdkamp 2025/**)",
       "WebFetch(domain:www.hervormdwoudenberg.nl)",
-      "Bash(git init *)"
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\.git\\\\index.lock\" -Force)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\daand\\OneDrive\\Documenten\\Kerk\\Kerk website\\.git"
     ]
   }
 }
