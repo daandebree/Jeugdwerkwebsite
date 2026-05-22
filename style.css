@@ -1806,28 +1806,24 @@ a {
 }
 
 /* ====================================================
-   CATECHESE FOTO'S (Unsplash stockfoto's)
-   Foto credit: Unsplash.com
+   CATECHESE FOTO'S
    ==================================================== */
 
-/* Hero-achtergrond catechese-pagina's */
+/* Hero-achtergrond catechese-pagina's — jongens met Bijbel aan tafel */
 .hero__bg--catechese {
-  /* Photo by Priscilla Du Preez on Unsplash */
-  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1400&q=80&auto=format&fit=crop');
-  background-position: center 35%;
+  background-image: url('images/carousel/slide-01.jpeg');
+  background-position: center 30%;
 }
 
-/* Blokfoto: boeken / studie */
+/* Blokfoto: meiden lezen in Bijbels */
 .block__photo--catechese-boeken {
-  /* Photo by Ben White on Unsplash */
-  background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&q=80&auto=format&fit=crop');
-  background-position: center center;
+  background-image: url('images/carousel/slide-04.jpeg');
+  background-position: center 20%;
 }
 
-/* Blokfoto: kleine groep / gesprek */
+/* Blokfoto: leider voor de klas (Israël-kaart aan muur) */
 .block__photo--catechese-groep {
-  /* Photo by Alexis Brown on Unsplash */
-  background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80&auto=format&fit=crop');
+  background-image: url('images/carousel/slide-27.jpeg');
   background-position: center center;
 }
 
