@@ -1781,6 +1781,56 @@ a {
   .ics-downloads { padding: 40px 20px; }
 }
 
+/* Wijk-badge op recurring-cards */
+.recurring-card__wijk {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.recurring-card__wijk--w2 {
+  border-color: #2d7d4f;
+  color: #2d7d4f;
+}
+
+.recurring-card__wijk--both {
+  border-color: #888;
+  color: #888;
+}
+
+/* ====================================================
+   CATECHESE FOTO'S (Unsplash stockfoto's)
+   Foto credit: Unsplash.com
+   ==================================================== */
+
+/* Hero-achtergrond catechese-pagina's */
+.hero__bg--catechese {
+  /* Photo by Priscilla Du Preez on Unsplash */
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1400&q=80&auto=format&fit=crop');
+  background-position: center 35%;
+}
+
+/* Blokfoto: boeken / studie */
+.block__photo--catechese-boeken {
+  /* Photo by Ben White on Unsplash */
+  background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&q=80&auto=format&fit=crop');
+  background-position: center center;
+}
+
+/* Blokfoto: kleine groep / gesprek */
+.block__photo--catechese-groep {
+  /* Photo by Alexis Brown on Unsplash */
+  background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80&auto=format&fit=crop');
+  background-position: center center;
+}
+
 /* ====================================================
    CLUB PAGINA'S
    ==================================================== */
