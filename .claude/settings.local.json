@@ -7,7 +7,10 @@
       "Bash(git init *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(Remove-Item \"C:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\.git\\\\index.lock\" -Force)"
+      "Bash(Remove-Item \"C:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\.git\\\\index.lock\" -Force)",
+      "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\extra info\\\\smoelen\\\\Marjolein Hooydonk.jpg\" -Destination \"c:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\images\\\\jeugdraad\\\\marjolein-hooydonk.jpg\" -Force)",
+      "Bash(python -c ' *)",
+      "PowerShell(git add -A)"
     ],
     "additionalDirectories": [
       "C:\\Users\\daand\\OneDrive\\Documenten\\Kerk\\Kerk website\\.git"
