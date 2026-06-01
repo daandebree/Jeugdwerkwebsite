@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeugdwerkers — Jeugdwerk Hervormd Woudenberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .team-card__aanpassen {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: currentColor;
+      opacity: 0.4;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .team-card__aanpassen:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.png" alt="Hervormde Gemeente Woudenberg" class="nav__logo-img">
+        <span>Jeugdwerk <span class="nav__logo-sub">Hervormd Woudenberg</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#visie">Visie</a></li>
+        <li><a href="index.html#watjedoen">Wat we doen</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
+      </ul>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" style="background-image: url('images/block-p1.jpg')"></div>
+    <div class="hero__card">
+      <h1>Jeugdwerkers</h1>
+      <p>
+        Het team dat samen met leidinggevenden bouwt aan het jeugdwerk in de gemeente.<br>
+        Want wie de jeugd heeft, heeft de toekomst.
+      </p>
+    </div>
+  </section>
+
+  <!-- TAGLINE -->
+  <section class="club-tagline">
+    <div class="club-tagline__inner">
+      <p>
+        Voorleven, verbinden en vertellen
+      </p>
+    </div>
+  </section>
+
+  <!-- VIDEO / ONS VERLANGEN -->
+  <section class="block">
+    <div class="block__photo block__photo--video">
+      <div class="video-play">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.15)"/>
+          <polygon points="26,20 48,32 26,44" fill="white"/>
+        </svg>
+        <span>Bekijk hier binnenkort onze video</span>
+      </div>
+    </div>
+    <div class="block__card">
+      <h2>Ons verlangen</h2>
+      <p>
+        Ons verlangen is simpel, maar groot:<br>
+        dat jongeren dichtbij God leven en hun leven willen inrichten voor Hem.
+      </p>
+      <p>
+        Niet alleen kennis, maar een relatie.<br>
+        Niet alleen aanwezig zijn, maar meebouwen.
+      </p>
+      <p>Daarom investeren we in geloof, relaties en groei in de gemeente.</p>
+    </div>
+  </section>
+
+  <!-- TEAM OVERZICHT -->
+  <section class="team-section">
+    <div class="team-section__inner">
+      <h2>Ontmoet iedereen in het jeugdwerk</h2>
+      <p class="team-section__intro">De jeugdraad bestaat uit jeugdouderlingen en gemeenteleden die samen verantwoordelijkheid dragen voor het jeugdwerk.</p>
+
+      <div class="team-grid">
+
+        <div class="team-card">
+          <img src="images/jeugdraad/ronald-driever.jpeg" alt="Ronald Driever" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Ronald Driever</span>
+            <span class="team-card__role">Jeugdouderling wijk 1</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/jeugdraad/tom-horst.jpg" alt="Tom Horst" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Tom Horst</span>
+            <span class="team-card__role">Jeugdouderling wijk 2</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/jeugdraad/daan-de-bree.jpg" alt="Daan de Bree" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Daan de Bree</span>
+            <span class="team-card__role">Jeugdouderling wijk 2</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/jeugdraad/mirjam-kwakenaak.jpg" alt="Mirjam Kwakenaak" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Mirjam Kwakenaak</span>
+            <span class="team-card__role">Jeugdraad</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/jeugdraad/marjolein-hooydonk.jpg" alt="Marjolein Hooydonk" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Marjolein Hooydonk</span>
+            <span class="team-card__role">Jeugdraad</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/jeugdraad/henk-jan-van-den-berge.png" alt="Henk-Jan van den Berge" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Henk-Jan van den Berge</span>
+            <span class="team-card__role">Jeugdraad</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/jeugdraad/rieke-van-de-lagemaat.png" alt="Rieke van de Lagemaat" class="team-card__photo">
+          <div class="team-card__info">
+            <span class="team-card__name">Rieke van de Lagemaat</span>
+            <span class="team-card__role">Jeugdraad</span>
+          </div>
+        </div>
+
+        <div class="team-card team-card--vacancy">
+          <div class="team-card__photo team-card__photo--placeholder">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/>
+              <path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="team-card__info">
+            <span class="team-card__name">Vacature</span>
+            <span class="team-card__role">Jongere in de jeugdraad</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATECHESE LEIDING — DONKER -->
+  <section class="team-section team-section--leiding">
+    <div class="team-section__inner">
+      <h2>De leidinggevenden</h2>
+      <div class="team-section__manifesto">
+        <p>Mensen met een hart voor kinderen en jongeren — ze staan er elke week weer.</p>
+      </div>
+
+      <div class="team-section__groups">
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Catechese wijk 1</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/willeke-hazeleger.jpg" alt="Willeke Hazeleger" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Willeke Hazeleger</span>
+                <span class="team-card__role">Kindercatechese</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/dina-wever.jpg" alt="Dina Wever" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Dina Wever</span>
+                <span class="team-card__role">Kindercatechese</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/herbert-van-den-belt.jpg" alt="Herbert van den Belt" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Herbert van den Belt</span>
+                <span class="team-card__role">Catechese overige groepen</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Ds. Lubbers</span>
+                <span class="team-card__role">Catechese &amp; Belijdenis</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Catechese wijk 2</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/greta-leeuwdrenth.jpg" alt="Greta Leeuwdrenth" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Greta Leeuwdrenth</span>
+                <span class="team-card__role">Groep 7</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/paul-haring.jpg" alt="Paul Haring" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Paul Haring</span>
+                <span class="team-card__role">Groep 8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/hans-veldkamp.jpg" alt="Hans Veldkamp" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Hans Veldkamp</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/lisa-van-maanen.jpg" alt="Lisa van Maanen" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Lisa van Maanen</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jantine-vos.jpg" alt="Jantine Vos" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jantine Vos</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/willeke-van-werkhoven.jpg" alt="Willeke van Werkhoven" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Willeke van Werkhoven</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jonathan-van-grol.jpg" alt="Jonathan van Grol" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jonathan van Grol</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/corine-van-vliet.jpg" alt="Corine van Vliet" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Corine van Vliet</span>
+                <span class="team-card__role">Klas 4–6 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/harm-olde.jpg" alt="Harm Olde" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Harm Olde</span>
+                <span class="team-card__role">Klas 4–6 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jolanda-dees.jpg" alt="Jolanda Dees" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jolanda Dees</span>
+                <span class="team-card__role">Klas 4–6 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/alex-wessels.jpg" alt="Alex Wessels" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Alex Wessels</span>
+                <span class="team-card__role">18+ &amp; Belijdenis</span>
+              </div>
+            </div>
+
+            <div class="team-card team-card--vacancy">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Vacature</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card team-card--vacancy">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Vacature</span>
+                <span class="team-card__role">Klas 1–3 VO</span>
+              </div>
+            </div>
+
+            <div class="team-card team-card--vacancy">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Vacature</span>
+                <span class="team-card__role">Groep 7 &amp; 8</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUBLEIDING — BLAUW-DONKER -->
+  <section class="team-section team-section--clubs">
+    <div class="team-section__inner">
+
+      <div class="team-section__groups">
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Woensdagmiddagclub</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/anne-lubbers-van-den-berge.jpg" alt="Anne Lubbers - van den Berge" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Anne Lubbers - van den Berge</span>
+                <span class="team-card__role">Woensdagmiddagclub</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/rhode-de-jager-de-boer.jpg" alt="Rhodé de Jager-de Boer" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Rhodé de Jager-de Boer</span>
+                <span class="team-card__role">Woensdagmiddagclub</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/marieke-veenendaal-noort.jpg" alt="Marieke Veenendaal - Noort" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Marieke Veenendaal - Noort</span>
+                <span class="team-card__role">Woensdagmiddagclub</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Bijbeluur</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/martha-doeven.jpg" alt="Martha Doeven" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Martha Doeven</span>
+                <span class="team-card__role">Bijbeluur groep 1/2</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/marisca-wind-ter-burg.jpg" alt="Marisca Wind - ter Burg" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Marisca Wind - ter Burg</span>
+                <span class="team-card__role">Bijbeluur groep 3/4</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/pieter-de-pater.jpg" alt="Pieter de Pater" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Pieter de Pater</span>
+                <span class="team-card__role">Bijbeluur groep 5/6</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/kees-van-dam.jpg" alt="Kees van Dam" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Kees van Dam</span>
+                <span class="team-card__role">Bijbeluur groep 5/6</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/hans-staring.jpg" alt="Hans Staring" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Hans Staring</span>
+                <span class="team-card__role">Bijbeluur groep 5/6</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/karin-staring-popping.jpg" alt="Karin Staring-Popping" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Karin Staring-Popping</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/annemarie-van-driel.jpg" alt="Annemarie van Driel" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Annemarie van Driel</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/levi-lokhorst.jpg" alt="Levi Lokhorst" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Levi Lokhorst</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/alie-van-veluw.jpg" alt="Alie van Veluw" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Alie van Veluw</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/aline-van-viegen.jpg" alt="Aline van Viegen" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Aline van Viegen</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/anneke-verkaik.jpg" alt="Anneke Verkaik" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Anneke Verkaik</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/corine-blokhuis.jpg" alt="Corine Blokhuis" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Corine Blokhuis</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/marlinde-blok.jpg" alt="Marlinde Blok" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Marlinde Blok</span>
+                <span class="team-card__role">Bijbeluur</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/henriette-van-der-linden.jpg" alt="Henriëtte van der Linden" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Henriëtte van der Linden</span>
+                <span class="team-card__role">Bijbeluur Parel</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Jongensclub</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/arnout-van-maanen.jpg" alt="Arnout van Maanen" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Arnout van Maanen</span>
+                <span class="team-card__role">Jongensclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jan-paul-hooydonk.jpg" alt="Jan-Paul Hooydonk" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jan-Paul Hooydonk</span>
+                <span class="team-card__role">Jongensclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jonan-harrewijn.jpg" alt="Jonan Harrewijn" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jonan Harrewijn</span>
+                <span class="team-card__role">Jongensclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/wim-westeneng.jpg" alt="Wim Westeneng" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Wim Westeneng</span>
+                <span class="team-card__role">Jongensclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/aart-jan-van-der-wind.jpg" alt="Aart-Jan van der Wind" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Aart-Jan van der Wind</span>
+                <span class="team-card__role">Jongensclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/henk-langelaar.jpg" alt="Henk Langelaar" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Henk Langelaar</span>
+                <span class="team-card__role">Jongensclub groep 7/8</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Meisjesclub</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/gea-bos.jpg" alt="Gea Bos" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Gea Bos</span>
+                <span class="team-card__role">Meisjesclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/alinda-van-burg.jpg" alt="Alinda van Burg" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Alinda van Burg</span>
+                <span class="team-card__role">Meisjesclub groep 7/8</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/lisa-van-maanen.jpg" alt="Lisa van Maanen" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Lisa van Maanen</span>
+                <span class="team-card__role">Meisjesclub groep 7/8</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Connect — United &amp; Saturday</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/bert-jan-van-den-brink.jpg" alt="Bert-Jan van den Brink" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Bert-Jan van den Brink</span>
+                <span class="team-card__role">United</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/geraldine-van-hell-geurs.jpg" alt="Geraldine van Hell-Geurs" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Geraldine van Hell-Geurs</span>
+                <span class="team-card__role">United</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/hanneke-van-laar.jpg" alt="Hanneke van Laar" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Hanneke van Laar</span>
+                <span class="team-card__role">United</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/marleen-van-der-steeg.jpg" alt="Marleen van der Steeg" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Marleen van der Steeg</span>
+                <span class="team-card__role">United</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Jongeren Vereniging</h3>
+          <div class="team-grid">
+
+            <div class="team-card team-card--vacancy">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Leiding</span>
+                <span class="team-card__role">Jongeren Vereniging</span>
+              </div>
+            </div>
+
+            <div class="team-card team-card--vacancy">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Leiding</span>
+                <span class="team-card__role">Jongeren Vereniging</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Oppas</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <img src="images/leiding/anika-bastiani.jpg" alt="Anika Bastiani" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Anika Bastiani</span>
+                <span class="team-card__role">Coördinatie kinderoppas</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/arnaud-en-renate-verbeek.jpg" alt="Arnaud &amp; Renate Verbeek" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Arnaud &amp; Renate Verbeek</span>
+                <span class="team-card__role">Coördinatie kinderoppas</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/marijke-hardeman-van-beek.jpg" alt="Marijke Hardeman - van Beek" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Marijke Hardeman - van Beek</span>
+                <span class="team-card__role">Coördinatie oppas Oosterpoort</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/lida-slijkhuis-den-hertog.jpg" alt="Lida Slijkhuis - den Hertog" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Lida Slijkhuis - den Hertog</span>
+                <span class="team-card__role">Coördinatie oppas Oosterpoort</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jacoline-bos-westeneng.jpg" alt="Jacoline Bos-Westeneng" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jacoline Bos-Westeneng</span>
+                <span class="team-card__role">Coördinatie oppas Oosterpoort</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="team-section__group">
+          <h3 class="team-section__group-label">Jeugdkamp commissie</h3>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Ilona van Milligen</span>
+                <span class="team-card__role">Jeugdkamp commissie</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Rozemarijn de Zwarte</span>
+                <span class="team-card__role">Jeugdkamp commissie</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Ruben Uijl</span>
+                <span class="team-card__role">Jeugdkamp commissie</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/petra-de-voogd.jpg" alt="Petra de Voogd" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Petra de Voogd</span>
+                <span class="team-card__role">Jeugdkamp commissie</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card__photo team-card__photo--placeholder">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="18" r="10" fill="currentColor" opacity="0.3"/><path d="M4 44c0-11 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="team-card__info">
+                <span class="team-card__name">Lois van Pijckeren</span>
+                <span class="team-card__role">Jeugdkamp commissie</span>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/leiding/jaap-van-dam.jpg" alt="Jaap van Dam" class="team-card__photo">
+              <div class="team-card__info">
+                <span class="team-card__name">Jaap van Dam</span>
+                <span class="team-card__role">Jeugdkamp commissie</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer footer--light" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
+        <p>Ken Hem · Vind Ons · Groei Samen</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/hervormdwoudenberg/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/hervormdwoudenberg/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@HervormdeGemeenteWoudenberg" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h3>Navigatie</h3>
+        <ul>
+          <li><a href="index.html#visie">Visie</a></li>
+          <li><a href="index.html#watjedoen">Wat we doen</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="index.html#meewerken">Ik wil meehelpen</a></li>
+          <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Jeugdleiders</h3>
+        <p>Tom Horst — <a href="tel:+31643084241">06 43 08 42 41</a><br>
+        <a href="mailto:t.horst@hervormdwoudenberg.nl">t.horst@hervormdwoudenberg.nl</a></p>
+        <p>Daan de Bree — <a href="tel:+31683238677">06 83 23 86 77</a><br>
+        <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
+        <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
+        <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p>Marjolein Hooydonk — <a href="tel:+31611895322">06 11 89 53 22</a><br>
+        <a href="mailto:mehooydonk@ikc.nu">mehooydonk@ikc.nu</a></p>
+        <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Hervormde Gemeente Woudenberg — <a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">hervormdwoudenberg.nl</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Voeg "Naam/foto aanpassen" link toe aan elke echte (niet-vacature) team-card
+    document.querySelectorAll('.team-card:not(.team-card--vacancy)').forEach(function (card) {
+      var nameEl = card.querySelector('.team-card__name');
+      if (!nameEl) return;
+      var naam = nameEl.textContent.trim();
+      if (naam === 'Vacature' || naam === 'Leiding') return;
+      var a = document.createElement('a');
+      a.href = 'aanpassen.html?naam=' + encodeURIComponent(naam);
+      a.className = 'team-card__aanpassen';
+      a.textContent = 'Naam/foto aanpassen';
+      card.querySelector('.team-card__info').appendChild(a);
+    });
+  </script>
+</body>
+</html>

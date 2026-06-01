@@ -2133,6 +2133,37 @@ a {
 }
 
 /* ====================================================
+   CLUBLEIDING — BLAUW-DONKER VARIANT
+   ==================================================== */
+.team-section--clubs {
+  background: var(--brand-dark);
+  color: var(--white);
+}
+
+.team-section--clubs h2 {
+  color: var(--white);
+}
+
+.team-section--clubs .team-section__group-label {
+  color: rgba(255, 255, 255, 0.45);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.team-section--clubs .team-card__role {
+  color: var(--brand-light);
+}
+
+.team-section--clubs .team-card__photo--placeholder {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.team-section--clubs .team-card--vacancy .team-card__name {
+  opacity: 0.35;
+  color: var(--white);
+}
+
+/* ====================================================
    FOOTER LICHT (wit)
    ==================================================== */
 .footer--light {
