@@ -160,28 +160,39 @@ document.querySelectorAll('form[data-netlify="true"]').forEach(function (form) {
   startAuto();
 })();
 
-// "Wat we doen" nav dropdown — keyboard & click support
+// Nav dropdowns — keyboard & click support (handles all .nav__item--dropdown)
 (function () {
-  const dropdown = document.getElementById('watWeDoDropdown');
-  if (!dropdown) return;
-  const toggle = dropdown.querySelector('.nav__dropdown-toggle');
+  const dropdowns = Array.from(document.querySelectorAll('.nav__item--dropdown'));
+  if (!dropdowns.length) return;
 
-  function close() {
-    dropdown.classList.remove('is-open');
-    toggle.setAttribute('aria-expanded', 'false');
+  function closeAll() {
+    dropdowns.forEach(d => {
+      d.classList.remove('is-open');
+      const t = d.querySelector('.nav__dropdown-toggle');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
   }
 
-  toggle.addEventListener('click', () => {
-    if (window.innerWidth <= 768) return;
-    const isOpen = dropdown.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('.nav__dropdown-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', () => {
+      if (window.innerWidth <= 768) return;
+      const isOpen = dropdown.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      dropdowns.filter(d => d !== dropdown).forEach(d => {
+        d.classList.remove('is-open');
+        const t = d.querySelector('.nav__dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    });
   });
 
   document.addEventListener('click', (e) => {
-    if (!dropdown.contains(e.target)) close();
+    if (!e.target.closest('.nav__item--dropdown')) closeAll();
   });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') close();
+    if (e.key === 'Escape') closeAll();
   });
 })();
 
@@ -198,3 +209,122 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
+
+// Feedback systeem — popup na 10 seconden, modal formulier, footer-knop
+(function () {
+  var POPUP_KEY = 'feedbackDismissed';
+
+  var modalHTML = '<div class="feedback-modal" id="feedbackModal" role="dialog" aria-modal="true" aria-labelledby="feedbackModalTitle">'
+    + '<div class="feedback-modal__dialog">'
+    + '<button class="feedback-modal__close" id="feedbackModalClose" aria-label="Sluiten">&times;</button>'
+    + '<h2 class="feedback-modal__title" id="feedbackModalTitle">Geef feedback</h2>'
+    + '<p class="feedback-modal__sub">Wat vind je van de website? Jouw mening helpt ons het jeugdwerk beter te presenteren.</p>'
+    + '<form class="form" id="feedbackForm">'
+    + '<input type="hidden" name="form-name" value="feedback">'
+    + '<div class="form__row">'
+    + '<label for="feedbackNaam">Naam <span style="font-weight:400;text-transform:none;font-size:0.75rem;color:#999">(optioneel)</span></label>'
+    + '<input type="text" id="feedbackNaam" name="naam" placeholder="Je naam">'
+    + '</div>'
+    + '<div class="form__row">'
+    + '<label for="feedbackEmail">E-mail <span style="font-weight:400;text-transform:none;font-size:0.75rem;color:#999">(optioneel)</span></label>'
+    + '<input type="email" id="feedbackEmail" name="email" placeholder="je@email.nl">'
+    + '</div>'
+    + '<div class="form__row">'
+    + '<label for="feedbackBericht">Jouw feedback *</label>'
+    + '<textarea id="feedbackBericht" name="bericht" rows="4" placeholder="Wat vind je goed? Wat kan beter? Mis je informatie?" required></textarea>'
+    + '</div>'
+    + '<button type="submit" class="btn">Verstuur feedback</button>'
+    + '</form>'
+    + '</div>'
+    + '</div>';
+
+  var popupHTML = '<div class="feedback-popup" id="feedbackPopup">'
+    + '<button class="feedback-popup__close" id="feedbackPopupClose" aria-label="Sluiten">&times;</button>'
+    + '<p class="feedback-popup__title">Wat vind jij van de website?</p>'
+    + '<p class="feedback-popup__text">Help ons de site te verbeteren. Je feedback is erg waardevol!</p>'
+    + '<button class="feedback-popup__btn js-feedback-open">Geef feedback</button>'
+    + '</div>';
+
+  document.body.insertAdjacentHTML('beforeend', modalHTML + popupHTML);
+
+  var modal = document.getElementById('feedbackModal');
+  var popup = document.getElementById('feedbackPopup');
+  var form = document.getElementById('feedbackForm');
+
+  function openModal() {
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    hidePopup();
+    setTimeout(function () {
+      var ta = document.getElementById('feedbackBericht');
+      if (ta) ta.focus();
+    }, 50);
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  function showPopup() {
+    if (sessionStorage.getItem(POPUP_KEY)) return;
+    popup.classList.add('is-visible');
+  }
+
+  function hidePopup() {
+    popup.classList.remove('is-visible');
+  }
+
+  function dismissPopup() {
+    hidePopup();
+    sessionStorage.setItem(POPUP_KEY, '1');
+  }
+
+  // Popup na 10 seconden
+  setTimeout(showPopup, 10000);
+
+  document.getElementById('feedbackPopupClose').addEventListener('click', dismissPopup);
+
+  document.getElementById('feedbackModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  // Delegated click for all "open feedback" triggers
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('js-feedback-open')) openModal();
+  });
+
+  // Footer feedback kolom op alle pagina's
+  var footerInner = document.querySelector('.footer__inner');
+  if (footerInner) {
+    footerInner.classList.add('footer__inner--with-feedback');
+    var col = document.createElement('div');
+    col.className = 'footer__feedback';
+    col.innerHTML = '<h3>Feedback</h3>'
+      + '<p>Heb je op- of aanmerkingen over de website? We horen het graag!</p>'
+      + '<button class="feedback-footer-btn js-feedback-open">Geef feedback</button>';
+    footerInner.appendChild(col);
+  }
+
+  // Formulier versturen via Netlify Forms
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var body = new URLSearchParams(new FormData(form)).toString();
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body
+      });
+      form.innerHTML = '<p class="form__success" style="margin-top:16px;">Bedankt voor je feedback! We gaan er goed naar kijken.</p>';
+      sessionStorage.setItem(POPUP_KEY, '1');
+      setTimeout(closeModal, 3000);
+    } catch {
+      alert('Er is iets misgegaan. Stuur je feedback naar t.horst@hervormdwoudenberg.nl.');
+    }
+  });
+})();

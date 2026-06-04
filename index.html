@@ -20,6 +20,7 @@
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#visie">Visie</a></li>
+        <li><a href="#verlangen">Ons verlangen</a></li>
         <li class="nav__item--dropdown" id="watWeDoDropdown">
           <a href="#watjedoen" class="nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             Wat we doen
@@ -51,7 +52,18 @@
           </ul>
         </li>
         <li><a href="agenda.html">Agenda</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav__item--dropdown" id="contactDropdown">
+          <a href="#contact" class="nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Contact
+            <svg class="nav__dropdown-chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+              <path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <ul class="nav__dropdown" aria-label="Contact opties">
+            <li><a href="jeugdraad.html">Jeugdraad</a></li>
+            <li><a href="jeugdwerkers.html">Jeugdwerkers</a></li>
+          </ul>
+        </li>
         <li class="nav__cta-mobile"><a href="#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
       </ul>
       <a href="#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
@@ -115,7 +127,7 @@
   </section>
 
   <!-- ===================== WHY / VERLANGEN ===================== -->
-  <section class="block">
+  <section class="block" id="verlangen">
     <!-- Video placeholder — vervang door een <iframe> of <video> tag -->
     <div class="block__photo block__photo--video">
       <div class="video-play">
@@ -492,8 +504,6 @@
         <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
         <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
         <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
-        <p>Marjolein Hooydonk — <a href="tel:+31611895322">06 11 89 53 22</a><br>
-        <a href="mailto:mehooydonk@ikc.nu">mehooydonk@ikc.nu</a></p>
         <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
       </div>
     </div>
@@ -501,6 +511,14 @@
       <p>© 2026 Hervormde Gemeente Woudenberg — <a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">hervormdwoudenberg.nl</a></p>
     </div>
   </footer>
+
+  <!-- Netlify Forms: feedback-formulier detectie (verborgen) -->
+  <form name="feedback" data-netlify="true" hidden>
+    <input type="hidden" name="form-name" value="feedback">
+    <input type="text" name="naam">
+    <input type="email" name="email">
+    <textarea name="bericht"></textarea>
+  </form>
 
   <script src="script.js"></script>
 </body>
