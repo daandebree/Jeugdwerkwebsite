@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bijbeluur — Jeugdwerk Hervormd Woudenberg</title>
+  <title>Bedankt voor je aanmelding — Startavond Catechese 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +22,18 @@
         <li><a href="index.html#verlangen">Ons verlangen</a></li>
         <li><a href="index.html#watjedoen">Wat we doen</a></li>
         <li><a href="agenda.html">Agenda</a></li>
-        <li><a href="jeugdwerkers.html">Jeugdwerkers</a></li>
+        <li class="nav__item--dropdown" id="contactDropdown">
+          <a href="index.html#contact" class="nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Contact
+            <svg class="nav__dropdown-chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+              <path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <ul class="nav__dropdown" aria-label="Contact opties">
+            <li><a href="jeugdraad.html">Jeugdraad</a></li>
+            <li><a href="jeugdwerkers.html">Jeugdwerkers</a></li>
+          </ul>
+        </li>
         <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
       </ul>
       <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
@@ -32,75 +43,16 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__bg" style="background-image: url('images/carousel/slide-18.jpeg')"></div>
-    <div class="hero__card">
-      <span class="hero__age">4 – 10 jaar · Wijk 2</span>
-      <h1>Bijbeluur</h1>
-      <p>
-        De Bijbel op jouw niveau —<br>
-        spannend, begrijpelijk en dichtbij.
-      </p>
-      <div class="hero__btns">
-        <a href="agenda.html" class="btn">Bekijk agenda</a>
-        <a href="index.html#aanmelden" class="btn btn--ghost">Ik wil meehelpen</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- TAGLINE -->
-  <section class="club-tagline">
-    <div class="club-tagline__inner">
-      <p>
-        God spreekt ook tegen kinderen —<br>
-        hier leren ze Hem kennen
-      </p>
-    </div>
-  </section>
-
-  <!-- OVER HET BIJBELUUR -->
-  <section class="block">
-    <div class="block__photo" style="background-image: url('images/carousel/slide-01.jpeg')"></div>
-    <div class="block__card">
-      <h2>Wat is het Bijbeluur?</h2>
-      <p>
-        Tijdens de kerkdienst gaan kinderen van 4 tot 10 jaar naar hun eigen ruimte.
-        Met verhalen, spelletjes en knutselen leren ze Wie God is en wat de Bijbel zegt —
-        op een manier die bij hun leeftijd past.
-      </p>
-      <p>
-        Elke week staat er een Bijbelverhaal centraal. Kinderen verwerken dat door tekenen,
-        knutselen of een spelletje. Zo wordt het verhaal écht van hen.
-      </p>
-    </div>
-  </section>
-
-  <!-- PRAKTISCH -->
-  <section class="block block--dark block--reversed">
-    <div class="block__photo" style="background-image: url('images/carousel/slide-12.jpeg')"></div>
-    <div class="block__card">
-      <h2>Praktisch</h2>
-      <div class="praktisch">
-        <div class="praktisch__grid">
-          <div class="praktisch__item">
-            <span class="praktisch__label">Wanneer</span>
-            <span class="praktisch__value">Zondag<br>Tijdens de kerkdienst</span>
-          </div>
-          <div class="praktisch__item">
-            <span class="praktisch__label">Leeftijd</span>
-            <span class="praktisch__value">4 – 10 jaar</span>
-          </div>
-          <div class="praktisch__item">
-            <span class="praktisch__label">Locatie</span>
-            <span class="praktisch__value">de Oosterpoort</span>
-          </div>
-          <div class="praktisch__item">
-            <span class="praktisch__label">Aanmelden</span>
-            <span class="praktisch__value">Niet nodig — je mag gewoon meedoen</span>
-          </div>
-        </div>
-        <a href="index.html#aanmelden" class="btn">Wil je leiding geven?</a>
+  <!-- BEDANKT BLOK -->
+  <section class="closing" style="background: var(--off-white); min-height: 60vh; display: flex; align-items: center;">
+    <div class="closing__inner" style="text-align: center;">
+      <div style="font-size: 3rem; margin-bottom: 16px;" aria-hidden="true">✓</div>
+      <h1 class="closing__text">Bedankt voor je aanmelding!</h1>
+      <p style="font-size: 1rem; line-height: 1.75; color: #555; max-width: 520px; margin: 0 auto;">We kijken ernaar uit je op donderdag 11 september te ontmoeten. Tot dan!</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 40px;">
+        <a href="agenda.html" class="btn">Bekijk de agenda</a>
+        <a href="startavond-catechese.html" class="btn btn--ghost">← Terug naar de startavond</a>
+        <a href="index.html" class="btn btn--ghost">Terug naar home</a>
       </div>
     </div>
   </section>
@@ -117,7 +69,7 @@
           <li><a href="index.html#visie">Visie</a></li>
           <li><a href="index.html#watjedoen">Wat we doen</a></li>
           <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="index.html#meewerken">Ik wil meehelpen</a></li>
+          <li><a href="catechese.html">Catechese</a></li>
           <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
         </ul>
       </div>

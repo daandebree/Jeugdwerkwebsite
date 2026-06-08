@@ -1783,6 +1783,123 @@ a {
   .ics-downloads { padding: 40px 20px; }
 }
 
+/* ====================================================
+   ERVARINGEN / QUOTE CARDS
+   ==================================================== */
+.quotes {
+  background: var(--off-white);
+  padding: 80px 32px;
+}
+
+.quotes__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.quotes__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.quotes__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.quote-card {
+  background: var(--white);
+  padding: 40px 28px 28px;
+  position: relative;
+  border-top: 3px solid var(--brand);
+}
+
+.quote-card::before {
+  content: '\201C';
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  line-height: 0.75;
+  color: var(--brand);
+  opacity: 0.4;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+.quote-card__text {
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: #444;
+  font-style: italic;
+  margin: 0;
+  padding-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .quotes__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .quotes { padding: 56px 20px; }
+  .quotes__title { margin-bottom: 32px; }
+}
+
+/* ====================================================
+   FORMULIER — AANVULLENDE STIJLEN
+   ==================================================== */
+.form__radios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.form__radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+.form__radio input[type="radio"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+  width: auto;
+  padding: 0;
+  border: revert;
+  accent-color: var(--brand);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.form__row input[type="date"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+.form__privacy {
+  font-size: 0.75rem;
+  color: #999;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.form-section__notice {
+  margin-top: 20px;
+  padding: 16px;
+  background: #eef2fb;
+  border-left: 3px solid #7b96d4;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #444;
+}
+
 /* Wijk-badge op recurring-cards */
 .recurring-card__wijk {
   display: inline-block;
@@ -2529,5 +2646,75 @@ a {
   }
   .footer__inner--with-feedback {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ====================================================
+   FOTO-GRID (JV, United, etc.)
+   ==================================================== */
+.foto-grid {
+  padding: 72px var(--page-pad);
+  background: var(--light);
+}
+
+.foto-grid__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.foto-grid h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  color: var(--dark);
+}
+
+.foto-grid__mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.foto-grid__mosaic .foto-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 4/3;
+  background: #ddd;
+}
+
+.foto-grid__mosaic .foto-item--tall {
+  grid-row: span 2;
+  aspect-ratio: unset;
+}
+
+.foto-grid__mosaic .foto-item--wide {
+  grid-column: span 2;
+}
+
+.foto-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.foto-item:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 700px) {
+  .foto-grid__mosaic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foto-grid__mosaic .foto-item--tall {
+    grid-row: span 1;
+  }
+  .foto-grid__mosaic .foto-item--wide {
+    grid-column: span 1;
   }
 }

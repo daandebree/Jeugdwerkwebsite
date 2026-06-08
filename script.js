@@ -83,22 +83,38 @@ if (availBtn && availPanel) {
 }
 
 // Netlify Forms AJAX — werkt voor alle formulieren op alle pagina's
+// Als data-redirect aanwezig is, wordt daarheen doorgestuurd na verzending
 document.querySelectorAll('form[data-netlify="true"]').forEach(function (form) {
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     const body = new URLSearchParams(new FormData(form)).toString();
+    const redirectUrl = form.dataset.redirect;
     try {
       await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body
       });
-      form.innerHTML = '<p class="form__success">Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.</p>';
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      } else {
+        form.innerHTML = '<p class="form__success">Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.</p>';
+      }
     } catch {
       alert('Er is iets misgegaan. Probeer het opnieuw of stuur een e-mail naar t.horst@hervormdwoudenberg.nl.');
     }
   });
 });
+
+// Conditionele lijn-keuze bij Onderbouwcatechese aanmeldformulier
+(function () {
+  var groepSelect = document.getElementById('groep');
+  var lijnRow = document.getElementById('lijn-row');
+  if (!groepSelect || !lijnRow) return;
+  groepSelect.addEventListener('change', function () {
+    lijnRow.hidden = groepSelect.value !== 'Onderbouwcatechese';
+  });
+})();
 
 // Foto-carrousel in de agenda-sectie
 (function () {
