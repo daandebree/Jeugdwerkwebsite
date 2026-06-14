@@ -14,7 +14,7 @@
     .agenda-hero {
       background: var(--dark);
       color: var(--white);
-      padding: 120px 32px 80px;
+      padding: 72px 32px 32px;
       text-align: center;
     }
 
@@ -24,19 +24,12 @@
       font-weight: 900;
       text-transform: uppercase;
       line-height: 1.05;
-      margin-bottom: 16px;
+      margin-bottom: 0;
     }
 
-    .agenda-hero p {
-      font-size: 1.05rem;
-      opacity: 0.7;
-      max-width: 520px;
-      margin: 0 auto;
-    }
-
-    /* ---- Terugkerende activiteiten ---- */
+    /* ---- Vaste momenten / weekoverzicht ---- */
     .recurring {
-      padding: 80px 32px;
+      padding: 64px 32px 80px;
       max-width: 1100px;
       margin: 0 auto;
     }
@@ -55,21 +48,19 @@
       font-size: 0.95rem;
     }
 
-    .recurring__grid {
+    .week-schedule {
+      border-top: 2px solid var(--dark);
+    }
+
+    .week-day {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
+      grid-template-columns: 130px 1fr;
+      border-bottom: 1px solid #e0e0e0;
     }
 
-    .recurring-card {
-      border: 1px solid #e8e8e8;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .recurring-card__day {
+    .week-day__header {
+      padding: 18px 0 18px 0;
+      font-family: var(--font-heading);
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.1em;
@@ -77,38 +68,72 @@
       color: var(--brand);
     }
 
-    .recurring-card__time {
-      font-size: 0.8rem;
-      color: #888;
+    .week-day__rows {
+      border-left: 1px solid #e8e8e8;
     }
 
-    .recurring-card h3 {
-      font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin: 0;
-      line-height: 1.2;
+    .week-row {
+      display: grid;
+      grid-template-columns: 170px 1fr minmax(0, 220px) auto;
+      align-items: center;
+      gap: 8px 16px;
+      padding: 13px 20px;
+      border-bottom: 1px solid #f2f2f2;
+      font-size: 0.875rem;
     }
 
-    .recurring-card__age {
-      font-size: 0.8rem;
+    .week-row:last-child {
+      border-bottom: none;
+    }
+
+    .week-row__time {
       color: #999;
-      margin-top: 2px;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.8rem;
+      white-space: nowrap;
     }
 
-    .recurring-card__link {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: 0.82rem;
+    .week-row__name {
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .week-row__age {
+      color: #aaa;
+      font-size: 0.78rem;
+    }
+
+    .week-row__link {
+      font-size: 0.78rem;
       font-weight: 600;
       color: var(--brand);
       text-decoration: none;
-      letter-spacing: 0.03em;
+      white-space: nowrap;
     }
 
-    .recurring-card__link:hover {
-      text-decoration: underline;
+    .week-row__link:hover { text-decoration: underline; }
+
+    @media (max-width: 860px) {
+      .week-row {
+        grid-template-columns: 140px 1fr auto;
+      }
+      .week-row__age { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .week-day {
+        grid-template-columns: 1fr;
+      }
+      .week-day__header {
+        border-bottom: 1px solid #e8e8e8;
+        padding: 12px 0 8px;
+      }
+      .week-day__rows { border-left: none; }
+      .week-row {
+        grid-template-columns: 130px 1fr;
+        padding: 10px 0;
+      }
+      .week-row__link { display: none; }
     }
 
     /* ---- Speciale evenementen ---- */
@@ -404,7 +429,6 @@
   <!-- HERO -->
   <section class="agenda-hero">
     <h1>Agenda</h1>
-    <p>Alle vaste momenten en bijzondere activiteiten van het jeugdwerk op één plek.</p>
   </section>
 
   <!-- INTERACTIEVE KALENDER -->
@@ -413,6 +437,160 @@
       <h2>Kalender</h2>
       <p class="cal-interactive__intro">Klik op een activiteit voor meer info. Schakel tussen agenda- en maandweergave.</p>
       <div id="fullcalendar"></div>
+    </div>
+  </section>
+
+  <!-- TERUGKERENDE ACTIVITEITEN — weekoverzicht -->
+  <section class="recurring">
+    <h2>Vaste momenten</h2>
+    <p class="recurring__intro">Alle vaste activiteiten van het jeugdwerk, geordend per dag van de week.</p>
+
+    <div class="week-schedule">
+
+      <!-- ZONDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Zondag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">Tijdens de dienst</span>
+            <span class="week-row__name">Oppas</span>
+            <span class="week-row__age">0 – 4 jaar</span>
+            <a href="oppas.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">Tijdens de dienst</span>
+            <span class="week-row__name">Bijbeluur</span>
+            <span class="week-row__age">4 – 10 jaar</span>
+            <a href="bijbeluur.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAANDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Maandag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">19:30 – 20:30</span>
+            <span class="week-row__name">Catechese Bovenbouw</span>
+            <span class="week-row__age">4e – 6e jaar VO &nbsp;·&nbsp; Wijk 2</span>
+            <a href="catechese-wijk-2.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">19:30 – 20:30</span>
+            <span class="week-row__name">Catechese 18+</span>
+            <span class="week-row__age">18 jaar en ouder &nbsp;·&nbsp; Wijk 2</span>
+            <a href="catechese-wijk-2.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">20:30 – 22:00</span>
+            <span class="week-row__name">Belijdenisgroep</span>
+            <span class="week-row__age">Op weg naar belijdenis &nbsp;·&nbsp; Wijk 2</span>
+            <a href="catechese-wijk-2.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DINSDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Dinsdag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">15:30 – 16:30 <em>(om de week)</em></span>
+            <span class="week-row__name">Kindercatechese</span>
+            <span class="week-row__age">Groep 7 &amp; 8 &nbsp;·&nbsp; Wijk 1 &amp; 2</span>
+            <a href="catechese.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">18:30 – 19:15</span>
+            <span class="week-row__name">Catechese 12 – 13 jaar</span>
+            <span class="week-row__age">1e – 2e jaar VO &nbsp;·&nbsp; Wijk 1</span>
+            <a href="catechese-wijk-1.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">18:30 – 19:15</span>
+            <span class="week-row__name">Catechese 16 – 17 jaar</span>
+            <span class="week-row__age">5e – 6e jaar VO &nbsp;·&nbsp; Wijk 1</span>
+            <a href="catechese-wijk-1.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">19:00 – 20:00</span>
+            <span class="week-row__name">Jongensclub</span>
+            <span class="week-row__age">10 – 12 jaar</span>
+            <a href="jongensclub.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">19:00 – 20:00</span>
+            <span class="week-row__name">Meisjesclub</span>
+            <span class="week-row__age">10 – 12 jaar</span>
+            <a href="meisjesclub.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">19:00 – 20:00</span>
+            <span class="week-row__name">Catechese Onderbouw</span>
+            <span class="week-row__age">1e – 3e jaar VO &nbsp;·&nbsp; Wijk 2</span>
+            <a href="catechese-wijk-2.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">19:30 – 20:15</span>
+            <span class="week-row__name">Catechese 14 – 15 jaar</span>
+            <span class="week-row__age">3e – 4e jaar VO &nbsp;·&nbsp; Wijk 1</span>
+            <a href="catechese-wijk-1.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">19:30 – 20:15</span>
+            <span class="week-row__name">Catechese 18+</span>
+            <span class="week-row__age">18 jaar en ouder &nbsp;·&nbsp; Wijk 1</span>
+            <a href="catechese-wijk-1.html" class="week-row__link">Meer info →</a>
+          </div>
+          <div class="week-row">
+            <span class="week-row__time">20:00</span>
+            <span class="week-row__name">Jeugdvereniging</span>
+            <span class="week-row__age">16+ jaar</span>
+            <a href="jv.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- WOENSDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Woensdag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">Middag</span>
+            <span class="week-row__name">Woensdagmiddagclub</span>
+            <span class="week-row__age">4 – 10 jaar</span>
+            <a href="woensdagmiddagclub.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- VRIJDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Vrijdag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">19:30</span>
+            <span class="week-row__name">United</span>
+            <span class="week-row__age">12 – 16 jaar</span>
+            <a href="united-friday.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZATERDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Zaterdag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">20:00</span>
+            <span class="week-row__name">Connect</span>
+            <span class="week-row__age">3e en 4e klas VO</span>
+            <a href="connect.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -431,315 +609,6 @@
         <a href="ics/connect.ics" class="ics-btn" download>Connect ↓</a>
         <a href="ics/jv.ics" class="ics-btn" download>Jeugdvereniging ↓</a>
         <a href="ics/bijbeluur.ics" class="ics-btn" download>Bijbeluur ↓</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- TERUGKERENDE ACTIVITEITEN -->
-  <section class="recurring">
-    <h2>Vaste momenten</h2>
-    <p class="recurring__intro">Alle vaste activiteiten van het jeugdwerk op een rij.</p>
-    <div class="recurring__grid">
-
-      <!-- Catechese — Wijk 1 (dinsdag) -->
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag — om de week</span>
-        <span class="recurring-card__time">15:30 – 16:30</span>
-        <h3>Kindercatechese</h3>
-        <p class="recurring-card__age">Groep 7 &amp; 8 &nbsp;·&nbsp; <span class="recurring-card__wijk recurring-card__wijk--both">Wijk 1 &amp; 2</span></p>
-        <a href="catechese.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">18:30 – 19:15</span>
-        <h3>Catechese 12–13 jaar</h3>
-        <p class="recurring-card__age">1e – 2e jaar VO &nbsp;·&nbsp; <span class="recurring-card__wijk">Wijk 1</span></p>
-        <a href="catechese-wijk-1.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">19:30 – 20:15</span>
-        <h3>Catechese 14–15 jaar</h3>
-        <p class="recurring-card__age">3e – 4e jaar VO &nbsp;·&nbsp; <span class="recurring-card__wijk">Wijk 1</span></p>
-        <a href="catechese-wijk-1.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">18:30 – 19:15</span>
-        <h3>Catechese 16–17 jaar</h3>
-        <p class="recurring-card__age">5e – 6e jaar VO &nbsp;·&nbsp; <span class="recurring-card__wijk">Wijk 1</span></p>
-        <a href="catechese-wijk-1.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">19:30 – 20:15</span>
-        <h3>Catechese 18+</h3>
-        <p class="recurring-card__age">18 jaar en ouder &nbsp;·&nbsp; <span class="recurring-card__wijk">Wijk 1</span></p>
-        <a href="catechese-wijk-1.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <!-- Catechese — Wijk 2 (dinsdag/maandag) -->
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">19:00 – 20:00</span>
-        <h3>Catechese Onderbouw</h3>
-        <p class="recurring-card__age">1e – 3e jaar VO &nbsp;·&nbsp; <span class="recurring-card__wijk recurring-card__wijk--w2">Wijk 2</span></p>
-        <a href="catechese-wijk-2.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Maandag</span>
-        <span class="recurring-card__time">19:30 – 20:30</span>
-        <h3>Catechese Bovenbouw</h3>
-        <p class="recurring-card__age">4e – 6e jaar VO &nbsp;·&nbsp; <span class="recurring-card__wijk recurring-card__wijk--w2">Wijk 2</span></p>
-        <a href="catechese-wijk-2.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Maandag</span>
-        <span class="recurring-card__time">19:30 – 20:30</span>
-        <h3>Catechese 18+</h3>
-        <p class="recurring-card__age">18 jaar en ouder &nbsp;·&nbsp; <span class="recurring-card__wijk recurring-card__wijk--w2">Wijk 2</span></p>
-        <a href="catechese-wijk-2.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Maandag</span>
-        <span class="recurring-card__time">20:30 – 22:00</span>
-        <h3>Belijdenisgroep</h3>
-        <p class="recurring-card__age">Op weg naar belijdenis &nbsp;·&nbsp; <span class="recurring-card__wijk recurring-card__wijk--w2">Wijk 2</span></p>
-        <a href="catechese-wijk-2.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <!-- Clubs & verenigingen (chronologisch door de week) -->
-      <div class="recurring-card">
-        <span class="recurring-card__day">Zondag</span>
-        <span class="recurring-card__time">Tijdens de kerkdienst</span>
-        <h3>Oppas</h3>
-        <p class="recurring-card__age">0 – 4 jaar</p>
-        <a href="oppas.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Zondag</span>
-        <span class="recurring-card__time">Tijdens de kerkdienst</span>
-        <h3>Bijbeluur</h3>
-        <p class="recurring-card__age">4 – 10 jaar</p>
-        <a href="bijbeluur.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Woensdag</span>
-        <span class="recurring-card__time">Middag</span>
-        <h3>Woensdagmiddagclub</h3>
-        <p class="recurring-card__age">4 – 10 jaar</p>
-        <a href="woensdagmiddagclub.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">19:00 – 20:00</span>
-        <h3>Jongensclub</h3>
-        <p class="recurring-card__age">10 – 12 jaar</p>
-        <a href="jongensclub.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">19:00 – 20:00</span>
-        <h3>Meisjesclub</h3>
-        <p class="recurring-card__age">10 – 12 jaar</p>
-        <a href="meisjesclub.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Vrijdag</span>
-        <span class="recurring-card__time">19:30</span>
-        <h3>United</h3>
-        <p class="recurring-card__age">12 – 16 jaar</p>
-        <a href="united-friday.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Zaterdag</span>
-        <span class="recurring-card__time">20:00</span>
-        <h3>Connect</h3>
-        <p class="recurring-card__age">3e en 4e klas VO</p>
-        <a href="connect.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-      <div class="recurring-card">
-        <span class="recurring-card__day">Dinsdag</span>
-        <span class="recurring-card__time">20:00</span>
-        <h3>Jongeren Vereniging</h3>
-        <p class="recurring-card__age">16+ jaar</p>
-        <a href="jv.html" class="recurring-card__link">Meer info →</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CATECHESE JAARKALENDER -->
-  <section class="cal">
-    <div class="cal__inner">
-      <h2>Catechese jaarkalender 2026–2027</h2>
-      <p class="cal__intro">
-        <strong>Wijk 1 — Dinsdag:</strong> Kindercatechese (gr. 7/8 · middag om de week) · Avondgroepen 12–18+ &nbsp;|&nbsp;
-        <strong>Wijk 2 — Dinsdag:</strong> Kindercatechese (om de week) · Onderbouw 19:00 &nbsp;|&nbsp;
-        <strong>Wijk 2 — Maandag:</strong> Bovenbouw · 18+ · Belijdenis
-      </p>
-      <div class="cal__months">
-
-        <div class="cal__month">
-          <div class="cal__month-header">September 2026</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry cal__entry--special">
-              <span class="cal__entry-date">Vr 11 sep</span>
-              <span class="cal__entry-label">Kick-off Mentoren &amp; Toerusting 1</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 21 / Di 22</span>
-              <span class="cal__entry-label">Les 1 — Start in eigen groep</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 28 / Di 29</span>
-              <span class="cal__entry-label">Les 2</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cal__month">
-          <div class="cal__month-header">Oktober 2026</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 5 / Di 6</span>
-              <span class="cal__entry-label">Les 3</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 12 / Di 13</span>
-              <span class="cal__entry-label">Les 4</span>
-            </li>
-            <li class="cal__entry cal__entry--off">
-              <span class="cal__entry-date">Ma 19 / Di 20</span>
-              <span class="cal__entry-label">Geen catechese — Herfstvakantie</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 26 / Di 27</span>
-              <span class="cal__entry-label">Les 5</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cal__month">
-          <div class="cal__month-header">November 2026</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry cal__entry--off">
-              <span class="cal__entry-date">Ma 2 / Di 3</span>
-              <span class="cal__entry-label">Geen catechese — Week van Dankdag</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 9 / Di 10</span>
-              <span class="cal__entry-label">Les 6</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 16 / Di 17</span>
-              <span class="cal__entry-label">Les 7</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 23 / Di 24</span>
-              <span class="cal__entry-label">Les 8</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 30 / Di 1 dec</span>
-              <span class="cal__entry-label">Start 10-minutengesprekken ouders</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cal__month">
-          <div class="cal__month-header">December 2026</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 7 / Di 8</span>
-              <span class="cal__entry-label">Les 9</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 14 / Di 15</span>
-              <span class="cal__entry-label">Les 10</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cal__month">
-          <div class="cal__month-header">Januari 2027</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry cal__entry--special">
-              <span class="cal__entry-date">Ma 4 jan</span>
-              <span class="cal__entry-label">Toerusting 2 + Gezamenlijke maaltijd</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 11 / Di 12</span>
-              <span class="cal__entry-label">Les 11</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 18 / Di 19</span>
-              <span class="cal__entry-label">Les 12</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 25 / Di 26</span>
-              <span class="cal__entry-label">Les 13</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cal__month">
-          <div class="cal__month-header">Februari 2027</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 1 / Di 2</span>
-              <span class="cal__entry-label">Les 14</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 8 / Di 9</span>
-              <span class="cal__entry-label">Les 15</span>
-            </li>
-            <li class="cal__entry cal__entry--off">
-              <span class="cal__entry-date">Ma 15 / Di 16</span>
-              <span class="cal__entry-label">Geen catechese — Voorjaarsvakantie</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 22 / Di 23</span>
-              <span class="cal__entry-label">Les 16</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cal__month">
-          <div class="cal__month-header">Maart 2027</div>
-          <ul class="cal__month-list">
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 1 / Di 2</span>
-              <span class="cal__entry-label">Les 17</span>
-            </li>
-            <li class="cal__entry cal__entry--off">
-              <span class="cal__entry-date">Ma 8 / Di 9</span>
-              <span class="cal__entry-label">Geen catechese — Week van Biddag</span>
-            </li>
-            <li class="cal__entry">
-              <span class="cal__entry-date">Ma 15 / Di 16</span>
-              <span class="cal__entry-label">Les 18</span>
-            </li>
-            <li class="cal__entry cal__entry--special">
-              <span class="cal__entry-date">Ma 22 / Di 23</span>
-              <span class="cal__entry-label">Centrale Afsluiting — Eben-Haëzer</span>
-            </li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </section>
