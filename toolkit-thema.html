@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thema Inspiratiebank — Clubleiders Toolkit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* === HERO === */
+    .detail-hero {
+      background: var(--dark);
+      color: var(--white);
+      padding: 140px 32px 72px;
+    }
+
+    .detail-hero__inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .detail-hero__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand);
+      text-decoration: none;
+      margin-bottom: 24px;
+      transition: opacity 0.2s;
+    }
+
+    .detail-hero__back:hover { opacity: 0.75; }
+
+    .detail-hero__back svg {
+      transform: rotate(180deg);
+    }
+
+    .detail-hero__label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 20px;
+      border: 1px solid var(--brand);
+      padding: 4px 12px;
+    }
+
+    .detail-hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4.5vw, 3.6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .detail-hero__sub {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      opacity: 0.75;
+      max-width: 600px;
+    }
+
+    /* === CONTENT SECTIE === */
+    .detail-section {
+      padding: 72px 32px 96px;
+      background: var(--off-white);
+    }
+
+    .detail-section__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* === CATEGORIE BLOK === */
+    .categorie {
+      margin-bottom: 64px;
+    }
+
+    .categorie:last-child {
+      margin-bottom: 0;
+    }
+
+    .categorie__header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .categorie__nr {
+      font-family: var(--font-heading);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brand);
+    }
+
+    .categorie__title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--dark);
+      letter-spacing: -0.01em;
+    }
+
+    .categorie__desc {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: #666;
+      max-width: 680px;
+      margin-bottom: 28px;
+    }
+
+    /* === RESOURCE GRID === */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .resource-card {
+      background: var(--white);
+      border: 1px solid #e0e0e0;
+      padding: 28px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+
+    .resource-card:hover {
+      border-color: var(--brand);
+      box-shadow: 0 6px 24px rgba(30,92,126,0.1);
+      transform: translateY(-2px);
+    }
+
+    .resource-card__icon {
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .resource-card__title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--dark);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .resource-card__desc {
+      font-size: 0.82rem;
+      line-height: 1.65;
+      color: #555;
+      flex: 1;
+      margin-bottom: 18px;
+    }
+
+    .resource-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 18px;
+    }
+
+    .resource-card__tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--off-white);
+      color: #777;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .resource-card__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--brand);
+      text-decoration: none;
+      padding: 8px 14px;
+      border: 1.5px solid var(--brand);
+      transition: background 0.2s, color 0.2s;
+      margin-top: auto;
+      align-self: flex-start;
+    }
+
+    .resource-card__btn:hover {
+      background: var(--brand);
+      color: var(--white);
+    }
+
+    .resource-card__btn svg {
+      flex-shrink: 0;
+    }
+
+    /* === FOOTER CTA === */
+    .detail-cta {
+      background: var(--dark);
+      color: var(--white);
+      padding: 80px 32px;
+      text-align: center;
+    }
+
+    .detail-cta__inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .detail-cta h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+
+    .detail-cta p {
+      font-size: 1rem;
+      opacity: 0.75;
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+
+    .detail-cta__btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .detail-cta .btn--outline {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.35);
+    }
+
+    .detail-cta .btn--outline:hover {
+      background: var(--white);
+      color: var(--dark);
+      border-color: var(--white);
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1024px) {
+      .resource-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .detail-hero { padding: 120px 20px 56px; }
+      .detail-section { padding: 56px 20px 72px; }
+      .detail-cta { padding: 64px 20px; }
+    }
+
+    @media (max-width: 560px) {
+      .resource-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.png" alt="Hervormde Gemeente Woudenberg" class="nav__logo-img">
+        <span>Jeugdwerk <span class="nav__logo-sub">Hervormd Woudenberg</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#visie">Visie</a></li>
+        <li><a href="index.html#watjedoen">Wat we doen</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
+      </ul>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="detail-hero">
+    <div class="detail-hero__inner">
+      <a href="toolkit.html" class="detail-hero__back">
+        <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+        Terug naar Toolkit
+      </a>
+      <span class="detail-hero__label">Tegel 09 — Thema Inspiratiebank</span>
+      <h1>Thema<br>Inspiratie&shy;bank</h1>
+      <p class="detail-hero__sub">
+        Actuele thema's en geloofsonderwerpen om met jongeren over in gesprek te gaan.
+        Hier vind je externe websites en platforms die clubleiders helpen om inhoud te
+        vinden rondom geloof, identiteit, leefwereld en meer.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="detail-section">
+    <div class="detail-section__inner">
+
+      <!-- CATEGORIE 1: Geloof & Evangelie -->
+      <div class="categorie">
+        <div class="categorie__header">
+          <span class="categorie__nr">01</span>
+          <h2 class="categorie__title">Geloof &amp; Evangelie</h2>
+        </div>
+        <p class="categorie__desc">
+          Websites die helpen om de kern van het christelijk geloof toegankelijk te maken voor jongeren.
+          Handig als voorbereiding op een gesprek of als aanvulling op een thema-avond.
+        </p>
+        <div class="resource-grid">
+
+          <div class="resource-card">
+            <div class="resource-card__icon">🔤</div>
+            <h3 class="resource-card__title">ABC van het Geloof</h3>
+            <p class="resource-card__desc">
+              Circa 80 geloofswoorden — van Drieëenheid tot Gebed, van Genade tot Bekering — uitgelegd in
+              toegankelijke taal voor jongeren. Ideaal om een gespreksstarter op te zoeken of een begrip
+              te verhelderen. Wekelijks wordt één woord uitgelicht.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Geloofswoorden</span>
+              <span class="resource-card__tag">Gespreksstarters</span>
+              <span class="resource-card__tag">Jongeren</span>
+            </div>
+            <a href="https://abcvanhetgeloof.nl/" target="_blank" rel="noopener" class="resource-card__btn">
+              Bezoek website
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-card__icon">🔤</div>
+            <h3 class="resource-card__title">ABC voor Kinderen</h3>
+            <p class="resource-card__desc">
+              De zustersite van ABC van het Geloof, specifiek gemaakt voor kinderen. Dezelfde geloofswoorden
+              in nog eenvoudigere taal. Nuttig voor clubleiders van jongere leeftijdsgroepen die samen
+              geloofsinhoud willen verkennen.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Kinderen</span>
+              <span class="resource-card__tag">Geloofswoorden</span>
+              <span class="resource-card__tag">Eenvoudige taal</span>
+            </div>
+            <a href="https://abcvoorkinderen.nl/" target="_blank" rel="noopener" class="resource-card__btn">
+              Bezoek website
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-card__icon">🌱</div>
+            <h3 class="resource-card__title">Evangeliestek</h3>
+            <p class="resource-card__desc">
+              Platform voor missionair en diaconaal bewustzijn onder jongeren. Biedt seizoensmaterialen
+              (Pasen, Pinksteren, Biddag), activiteitenboekjes en ideeën om jongeren te betrekken bij
+              wat er in de wereld speelt — vanuit geloof. Materialen ook beschikbaar via Goed in Vorm.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Missionair</span>
+              <span class="resource-card__tag">Diaconaal</span>
+              <span class="resource-card__tag">Seizoensmaterialen</span>
+            </div>
+            <a href="https://www.evangeliestek.nl/" target="_blank" rel="noopener" class="resource-card__btn">
+              Bezoek website
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CATEGORIE 2: Leefwereld & Identiteit -->
+      <div class="categorie">
+        <div class="categorie__header">
+          <span class="categorie__nr">02</span>
+          <h2 class="categorie__title">Leefwereld &amp; Identiteit</h2>
+        </div>
+        <p class="categorie__desc">
+          Inhoud die helpt om de wereld van jongeren te begrijpen en thema's te verbinden aan het dagelijks
+          leven. Maatschappij, seksualiteit, muziek, geloof, identiteit, internationalisering — BasiC behandelt
+          het allemaal met 70+ onderwerpen.
+        </p>
+        <div class="resource-grid">
+
+          <div class="resource-card">
+            <div class="resource-card__icon">📱</div>
+            <h3 class="resource-card__title">BasiC Community — Instagram</h3>
+            <p class="resource-card__desc">
+              Het Instagram-kanaal van BasiC deelt korte content over de leefwereld van jongeren: actuele
+              onderwerpen, gespreksstarters en inspirerende invalshoeken. Goed om zelf te volgen én als
+              startpunt voor een thema-avond.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Leefwereld</span>
+              <span class="resource-card__tag">Actueel</span>
+              <span class="resource-card__tag">Gespreksstarters</span>
+            </div>
+            <a href="https://www.instagram.com/basicommunity/" target="_blank" rel="noopener" class="resource-card__btn">
+              Volg op Instagram
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-card__icon">▶️</div>
+            <h3 class="resource-card__title">BasiC — YouTube</h3>
+            <p class="resource-card__desc">
+              Het YouTube-kanaal van BasiC biedt video's over thema's als geloof, identiteit, maatschappij
+              en seksualiteit. Vlogs, denkprikkels en interviews — concrete content die je als clubleider
+              kunt gebruiken of tonen tijdens een avond.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Video</span>
+              <span class="resource-card__tag">Identiteit</span>
+              <span class="resource-card__tag">70+ onderwerpen</span>
+            </div>
+            <a href="https://www.youtube.com/@Basi-C" target="_blank" rel="noopener" class="resource-card__btn">
+              Bekijk kanaal
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-card__icon">🌐</div>
+            <h3 class="resource-card__title">BasiC — Website</h3>
+            <p class="resource-card__desc">
+              De hoofdsite van BasiC bevat blog-artikelen, denkprikkels en thematische pagina's over
+              Society, Sexuality, Music, Faith, Internationalization en Identity. Ook vind je hier
+              de 4 programma's die je kunt aanvragen voor je club.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">6 thema's</span>
+              <span class="resource-card__tag">Blog</span>
+              <span class="resource-card__tag">Programma's</span>
+            </div>
+            <a href="https://www.basi-c.nl/" target="_blank" rel="noopener" class="resource-card__btn">
+              Bezoek website
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CATEGORIE 3: Voor kinderclubs (4-12 jaar) -->
+      <div class="categorie">
+        <div class="categorie__header">
+          <span class="categorie__nr">03</span>
+          <h2 class="categorie__title">Voor kinderclubs (4–12 jaar)</h2>
+        </div>
+        <p class="categorie__desc">
+          Specifieke materialen voor clubs met jongere kinderen. Kinder Evangelie biedt Bijbelse content
+          in drie vormen: zingen, kijken en doen — plus thematische doeboeken en ontdekkaarten.
+        </p>
+        <div class="resource-grid">
+
+          <div class="resource-card">
+            <div class="resource-card__icon">📖</div>
+            <h3 class="resource-card__title">Kinder Evangelie — Doeboeken</h3>
+            <p class="resource-card__desc">
+              Drie doeboeken voor kinderen: <em>Gesprekken</em> (over Jezus), <em>Gelijkenissen</em>
+              (verhalen van Jezus) en <em>Wonderen</em>. Combineren Bijbelverhalen met opdrachten
+              en gespreksvragen — klaar voor gebruik in een kinderclub.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Bijbel</span>
+              <span class="resource-card__tag">Werkvormen</span>
+              <span class="resource-card__tag">4-12 jaar</span>
+            </div>
+            <a href="https://kindenevangelie.nl/" target="_blank" rel="noopener" class="resource-card__btn">
+              Bekijk doeboeken
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-card__icon">🃏</div>
+            <h3 class="resource-card__title">Kinder Evangelie — Ontdekkaarten</h3>
+            <p class="resource-card__desc">
+              Losse ontdekkaarten rond christelijke feestdagen: Biddag, Pasen en Pinksteren.
+              Handig als aanvulling op een thema-avond rondom deze momenten in het kerkelijk jaar.
+            </p>
+            <div class="resource-card__tags">
+              <span class="resource-card__tag">Feestdagen</span>
+              <span class="resource-card__tag">Pasen</span>
+              <span class="resource-card__tag">Pinksteren</span>
+            </div>
+            <a href="https://kindenevangelie.nl/" target="_blank" rel="noopener" class="resource-card__btn">
+              Bekijk ontdekkaarten
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="detail-cta">
+    <div class="detail-cta__inner">
+      <h2>Kom je er niet uit?</h2>
+      <p>
+        De Jeugdraad helpt graag mee. Heb je een vraag, een goed idee of materiaal
+        dat je wilt delen? Laat het ons weten.
+      </p>
+      <div class="detail-cta__btns">
+        <a href="mailto:d.debree@hervormdwoudenberg.nl" class="btn">Mail de Jeugdraad</a>
+        <a href="toolkit.html" class="btn btn--outline">Terug naar Toolkit</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer footer--light" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
+        <p>Ken Hem · Vind Ons · Groei Samen</p>
+      </div>
+      <div class="footer__links">
+        <h3>Navigatie</h3>
+        <ul>
+          <li><a href="index.html#visie">Visie</a></li>
+          <li><a href="index.html#watjedoen">Wat we doen</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="index.html#meewerken">Ik wil meehelpen</a></li>
+          <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Jeugdleiders</h3>
+        <p>Tom Horst — <a href="tel:+31643084241">06 43 08 42 41</a><br>
+        <a href="mailto:t.horst@hervormdwoudenberg.nl">t.horst@hervormdwoudenberg.nl</a></p>
+        <p>Daan de Bree — <a href="tel:+31683238677">06 83 23 86 77</a><br>
+        <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
+        <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
+        <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Hervormde Gemeente Woudenberg — <a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">hervormdwoudenberg.nl</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

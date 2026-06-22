@@ -113,7 +113,7 @@ TARGETS = [
     ("Aart-Jan van der Wind",      "Aart-Jan Wind"),
     ("Henk Langelaar",             "Henk Langelaar"),
     # Meisjesclub
-    ("Gea Bos",                    "Gea Bos"),
+
     ("Alinda van Burg",            "Alinda Burg"),
     # Connect
     ("Bert-Jan van den Brink",     "Bert-Jan Brink"),

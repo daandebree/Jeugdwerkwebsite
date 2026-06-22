@@ -543,12 +543,6 @@
             <span class="week-row__age">18 jaar en ouder &nbsp;·&nbsp; Wijk 1</span>
             <a href="catechese-wijk-1.html" class="week-row__link">Meer info →</a>
           </div>
-          <div class="week-row">
-            <span class="week-row__time">20:00</span>
-            <span class="week-row__name">Jeugdvereniging</span>
-            <span class="week-row__age">16+ jaar</span>
-            <a href="jv.html" class="week-row__link">Meer info →</a>
-          </div>
         </div>
       </div>
 
@@ -565,25 +559,31 @@
         </div>
       </div>
 
+      <!-- DONDERDAG -->
+      <div class="week-day">
+        <div class="week-day__header">Donderdag</div>
+        <div class="week-day__rows">
+          <div class="week-row">
+            <span class="week-row__time">20:00</span>
+            <span class="week-row__name">Jeugdvereniging</span>
+            <span class="week-row__age">16+ jaar</span>
+            <a href="jv.html" class="week-row__link">Meer info →</a>
+          </div>
+        </div>
+      </div>
+
       <!-- VRIJDAG -->
       <div class="week-day">
         <div class="week-day__header">Vrijdag</div>
         <div class="week-day__rows">
           <div class="week-row">
-            <span class="week-row__time">19:30</span>
+            <span class="week-row__time">19:30 <em>(om de week)</em></span>
             <span class="week-row__name">United</span>
             <span class="week-row__age">12 – 16 jaar</span>
             <a href="united-friday.html" class="week-row__link">Meer info →</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ZATERDAG -->
-      <div class="week-day">
-        <div class="week-day__header">Zaterdag</div>
-        <div class="week-day__rows">
           <div class="week-row">
-            <span class="week-row__time">20:00</span>
+            <span class="week-row__time">19:30 <em>(om de week)</em></span>
             <span class="week-row__name">Connect</span>
             <span class="week-row__age">3e en 4e klas VO</span>
             <a href="connect.html" class="week-row__link">Meer info →</a>
@@ -621,14 +621,26 @@
       <ul class="special__list">
 
         <li class="special__item">
-          <span class="special__date">00.00.2026</span>
+          <span class="special__date">4 t/m 6 sep 2026</span>
+          <span class="special__name"><a href="jeugdkamp.html">Jeugdkamp</a></span>
+          <span class="special__tag">Kamp</span>
+        </li>
+
+        <li class="special__item">
+          <span class="special__date">20 sep 2026</span>
+          <span class="special__name">Start seizoen</span>
+          <span class="special__tag">Algemeen</span>
+        </li>
+
+        <li class="special__item">
+          <span class="special__date">Vr 25 sep 2026</span>
           <span class="special__name">United — opening seizoen</span>
           <span class="special__tag">United</span>
         </li>
 
         <li class="special__item">
-          <span class="special__date">00.00.2026</span>
-          <span class="special__name">United Saturday — opening seizoen</span>
+          <span class="special__date">Vr 2 okt 2026</span>
+          <span class="special__name">Connect — opening seizoen</span>
           <span class="special__tag">United</span>
         </li>
 
@@ -654,12 +666,6 @@
           <span class="special__date">22–23 mrt 2027</span>
           <span class="special__name">Centrale Afsluiting — Eben-Haëzer</span>
           <span class="special__tag">Catechese</span>
-        </li>
-
-        <li class="special__item">
-          <span class="special__date">Zomer 2026</span>
-          <span class="special__name">Jeugdkamp</span>
-          <span class="special__tag">Kamp</span>
         </li>
 
       </ul>
@@ -806,14 +812,14 @@
         // Woensdagmiddagclub — woensdag 14:15
         ...maakEvents(wekelijks(3, START, EIND), COLORS.wmclub,
           'Woensdagmiddagclub', '14:15', '15:30', 'woensdagmiddagclub.html'),
-        // United — vrijdag 19:30
-        ...maakEvents(wekelijks(5, START, EIND), COLORS.unitedFriday,
+        // United — vrijdag, om de week, start 25 sep 2026
+        ...maakEvents(wekelijks(5, '2026-09-25', EIND, true), COLORS.unitedFriday,
           'United', '19:30', '21:00', 'united-friday.html'),
-        // Connect — zaterdag 20:00
-        ...maakEvents(wekelijks(6, START, EIND), COLORS.connect,
-          'Connect', '20:00', '22:00', 'connect.html'),
-        // JV — dinsdag 20:00
-        ...maakEvents(wekelijks(2, START, EIND), COLORS.jv,
+        // Connect — vrijdag, om de week, start 2 okt 2026 (week later dan United)
+        ...maakEvents(wekelijks(5, '2026-10-02', EIND, true), COLORS.connect,
+          'Connect', '19:30', '21:30', 'connect.html'),
+        // JV — donderdag 20:00
+        ...maakEvents(wekelijks(4, START, EIND), COLORS.jv,
           'Jeugdvereniging', '20:00', '21:30', 'jv.html'),
         // Bijbeluur — zondag (tijdens dienst)
         ...maakEvents(wekelijks(0, START, EIND), COLORS.bijbeluur,
@@ -821,11 +827,11 @@
         // Oppas — zondag (tijdens dienst)
         ...maakEvents(wekelijks(0, START, EIND), COLORS.oppas,
           'Oppas', '09:30', '11:00', 'oppas.html'),
-        // Jeugdkamp — placeholder
+        // Jeugdkamp — 4-6 september 2026
         {
-          title: 'Jeugdkamp 2027',
-          start: '2027-07-05',
-          end:   '2027-07-12',
+          title: 'Jeugdkamp',
+          start: '2026-09-04',
+          end:   '2026-09-07',
           color: COLORS.kamp,
           url:   'jeugdkamp.html',
           allDay: true,
