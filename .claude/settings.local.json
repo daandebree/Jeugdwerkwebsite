@@ -10,7 +10,8 @@
       "Bash(Remove-Item \"C:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\.git\\\\index.lock\" -Force)",
       "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\extra info\\\\smoelen\\\\Marjolein Hooydonk.jpg\" -Destination \"c:\\\\Users\\\\daand\\\\OneDrive\\\\Documenten\\\\Kerk\\\\Kerk website\\\\images\\\\jeugdraad\\\\marjolein-hooydonk.jpg\" -Force)",
       "Bash(python -c ' *)",
-      "PowerShell(git add -A)"
+      "PowerShell(git add -A)",
+      "Bash(git push *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\daand\\OneDrive\\Documenten\\Kerk\\Kerk website\\.git"
