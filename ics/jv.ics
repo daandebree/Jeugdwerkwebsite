@@ -23,16 +23,263 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
-SUMMARY:Jongeren Vereniging (JV)
-RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20270630T000000Z
-EXDATE;TZID=Europe/Amsterdam:20261027T200000
-EXDATE;TZID=Europe/Amsterdam:20261222T200000
-EXDATE;TZID=Europe/Amsterdam:20270223T200000
-EXDATE;TZID=Europe/Amsterdam:20270408T200000
-DTSTART;TZID=Europe/Amsterdam:20260901T200000
-DURATION:PT1H30M
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Jongeren Vereniging voor 16+. Elke dinsdagavond.
+UID:jv-20260924@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20260924T200000
+DTEND;TZID=Europe/Amsterdam:20260924T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+. Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261001@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261001T200000
+DTEND;TZID=Europe/Amsterdam:20261001T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261008@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261008T200000
+DTEND;TZID=Europe/Amsterdam:20261008T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261015@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261015T200000
+DTEND;TZID=Europe/Amsterdam:20261015T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261029@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261029T200000
+DTEND;TZID=Europe/Amsterdam:20261029T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261112@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261112T200000
+DTEND;TZID=Europe/Amsterdam:20261112T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261119@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261119T200000
+DTEND;TZID=Europe/Amsterdam:20261119T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261126@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261126T200000
+DTEND;TZID=Europe/Amsterdam:20261126T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261203@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261203T200000
+DTEND;TZID=Europe/Amsterdam:20261203T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261210@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261210T200000
+DTEND;TZID=Europe/Amsterdam:20261210T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20261217@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20261217T200000
+DTEND;TZID=Europe/Amsterdam:20261217T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270107@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270107T200000
+DTEND;TZID=Europe/Amsterdam:20270107T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270114@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270114T200000
+DTEND;TZID=Europe/Amsterdam:20270114T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270121@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270121T200000
+DTEND;TZID=Europe/Amsterdam:20270121T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270128@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270128T200000
+DTEND;TZID=Europe/Amsterdam:20270128T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270204@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270204T200000
+DTEND;TZID=Europe/Amsterdam:20270204T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270211@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270211T200000
+DTEND;TZID=Europe/Amsterdam:20270211T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270218@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270218T200000
+DTEND;TZID=Europe/Amsterdam:20270218T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270304@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270304T200000
+DTEND;TZID=Europe/Amsterdam:20270304T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270318@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270318T200000
+DTEND;TZID=Europe/Amsterdam:20270318T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270325@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270325T200000
+DTEND;TZID=Europe/Amsterdam:20270325T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270401@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270401T200000
+DTEND;TZID=Europe/Amsterdam:20270401T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270408@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270408T200000
+DTEND;TZID=Europe/Amsterdam:20270408T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270415@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270415T200000
+DTEND;TZID=Europe/Amsterdam:20270415T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270422@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270422T200000
+DTEND;TZID=Europe/Amsterdam:20270422T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jv-20270429@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jeugdvereniging
+DTSTART;TZID=Europe/Amsterdam:20270429T200000
+DTEND;TZID=Europe/Amsterdam:20270429T220000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jeugdvereniging (JV) voor 16+.
 END:VEVENT
 
 END:VCALENDAR

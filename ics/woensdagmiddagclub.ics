@@ -23,16 +23,143 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
-SUMMARY:Woensdagmiddagclub
-RRULE:FREQ=WEEKLY;BYDAY=WE;UNTIL=20270630T000000Z
-EXDATE;TZID=Europe/Amsterdam:20261028T141500
-EXDATE;TZID=Europe/Amsterdam:20261223T141500
-EXDATE;TZID=Europe/Amsterdam:20270224T141500
-EXDATE;TZID=Europe/Amsterdam:20270409T141500
-DTSTART;TZID=Europe/Amsterdam:20260902T141500
-DURATION:PT1H15M
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6. Elke woensdagmiddag.
+UID:woensdagmiddagclub-20260923-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4)
+DTSTART;TZID=Europe/Amsterdam:20260923T143000
+DTEND;TZID=Europe/Amsterdam:20260923T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6. Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20261007-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20261007T143000
+DTEND;TZID=Europe/Amsterdam:20261007T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20261028-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4)
+DTSTART;TZID=Europe/Amsterdam:20261028T143000
+DTEND;TZID=Europe/Amsterdam:20261028T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20261118-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20261118T143000
+DTEND;TZID=Europe/Amsterdam:20261118T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20261125-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4) (nog te bevestigen)
+DTSTART;TZID=Europe/Amsterdam:20261125T143000
+DTEND;TZID=Europe/Amsterdam:20261125T154500
+LOCATION:Zaal 2A + 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6. Let op: deze datum/locatie staat nog niet definitief vast (controlepunt in het masterrooster).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20261202-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20261202T143000
+DTEND;TZID=Europe/Amsterdam:20261202T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20261216-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4)
+DTSTART;TZID=Europe/Amsterdam:20261216T143000
+DTEND;TZID=Europe/Amsterdam:20261216T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270113-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20270113T143000
+DTEND;TZID=Europe/Amsterdam:20270113T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270127-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4)
+DTSTART;TZID=Europe/Amsterdam:20270127T143000
+DTEND;TZID=Europe/Amsterdam:20270127T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270210-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20270210T143000
+DTEND;TZID=Europe/Amsterdam:20270210T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270303-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4)
+DTSTART;TZID=Europe/Amsterdam:20270303T143000
+DTEND;TZID=Europe/Amsterdam:20270303T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270324-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20270324T143000
+DTEND;TZID=Europe/Amsterdam:20270324T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270407-34@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 3/4)
+DTSTART;TZID=Europe/Amsterdam:20270407T143000
+DTEND;TZID=Europe/Amsterdam:20270407T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:woensdagmiddagclub-20270421-56@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Woensdagmiddagclub (groep 5/6)
+DTSTART;TZID=Europe/Amsterdam:20270421T143000
+DTEND;TZID=Europe/Amsterdam:20270421T154500
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Woensdagmiddagclub voor groep 3 t/m 6.
 END:VEVENT
 
 END:VCALENDAR

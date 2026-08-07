@@ -23,16 +23,133 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
+UID:connect-20261002@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
 SUMMARY:Connect
-RRULE:FREQ=WEEKLY;BYDAY=SA;UNTIL=20270630T000000Z
-EXDATE;TZID=Europe/Amsterdam:20261031T200000
-EXDATE;TZID=Europe/Amsterdam:20261226T200000
-EXDATE;TZID=Europe/Amsterdam:20270227T200000
-EXDATE;TZID=Europe/Amsterdam:20270410T200000
-DTSTART;TZID=Europe/Amsterdam:20260905T200000
-DURATION:PT2H
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Connect voor 3e en 4e klas VO. Elke zaterdagavond.
+DTSTART;TZID=Europe/Amsterdam:20261002T193000
+DTEND;TZID=Europe/Amsterdam:20261002T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20261016@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20261016T193000
+DTEND;TZID=Europe/Amsterdam:20261016T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20261113@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20261113T193000
+DTEND;TZID=Europe/Amsterdam:20261113T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20261127@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20261127T193000
+DTEND;TZID=Europe/Amsterdam:20261127T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20261211@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20261211T193000
+DTEND;TZID=Europe/Amsterdam:20261211T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270108@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270108T193000
+DTEND;TZID=Europe/Amsterdam:20270108T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270122@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270122T193000
+DTEND;TZID=Europe/Amsterdam:20270122T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270205@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270205T193000
+DTEND;TZID=Europe/Amsterdam:20270205T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270219@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270219T193000
+DTEND;TZID=Europe/Amsterdam:20270219T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270319@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270319T193000
+DTEND;TZID=Europe/Amsterdam:20270319T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270402@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270402T193000
+DTEND;TZID=Europe/Amsterdam:20270402T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270416@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270416T193000
+DTEND;TZID=Europe/Amsterdam:20270416T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:connect-20270430@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Connect
+DTSTART;TZID=Europe/Amsterdam:20270430T193000
+DTEND;TZID=Europe/Amsterdam:20270430T210000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Connect voor 3e en 4e klas VO.
 END:VEVENT
 
 END:VCALENDAR

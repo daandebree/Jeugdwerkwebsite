@@ -23,16 +23,253 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
+UID:meisjesclub-20260921@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
 SUMMARY:Meisjesclub
-RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20270630T000000Z
-EXDATE;TZID=Europe/Amsterdam:20261027T190000
-EXDATE;TZID=Europe/Amsterdam:20261222T190000
-EXDATE;TZID=Europe/Amsterdam:20270223T190000
-EXDATE;TZID=Europe/Amsterdam:20270408T190000
-DTSTART;TZID=Europe/Amsterdam:20260901T190000
-DURATION:PT1H30M
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Meisjesclub voor groep 7 & 8 (meisjes). Elke dinsdagavond.
+DTSTART;TZID=Europe/Amsterdam:20260921T190000
+DTEND;TZID=Europe/Amsterdam:20260921T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20260928@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20260928T190000
+DTEND;TZID=Europe/Amsterdam:20260928T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261005@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261005T190000
+DTEND;TZID=Europe/Amsterdam:20261005T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261012@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261012T190000
+DTEND;TZID=Europe/Amsterdam:20261012T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261026@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261026T190000
+DTEND;TZID=Europe/Amsterdam:20261026T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261109@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261109T190000
+DTEND;TZID=Europe/Amsterdam:20261109T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261116@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261116T190000
+DTEND;TZID=Europe/Amsterdam:20261116T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261123@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261123T190000
+DTEND;TZID=Europe/Amsterdam:20261123T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261130@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261130T190000
+DTEND;TZID=Europe/Amsterdam:20261130T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261207@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261207T190000
+DTEND;TZID=Europe/Amsterdam:20261207T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20261214@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20261214T190000
+DTEND;TZID=Europe/Amsterdam:20261214T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270104@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270104T190000
+DTEND;TZID=Europe/Amsterdam:20270104T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270111@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270111T190000
+DTEND;TZID=Europe/Amsterdam:20270111T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270118@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270118T190000
+DTEND;TZID=Europe/Amsterdam:20270118T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270125@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270125T190000
+DTEND;TZID=Europe/Amsterdam:20270125T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270201@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270201T190000
+DTEND;TZID=Europe/Amsterdam:20270201T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270208@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270208T190000
+DTEND;TZID=Europe/Amsterdam:20270208T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270215@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270215T190000
+DTEND;TZID=Europe/Amsterdam:20270215T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270301@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270301T190000
+DTEND;TZID=Europe/Amsterdam:20270301T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270315@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270315T190000
+DTEND;TZID=Europe/Amsterdam:20270315T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270322@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270322T190000
+DTEND;TZID=Europe/Amsterdam:20270322T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270405@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270405T190000
+DTEND;TZID=Europe/Amsterdam:20270405T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270412@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270412T190000
+DTEND;TZID=Europe/Amsterdam:20270412T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270419@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270419T190000
+DTEND;TZID=Europe/Amsterdam:20270419T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:meisjesclub-20270426@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Meisjesclub
+DTSTART;TZID=Europe/Amsterdam:20270426T190000
+DTEND;TZID=Europe/Amsterdam:20270426T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Meisjesclub voor groep 7 of 8 (meisjes).
 END:VEVENT
 
 END:VCALENDAR

@@ -23,16 +23,253 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
+UID:jongensclub-20260922@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
 SUMMARY:Jongensclub
-RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20270630T000000Z
-EXDATE;TZID=Europe/Amsterdam:20261027T190000
-EXDATE;TZID=Europe/Amsterdam:20261222T190000
-EXDATE;TZID=Europe/Amsterdam:20270223T190000
-EXDATE;TZID=Europe/Amsterdam:20270408T190000
-DTSTART;TZID=Europe/Amsterdam:20260901T190000
-DURATION:PT1H30M
-LOCATION:Bovenzaal Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Jongensclub voor groep 7 & 8 (jongens). Elke dinsdagavond.
+DTSTART;TZID=Europe/Amsterdam:20260922T190000
+DTEND;TZID=Europe/Amsterdam:20260922T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20260929@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20260929T190000
+DTEND;TZID=Europe/Amsterdam:20260929T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261006@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261006T190000
+DTEND;TZID=Europe/Amsterdam:20261006T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261013@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261013T190000
+DTEND;TZID=Europe/Amsterdam:20261013T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261027@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261027T190000
+DTEND;TZID=Europe/Amsterdam:20261027T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261110@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261110T190000
+DTEND;TZID=Europe/Amsterdam:20261110T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261117@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261117T190000
+DTEND;TZID=Europe/Amsterdam:20261117T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261124@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261124T190000
+DTEND;TZID=Europe/Amsterdam:20261124T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261201@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261201T190000
+DTEND;TZID=Europe/Amsterdam:20261201T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261208@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261208T190000
+DTEND;TZID=Europe/Amsterdam:20261208T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20261215@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20261215T190000
+DTEND;TZID=Europe/Amsterdam:20261215T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270105@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270105T190000
+DTEND;TZID=Europe/Amsterdam:20270105T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270112@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270112T190000
+DTEND;TZID=Europe/Amsterdam:20270112T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270119@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270119T190000
+DTEND;TZID=Europe/Amsterdam:20270119T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270126@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270126T190000
+DTEND;TZID=Europe/Amsterdam:20270126T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270202@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270202T190000
+DTEND;TZID=Europe/Amsterdam:20270202T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270209@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270209T190000
+DTEND;TZID=Europe/Amsterdam:20270209T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270216@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270216T190000
+DTEND;TZID=Europe/Amsterdam:20270216T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270302@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270302T190000
+DTEND;TZID=Europe/Amsterdam:20270302T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270316@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270316T190000
+DTEND;TZID=Europe/Amsterdam:20270316T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270323@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270323T190000
+DTEND;TZID=Europe/Amsterdam:20270323T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270330@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270330T190000
+DTEND;TZID=Europe/Amsterdam:20270330T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270413@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270413T190000
+DTEND;TZID=Europe/Amsterdam:20270413T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270420@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270420T190000
+DTEND;TZID=Europe/Amsterdam:20270420T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:jongensclub-20270427@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Jongensclub
+DTSTART;TZID=Europe/Amsterdam:20270427T190000
+DTEND;TZID=Europe/Amsterdam:20270427T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:Jongensclub voor groep 7 of 8 (jongens).
 END:VEVENT
 
 END:VCALENDAR

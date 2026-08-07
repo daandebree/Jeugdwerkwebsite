@@ -23,16 +23,133 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
-SUMMARY:United Friday
-RRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL=20270630T000000Z
-EXDATE;TZID=Europe/Amsterdam:20261030T193000
-EXDATE;TZID=Europe/Amsterdam:20261225T193000
-EXDATE;TZID=Europe/Amsterdam:20270226T193000
-EXDATE;TZID=Europe/Amsterdam:20270409T193000
-DTSTART;TZID=Europe/Amsterdam:20260904T193000
-DURATION:PT1H30M
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:United Friday voor 1e en 2e klas VO. Elke vrijdagavond.
+UID:united-friday-20260925@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20260925T190000
+DTEND;TZID=Europe/Amsterdam:20260925T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO. Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20261009@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20261009T190000
+DTEND;TZID=Europe/Amsterdam:20261009T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20261030@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20261030T190000
+DTEND;TZID=Europe/Amsterdam:20261030T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20261120@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20261120T190000
+DTEND;TZID=Europe/Amsterdam:20261120T203000
+LOCATION:Zaal 2A + 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO. United week 47: eenmalig Oosterpoort zaal 2A+2B volgens mail\; Uitwijk locatie volgens mailwisseling Corrie/Tom
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20261204@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20261204T190000
+DTEND;TZID=Europe/Amsterdam:20261204T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20261218@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20261218T190000
+DTEND;TZID=Europe/Amsterdam:20261218T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270115@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270115T190000
+DTEND;TZID=Europe/Amsterdam:20270115T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270129@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270129T190000
+DTEND;TZID=Europe/Amsterdam:20270129T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270212@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270212T190000
+DTEND;TZID=Europe/Amsterdam:20270212T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270305@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270305T190000
+DTEND;TZID=Europe/Amsterdam:20270305T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270326@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270326T190000
+DTEND;TZID=Europe/Amsterdam:20270326T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270409@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270409T190000
+DTEND;TZID=Europe/Amsterdam:20270409T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:united-friday-20270423@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:United
+DTSTART;TZID=Europe/Amsterdam:20270423T190000
+DTEND;TZID=Europe/Amsterdam:20270423T203000
+LOCATION:Bovenzaal Eben-Haëzer\, Schoutstraat 8a\, Woudenberg
+DESCRIPTION:United voor 1e en 2e klas VO.
 END:VEVENT
 
 END:VCALENDAR

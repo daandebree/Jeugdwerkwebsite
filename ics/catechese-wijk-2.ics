@@ -23,80 +23,1023 @@ END:DAYLIGHT
 END:VTIMEZONE
 
 BEGIN:VEVENT
-SUMMARY:Kindercatechese (Wijk 2)
-RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU;UNTIL=20270323T220000Z
-EXDATE;TZID=Europe/Amsterdam:20261020T153000
-EXDATE;TZID=Europe/Amsterdam:20261103T153000
-EXDATE;TZID=Europe/Amsterdam:20261229T153000
-EXDATE;TZID=Europe/Amsterdam:20270309T153000
-DTSTART;TZID=Europe/Amsterdam:20260922T153000
-DURATION:PT1H
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Kindercatechese voor groep 7 & 8 uit wijk 2. Elke andere dinsdagmiddag 15:30–16:30.
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:Catechese Onderbouw (Wijk 2)
-RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20270323T220000Z
-EXDATE;TZID=Europe/Amsterdam:20261020T190000
-EXDATE;TZID=Europe/Amsterdam:20261103T190000
-EXDATE;TZID=Europe/Amsterdam:20261222T190000
-EXDATE;TZID=Europe/Amsterdam:20261229T190000
-EXDATE;TZID=Europe/Amsterdam:20270105T190000
-EXDATE;TZID=Europe/Amsterdam:20270216T190000
-EXDATE;TZID=Europe/Amsterdam:20270309T190000
-DTSTART;TZID=Europe/Amsterdam:20260922T190000
-DURATION:PT1H
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Catechese voor 1e t/m 3e jaar VO uit wijk 2. Dinsdagavond 19:00–20:00.
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:Catechese Bovenbouw (Wijk 2)
-RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270322T220000Z
-EXDATE;TZID=Europe/Amsterdam:20261019T193000
-EXDATE;TZID=Europe/Amsterdam:20261102T193000
-EXDATE;TZID=Europe/Amsterdam:20261221T193000
-EXDATE;TZID=Europe/Amsterdam:20261228T193000
-EXDATE;TZID=Europe/Amsterdam:20270104T193000
-EXDATE;TZID=Europe/Amsterdam:20270215T193000
-EXDATE;TZID=Europe/Amsterdam:20270308T193000
-DTSTART;TZID=Europe/Amsterdam:20260921T193000
-DURATION:PT1H
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Catechese voor 4e t/m 6e jaar VO uit wijk 2. Maandagavond 19:30–20:30.
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:Catechese 18+ (Wijk 2)
-RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270322T220000Z
-EXDATE;TZID=Europe/Amsterdam:20261019T193000
-EXDATE;TZID=Europe/Amsterdam:20261102T193000
-EXDATE;TZID=Europe/Amsterdam:20261221T193000
-EXDATE;TZID=Europe/Amsterdam:20261228T193000
-EXDATE;TZID=Europe/Amsterdam:20270104T193000
-EXDATE;TZID=Europe/Amsterdam:20270215T193000
-EXDATE;TZID=Europe/Amsterdam:20270308T193000
-DTSTART;TZID=Europe/Amsterdam:20260921T193000
-DURATION:PT1H
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Catechese voor 18+ uit wijk 2. Maandagavond 19:30–20:30.
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:Belijdenisgroep (Wijk 2)
-RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270322T220000Z
-EXDATE;TZID=Europe/Amsterdam:20261019T203000
-EXDATE;TZID=Europe/Amsterdam:20261102T203000
-EXDATE;TZID=Europe/Amsterdam:20261221T203000
-EXDATE;TZID=Europe/Amsterdam:20261228T203000
-EXDATE;TZID=Europe/Amsterdam:20270104T203000
-EXDATE;TZID=Europe/Amsterdam:20270215T203000
-EXDATE;TZID=Europe/Amsterdam:20270308T203000
+UID:catechese-wijk-2-belijdenisgroep-20260921@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
 DTSTART;TZID=Europe/Amsterdam:20260921T203000
-DURATION:PT1H30M
-LOCATION:Eben-Haëzer, Schoutstraat 8a, Woudenberg
-DESCRIPTION:Belijdenisgroep wijk 2. Maandagavond 20:30–22:00.
+DTEND;TZID=Europe/Amsterdam:20260921T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20260921@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20260921T193000
+DTEND;TZID=Europe/Amsterdam:20260921T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20260921@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20260921T193000
+DTEND;TZID=Europe/Amsterdam:20260921T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20260922@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20260922T190000
+DTEND;TZID=Europe/Amsterdam:20260922T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20260922-g7en8samen@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20260922T153000
+DTEND;TZID=Europe/Amsterdam:20260922T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2). Startweek catechese/clubs
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20260928@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20260928T203000
+DTEND;TZID=Europe/Amsterdam:20260928T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20260928@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20260928T193000
+DTEND;TZID=Europe/Amsterdam:20260928T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20260928@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20260928T193000
+DTEND;TZID=Europe/Amsterdam:20260928T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20260929@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20260929T190000
+DTEND;TZID=Europe/Amsterdam:20260929T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20260929-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20260929T153000
+DTEND;TZID=Europe/Amsterdam:20260929T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261005@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261005T203000
+DTEND;TZID=Europe/Amsterdam:20261005T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261005@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261005T193000
+DTEND;TZID=Europe/Amsterdam:20261005T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261005@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261005T193000
+DTEND;TZID=Europe/Amsterdam:20261005T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261006@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261006T190000
+DTEND;TZID=Europe/Amsterdam:20261006T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261006-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261006T153000
+DTEND;TZID=Europe/Amsterdam:20261006T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261012@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261012T203000
+DTEND;TZID=Europe/Amsterdam:20261012T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261012@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261012T193000
+DTEND;TZID=Europe/Amsterdam:20261012T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261012@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261012T193000
+DTEND;TZID=Europe/Amsterdam:20261012T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261013@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261013T190000
+DTEND;TZID=Europe/Amsterdam:20261013T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2). Groep 7/onderbouw gecombineerd met oudergesprekken
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261013-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261013T153000
+DTEND;TZID=Europe/Amsterdam:20261013T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2). Groep 7/onderbouw gecombineerd met oudergesprekken
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261026@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261026T203000
+DTEND;TZID=Europe/Amsterdam:20261026T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261026@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261026T193000
+DTEND;TZID=Europe/Amsterdam:20261026T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261026@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261026T193000
+DTEND;TZID=Europe/Amsterdam:20261026T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261027@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261027T190000
+DTEND;TZID=Europe/Amsterdam:20261027T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261027-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261027T153000
+DTEND;TZID=Europe/Amsterdam:20261027T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261109@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261109T203000
+DTEND;TZID=Europe/Amsterdam:20261109T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261109@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261109T193000
+DTEND;TZID=Europe/Amsterdam:20261109T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261109@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261109T193000
+DTEND;TZID=Europe/Amsterdam:20261109T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261110@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261110T190000
+DTEND;TZID=Europe/Amsterdam:20261110T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261110-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261110T153000
+DTEND;TZID=Europe/Amsterdam:20261110T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261116@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261116T203000
+DTEND;TZID=Europe/Amsterdam:20261116T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261116@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261116T193000
+DTEND;TZID=Europe/Amsterdam:20261116T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261116@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261116T193000
+DTEND;TZID=Europe/Amsterdam:20261116T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261117@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261117T190000
+DTEND;TZID=Europe/Amsterdam:20261117T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261117-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261117T153000
+DTEND;TZID=Europe/Amsterdam:20261117T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261123@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261123T203000
+DTEND;TZID=Europe/Amsterdam:20261123T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261123@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261123T193000
+DTEND;TZID=Europe/Amsterdam:20261123T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261123@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261123T193000
+DTEND;TZID=Europe/Amsterdam:20261123T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261124@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261124T190000
+DTEND;TZID=Europe/Amsterdam:20261124T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261124-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261124T153000
+DTEND;TZID=Europe/Amsterdam:20261124T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261130@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261130T203000
+DTEND;TZID=Europe/Amsterdam:20261130T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261130@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261130T193000
+DTEND;TZID=Europe/Amsterdam:20261130T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261130@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261130T193000
+DTEND;TZID=Europe/Amsterdam:20261130T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261201@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261201T190000
+DTEND;TZID=Europe/Amsterdam:20261201T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261201-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261201T153000
+DTEND;TZID=Europe/Amsterdam:20261201T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261207@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261207T203000
+DTEND;TZID=Europe/Amsterdam:20261207T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261207@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261207T193000
+DTEND;TZID=Europe/Amsterdam:20261207T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261207@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261207T193000
+DTEND;TZID=Europe/Amsterdam:20261207T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261208@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261208T190000
+DTEND;TZID=Europe/Amsterdam:20261208T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261208-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261208T153000
+DTEND;TZID=Europe/Amsterdam:20261208T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20261214@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20261214T203000
+DTEND;TZID=Europe/Amsterdam:20261214T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20261214@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20261214T193000
+DTEND;TZID=Europe/Amsterdam:20261214T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20261214@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20261214T193000
+DTEND;TZID=Europe/Amsterdam:20261214T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20261215@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20261215T190000
+DTEND;TZID=Europe/Amsterdam:20261215T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20261215-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20261215T153000
+DTEND;TZID=Europe/Amsterdam:20261215T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270105@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270105T190000
+DTEND;TZID=Europe/Amsterdam:20270105T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2). Maandag: toerustingavond leiding\, geen catechese. Toerusting 2027 in Oosterpoort volgens mail
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270105-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270105T153000
+DTEND;TZID=Europe/Amsterdam:20270105T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2). Maandag: toerustingavond leiding\, geen catechese. Toerusting 2027 in Oosterpoort volgens mail
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270111@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270111T203000
+DTEND;TZID=Europe/Amsterdam:20270111T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270111@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270111T193000
+DTEND;TZID=Europe/Amsterdam:20270111T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270111@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270111T193000
+DTEND;TZID=Europe/Amsterdam:20270111T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270112@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270112T190000
+DTEND;TZID=Europe/Amsterdam:20270112T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270112-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270112T153000
+DTEND;TZID=Europe/Amsterdam:20270112T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270118@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270118T203000
+DTEND;TZID=Europe/Amsterdam:20270118T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270118@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270118T193000
+DTEND;TZID=Europe/Amsterdam:20270118T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270118@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270118T193000
+DTEND;TZID=Europe/Amsterdam:20270118T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270119@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270119T190000
+DTEND;TZID=Europe/Amsterdam:20270119T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270119-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270119T153000
+DTEND;TZID=Europe/Amsterdam:20270119T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270125@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270125T203000
+DTEND;TZID=Europe/Amsterdam:20270125T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270125@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270125T193000
+DTEND;TZID=Europe/Amsterdam:20270125T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270125@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270125T193000
+DTEND;TZID=Europe/Amsterdam:20270125T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270126@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270126T190000
+DTEND;TZID=Europe/Amsterdam:20270126T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270126-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270126T153000
+DTEND;TZID=Europe/Amsterdam:20270126T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270201@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270201T203000
+DTEND;TZID=Europe/Amsterdam:20270201T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270201@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270201T193000
+DTEND;TZID=Europe/Amsterdam:20270201T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270201@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270201T193000
+DTEND;TZID=Europe/Amsterdam:20270201T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270202@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270202T190000
+DTEND;TZID=Europe/Amsterdam:20270202T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270202-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270202T153000
+DTEND;TZID=Europe/Amsterdam:20270202T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270208@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270208T203000
+DTEND;TZID=Europe/Amsterdam:20270208T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270208@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270208T193000
+DTEND;TZID=Europe/Amsterdam:20270208T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270208@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270208T193000
+DTEND;TZID=Europe/Amsterdam:20270208T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270209@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270209T190000
+DTEND;TZID=Europe/Amsterdam:20270209T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270209-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270209T153000
+DTEND;TZID=Europe/Amsterdam:20270209T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270215@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270215T203000
+DTEND;TZID=Europe/Amsterdam:20270215T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270215@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270215T193000
+DTEND;TZID=Europe/Amsterdam:20270215T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270215@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270215T193000
+DTEND;TZID=Europe/Amsterdam:20270215T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270216@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270216T190000
+DTEND;TZID=Europe/Amsterdam:20270216T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270216-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270216T153000
+DTEND;TZID=Europe/Amsterdam:20270216T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270301@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270301T203000
+DTEND;TZID=Europe/Amsterdam:20270301T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270301@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270301T193000
+DTEND;TZID=Europe/Amsterdam:20270301T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270301@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270301T193000
+DTEND;TZID=Europe/Amsterdam:20270301T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270302@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270302T190000
+DTEND;TZID=Europe/Amsterdam:20270302T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270302-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270302T153000
+DTEND;TZID=Europe/Amsterdam:20270302T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270315@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270315T203000
+DTEND;TZID=Europe/Amsterdam:20270315T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270315@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270315T193000
+DTEND;TZID=Europe/Amsterdam:20270315T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270315@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270315T193000
+DTEND;TZID=Europe/Amsterdam:20270315T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270316@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270316T190000
+DTEND;TZID=Europe/Amsterdam:20270316T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270316-g7@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270316T153000
+DTEND;TZID=Europe/Amsterdam:20270316T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-belijdenisgroep-20270322@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Belijdenisgroep
+DTSTART;TZID=Europe/Amsterdam:20270322T203000
+DTEND;TZID=Europe/Amsterdam:20270322T220000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Belijdeniscatechisatie (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-18+-20270322@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese 18+
+DTSTART;TZID=Europe/Amsterdam:20270322T193000
+DTEND;TZID=Europe/Amsterdam:20270322T203000
+LOCATION:Zaal 2B\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 18+ (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-bovenbouw-20270322@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Bovenbouw
+DTSTART;TZID=Europe/Amsterdam:20270322T193000
+DTEND;TZID=Europe/Amsterdam:20270322T204500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 4e t/m 6e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-catechese-onderbouw-20270323@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Catechese Onderbouw
+DTSTART;TZID=Europe/Amsterdam:20270323T190000
+DTEND;TZID=Europe/Amsterdam:20270323T201500
+LOCATION:Zaal 5 en Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Catechese voor 1e t/m 3e jaar VO (wijk 2).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:catechese-wijk-2-kindercatechese-20270323-g8@hervormdwoudenberg.nl
+DTSTAMP:20260807T000000Z
+SUMMARY:Kindercatechese
+DTSTART;TZID=Europe/Amsterdam:20270323T153000
+DTEND;TZID=Europe/Amsterdam:20270323T164500
+LOCATION:Zaal 2A\, Oosterpoort\, Woudenberg
+DESCRIPTION:Kindercatechese voor groep 7 & 8 (wijk 2).
 END:VEVENT
 
 END:VCALENDAR
