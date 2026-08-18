@@ -272,7 +272,7 @@ a {
    style="background-image: url('images/hero.jpg')" toe aan het element */
 .hero__bg--placeholder {
   background-image: url('images/hero.jpg');
-  background-position: center top;
+  background-position: center 30%;
 }
 
 .hero__bg::after {
@@ -956,6 +956,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .age-card--wide {
@@ -983,6 +985,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
+  hyphens: auto;
 }
 
 .age-card ul {
@@ -1041,6 +1044,8 @@ a {
   flex-direction: column;
   gap: 10px;
   transition: background 0.2s;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .role-card:hover {
@@ -1057,6 +1062,7 @@ a {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
+  hyphens: auto;
 }
 
 .role-card__sub {
@@ -1581,6 +1587,14 @@ a {
     min-height: 0;
     padding: 45vh 0 0;
   }
+  /* Zonder vaste hoogte loopt de achtergrondfoto door achter de witte kaart,
+     waardoor "cover" op een veel te hoge box rekent en op mobiel alleen het
+     bovenste randje van de foto (vaak lucht/bomen) zichtbaar blijft. */
+  .hero__bg {
+    top: 0;
+    height: 45vh;
+    bottom: auto;
+  }
   .hero__card {
     width: 100%;
     max-width: 100%;
@@ -1770,6 +1784,23 @@ a {
 }
 
 .ics-downloads__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 40px;
+}
+
+.ics-group__label {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.55;
+  margin-bottom: 8px;
+}
+
+.ics-group__buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -2060,6 +2091,8 @@ a {
   color: var(--dark);
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .vacancy-card:hover {
@@ -2139,6 +2172,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .team-card__photo {
