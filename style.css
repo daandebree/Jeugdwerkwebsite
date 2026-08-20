@@ -1162,6 +1162,10 @@ a {
   gap: 6px;
 }
 
+.form__row[hidden] {
+  display: none;
+}
+
 .form__row label {
   font-size: 0.8rem;
   font-weight: 600;
