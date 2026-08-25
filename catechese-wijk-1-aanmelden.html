@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aanmelden Catechese Wijk 1 — Jeugdwerk Hervormd Woudenberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.png" alt="Hervormde Gemeente Woudenberg" class="nav__logo-img">
+        <span>Jeugdwerk <span class="nav__logo-sub">Hervormd Woudenberg</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#visie">Visie</a></li>
+        <li><a href="index.html#verlangen">Ons verlangen</a></li>
+        <li><a href="index.html#watjedoen">Wat we doen</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="jeugdwerkers.html">Jeugdwerkers</a></li>
+        <li class="nav__cta-mobile"><a href="index.html#aanmelden" class="btn nav__cta-link">Ik wil meehelpen</a></li>
+      </ul>
+      <a href="index.html#aanmelden" class="btn nav__cta">Ik wil meehelpen</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg hero__bg--catechese"></div>
+    <div class="hero__card">
+      <span class="hero__age">Wijk 1</span>
+      <h1>Aanmelden voor Catechese</h1>
+      <p>Meld je aan voor het nieuwe seizoen catechese in wijk 1. Vul hieronder je gegevens in.</p>
+      <div class="hero__btns">
+        <a href="#aanmelden" class="btn">Meld je direct aan</a>
+        <a href="catechese-wijk-1.html" class="btn btn--ghost">← Terug naar catechese wijk 1</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AANMELDFORMULIER -->
+  <section class="form-section form-section--club" id="aanmelden">
+    <div class="form-section__inner">
+      <div class="form-section__text">
+        <h2>Aanmelden voor catechese Wijk 1</h2>
+        <p>Leuk dat je je wilt aanmelden! Vul hieronder je gegevens in. Na verzending ontvang je een bevestiging en nemen wij je aanmelding mee voor het nieuwe seizoen.</p>
+      </div>
+      <form class="form" name="aanmelding-catechese-wijk-1" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-redirect="/catechese-wijk-1-bedankt.html">
+        <input type="hidden" name="form-name" value="aanmelding-catechese-wijk-1">
+        <p hidden><label>Laat dit veld leeg: <input name="bot-field"></label></p>
+
+        <div class="form__row">
+          <label for="voornaam">Voornaam *</label>
+          <input type="text" id="voornaam" name="voornaam" placeholder="Je voornaam" required>
+        </div>
+
+        <div class="form__row">
+          <label for="achternaam">Achternaam *</label>
+          <input type="text" id="achternaam" name="achternaam" placeholder="Je achternaam" required>
+        </div>
+
+        <div class="form__row">
+          <label for="email">E-mailadres *</label>
+          <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+        </div>
+
+        <div class="form__row">
+          <label for="geboortedatum">Geboortedatum *</label>
+          <input type="date" id="geboortedatum" name="geboortedatum" required>
+        </div>
+
+        <div class="form__row">
+          <label for="woonplaats">Woonplaats *</label>
+          <input type="text" id="woonplaats" name="woonplaats" placeholder="Woudenberg" required>
+        </div>
+
+        <div class="form__row">
+          <label for="postcode">Postcode *</label>
+          <input type="text" id="postcode" name="postcode" placeholder="1234 AB" required>
+        </div>
+
+        <div class="form__row">
+          <label for="adres">Straatnaam + huisnummer *</label>
+          <input type="text" id="adres" name="adres" placeholder="Straatnaam 12" required>
+        </div>
+
+        <div class="form__row">
+          <label for="telefoon">06-nummer</label>
+          <input type="tel" id="telefoon" name="telefoon" placeholder="06 12 34 56 78">
+        </div>
+
+        <div class="form__row">
+          <label for="telefoon-ouders">06-nummer ouders/verzorgers</label>
+          <input type="tel" id="telefoon-ouders" name="telefoon_ouders" placeholder="06 12 34 56 78">
+        </div>
+
+        <div class="form__row">
+          <label for="email-ouders">E-mailadres ouders/verzorgers</label>
+          <input type="email" id="email-ouders" name="email_ouders" placeholder="ouders@email.nl">
+        </div>
+
+        <div class="form__row">
+          <label for="groep">Catechesegroep *</label>
+          <select id="groep" name="groep" required>
+            <option value="">Kies een catechesegroep…</option>
+            <option value="Groep 7 en 8">Groep 7 en 8 — dinsdag 16:15–17:00</option>
+            <option value="1e klas">1e klas — dinsdag 18:30–19:15</option>
+            <option value="2e klas">2e klas — dinsdag 19:30–20:15</option>
+            <option value="3e klas">3e klas — dinsdag 19:30–20:15</option>
+            <option value="4e klas">4e klas — dinsdag 19:30–20:15</option>
+            <option value="5e en 6e klas / 16-17 jaar">5e en 6e klas / 16-17 jaar — dinsdag 18:30–19:15</option>
+            <option value="18+ jaar">18+ jaar — dinsdag 19:30–20:15</option>
+            <option value="Belijdeniscatechese">Belijdeniscatechese — woensdag 19:00–21:00</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label for="opmerking">Opmerkingen en/of bijzonderheden</label>
+          <textarea id="opmerking" name="opmerking" rows="4" placeholder="Bijv. voorkeur voor een vriend(in) in dezelfde groep, medische bijzonderheden, vragen aan de organisatie…"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Aanmelden voor 2026-2027</button>
+        <p class="form__privacy">Je gegevens worden uitsluitend gebruikt voor de organisatie van de catechese van Wijk 1 en niet gedeeld met derden.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer footer--light" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Jeugdwerk Hervormd Woudenberg</span>
+        <p>Ken Hem · Vind Ons · Groei Samen</p>
+      </div>
+      <div class="footer__links">
+        <h3>Navigatie</h3>
+        <ul>
+          <li><a href="index.html#visie">Visie</a></li>
+          <li><a href="index.html#watjedoen">Wat we doen</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="catechese-wijk-1.html">Catechese Wijk 1</a></li>
+          <li><a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">Hoofdwebsite ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Jeugdleiders</h3>
+        <p>Tom Horst — <a href="tel:+31643084241">06 43 08 42 41</a><br>
+        <a href="mailto:t.horst@hervormdwoudenberg.nl">t.horst@hervormdwoudenberg.nl</a></p>
+        <p>Daan de Bree — <a href="tel:+31683238677">06 83 23 86 77</a><br>
+        <a href="mailto:d.debree@hervormdwoudenberg.nl">d.debree@hervormdwoudenberg.nl</a></p>
+        <p>Ronald Driever — <a href="tel:+31650460114">06 50 46 01 14</a><br>
+        <a href="mailto:r.driever@hervormdwoudenberg.nl">r.driever@hervormdwoudenberg.nl</a></p>
+        <p style="margin-top:12px;opacity:0.45;font-size:0.8rem;">Hervormde Gemeente Woudenberg<br>Schoutstraat 8a, Woudenberg</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Hervormde Gemeente Woudenberg — <a href="https://www.hervormdwoudenberg.nl/" target="_blank" rel="noopener">hervormdwoudenberg.nl</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

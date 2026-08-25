@@ -116,6 +116,18 @@ document.querySelectorAll('form[data-netlify="true"]').forEach(function (form) {
   });
 })();
 
+// Conditionele groepskeuze bij Bijbeluur in het "Ik wil meehelpen"-formulier
+(function () {
+  var interesseSelect = document.getElementById('interesse');
+  var bijbeluurGroepRow = document.getElementById('bijbeluur-groep-row');
+  if (!interesseSelect || !bijbeluurGroepRow) return;
+  function toggleBijbeluurGroep() {
+    bijbeluurGroepRow.hidden = interesseSelect.value.indexOf('bijbeluur') !== 0;
+  }
+  interesseSelect.addEventListener('change', toggleBijbeluurGroep);
+  toggleBijbeluurGroep();
+})();
+
 // Foto-carrousel in de agenda-sectie
 (function () {
   const track = document.getElementById('carouselTrack');

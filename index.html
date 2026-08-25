@@ -406,11 +406,28 @@
           <label for="interesse">Interesse in rol</label>
           <select id="interesse" name="interesse">
             <option value="">Kies een rol…</option>
-            <option value="mentor">Mentor/Catecheet (Catechese)</option>
-            <option value="groepsleider">Jeugdleider (Community &amp; Clubs)</option>
-            <option value="creatief">Creatief &amp; Media</option>
-            <option value="organisator">Organisator (Praktisch &amp; Events)</option>
-            <option value="weet-niet">Weet ik nog niet</option>
+            <optgroup label="Actuele vacatures">
+              <option value="bijbeluur-leiding">Bijbeluur — Leidinggevende</option>
+              <option value="bijbeluur-hulpleiding">Bijbeluur — Hulpleiding</option>
+              <option value="united-jeugdleider">Jeugdleider — United</option>
+              <option value="woensdagmiddagclub-leiding">Leidinggevende — Woensdagmiddagclub</option>
+            </optgroup>
+            <optgroup label="Ook interesse in">
+              <option value="mentor">Mentor/Catecheet (Catechese)</option>
+              <option value="creatief">Creatief &amp; Media</option>
+              <option value="organisator">Organisator (Praktisch &amp; Events)</option>
+              <option value="weet-niet">Weet ik nog niet</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form__row" id="bijbeluur-groep-row" hidden>
+          <label for="bijbeluur-groep">Bij welke groep?</label>
+          <select id="bijbeluur-groep" name="bijbeluur_groep">
+            <option value="">Kies een groep…</option>
+            <option value="groep-1-2">Groep 1/2</option>
+            <option value="groep-3-4">Groep 3/4</option>
+            <option value="groep-5-6">Groep 5/6</option>
+            <option value="maakt-niet-uit">Maakt niet uit</option>
           </select>
         </div>
         <div class="form__row">
@@ -441,6 +458,7 @@
                   <p class="avail-check__groeplabel">Weekend</p>
                   <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="za-middag"> Zaterdagmiddag</label>
                   <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="za-avond"> Zaterdagavond</label>
+                  <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="zo-ochtend"> Zondagmorgen</label>
                   <label class="avail-check__item"><input type="checkbox" name="beschikbaar[]" value="zo-middag"> Zondagmiddag</label>
                 </div>
               </div>
